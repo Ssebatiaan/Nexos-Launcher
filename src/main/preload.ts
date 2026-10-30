@@ -8,4 +8,9 @@ contextBridge.exposeInMainWorld("nexos", {
   readOptions: () => ipcRenderer.invoke("opciones:leer"),
   saveOptions: (options: { ramMb: number }) => ipcRenderer.invoke("opciones:guardar", options),
   version: () => ipcRenderer.invoke("app:version"),
+  syncPack: () => ipcRenderer.invoke("pack:sincronizar"),
+  onPackProgress: (cb: (p: unknown) => void) => {
+    ipcRenderer.removeAllListeners("pack:progreso");
+    ipcRenderer.on("pack:progreso", (_e, p) => cb(p));
+  },
 });
