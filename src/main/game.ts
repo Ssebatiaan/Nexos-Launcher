@@ -15,6 +15,8 @@ export interface LaunchRequest {
   ramMb: number;
   /** Tamano de la ventana o pantalla completa; sin esto, lo que recuerde el juego. */
   resolution?: { width?: number; height?: number; fullscreen?: boolean };
+  /** Solo pruebas (NEXOS_PRUEBA_ENTRAR=1): entra directo a este servidor. Normalmente se abre el menu del juego. */
+  server?: { host: string; port: number };
   /** Archivo donde se guarda todo lo que escribe el juego (para "Ver registro"). */
   logFile: string;
   launcherVersion: string;
@@ -43,6 +45,7 @@ export async function launchGame(req: LaunchRequest, events: GameEvents): Promis
     launcherName: "nexos-launcher",
     launcherBrand: "Nexos Launcher",
     resolution: req.resolution,
+    quickPlayMultiplayer: req.server ? `${req.server.host}:${req.server.port}` : undefined,
     extraExecOption: { windowsHide: true },
   });
   proc.stdout?.pipe(new GameLogText()).pipe(log, { end: false });

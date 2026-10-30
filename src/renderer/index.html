@@ -71,10 +71,36 @@
 
       <!-- Skins -->
       <section class="view" id="view-skins">
-        <div class="panel">
-          <h2>Skins</h2>
-          <p class="muted">Aquí verás tu personaje en 3D (podrás girarlo) y podrás subir una skin nueva que verán todos en el servidor.</p>
-          <div class="placeholder">Próximamente · Sprint 5</div>
+        <div class="skins">
+          <div class="skin-stage">
+            <canvas id="skin-canvas" width="320" height="420"></canvas>
+            <div class="skin-empty" id="skin-empty">Elige una skin: sube un PNG o usa la de un jugador premium.</div>
+            <small class="muted">Arrastra para girar · rueda para acercar</small>
+          </div>
+          <div class="skin-side">
+            <h2>Skins</h2>
+            <div class="skin-current">
+              <strong id="skin-name">Sin skin</strong>
+              <span class="muted small" id="skin-kind">Elige una para tu cuenta</span>
+            </div>
+            <div class="variant" id="variant">
+              <button data-variant="classic">Clásica</button>
+              <button data-variant="slim">Delgada</button>
+            </div>
+            <div class="buttons">
+              <button class="btn-primary" id="skin-upload">Subir PNG…</button>
+              <button class="btn-secondary hidden" id="skin-clear">No usar skin del launcher</button>
+            </div>
+            <h3 class="section">Skin de un jugador premium</h3>
+            <div class="add-row">
+              <input id="skin-premium" maxlength="16" placeholder="Nombre del jugador" spellcheck="false">
+              <button class="btn-secondary" id="skin-premium-btn">Usar</button>
+            </div>
+            <div class="form-error hidden" id="skin-error"></div>
+            <p class="muted small skin-note" id="skin-note"></p>
+            <h3 class="section">Historial</h3>
+            <div class="skin-history" id="skin-history"></div>
+          </div>
         </div>
       </section>
 
@@ -151,6 +177,7 @@
     </div>
   </div>
 
+  <script src="lib/skinview3d.bundle.js"></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

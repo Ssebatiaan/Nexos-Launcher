@@ -79,6 +79,17 @@ al cerrar el servidor una descarga.
   instalación (vuelve a poner Java y revisa la huella de todos los archivos), abrir la carpeta del juego, buscar
   actualizaciones.
 
+## Skins
+
+Pantalla Skins (`src/renderer/skins-view.ts`, visor 3D con skinview3d, MIT): subir una PNG (64×64; si los brazos son
+finos se marca «Delgada» sola), usar la skin de un jugador premium (API oficial de Mojang) e historial de las últimas 12
+(`src/main/skins.ts`, en `skins/` de la carpeta del launcher). La skin es de cada cuenta y su cabeza es el avatar.
+
+Al pulsar JUGAR se deja en `juego/nexos/skin.json` (+ `skin.png`); Nexus Protect la manda al servidor al entrar y allí
+se pone con Skin Restorer (solo si cambió desde la última vez, para no pisar un `/skin` puesto en el juego). Las de un
+premium ya vienen firmadas; las de archivo las firma MineSkin con la clave de `config/skinrestorer/config.json`
+(`providers.mineskin.apiKey`, solo en el servidor). Prueba entrando sola al servidor: `NEXOS_PRUEBA_ENTRAR=1`.
+
 ## Plan por sprints
 
 | Sprint | Contenido | Estado |
@@ -88,5 +99,5 @@ al cerrar el servidor una descarga.
 | 2 | Instalar y jugar: Java 21 + Minecraft + NeoForge + modpack, cuenta no premium, entrar al servidor | Hecho |
 | 3 | Actualizaciones y opciones: buscar al abrir, auto-actualización del launcher, Discord, noticias, estado | Hecho |
 | 4 | Cuentas: varias guardadas, Microsoft (cuando aprueben la app) | Pendiente |
-| 5 | Skins: visor 3D, subir skin y que se vea en el servidor | Pendiente |
+| 5 | Skins: visor 3D, subir skin y que se vea en el servidor | Hecho (las de archivo, cuando haya clave de MineSkin) |
 | 6 | Pulido: instalador .exe, auto-login no premium, registro de errores | Pendiente |

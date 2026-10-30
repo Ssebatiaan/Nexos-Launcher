@@ -9,6 +9,7 @@ import { Accounts } from "./accounts";
 import { launchGame } from "./game";
 import { ensureJava, ensureMinecraft, ensureNeoForge, freeSpace, friendlyError, pathsFor, type StepProgress } from "./installer";
 import { fetchPack, installedVersion, type Pack, syncPack } from "./pack";
+import { Skins } from "./skins";
 import { queryStatus } from "./status";
 import { checkNow, installAvailable, updateOnStartup, type UpdateState, watchForUpdates } from "./updater";
 
@@ -20,6 +21,16 @@ const NEEDED_BYTES = 3 * 1024 ** 3;
 
 const paths = () => pathsFor(app.getPath("userData"));
 const accounts = () => new Accounts(app.getPath("userData"));
+const skins = () => new Skins(app.getPath("userData"));
+
+/** Cuenta elegida (las skins son por cuenta). */
+function skinAccount(): string {
+  const account = accounts().selected();
+  if (!account) {
+    throw new Error("Primero añade una cuenta (abajo a la izquierda, en la pantalla Jugar).");
+  }
+  return account.id;
+}
 
 // ------------------------------------------------------------------ opciones
 
@@ -222,8 +233,11 @@ async function play(win: BrowserWindow, mode: "jugar" | "reparar"): Promise<void
     state.percent = null;
     send();
     const options = loadOptions();
+    // La skin elegida en el launcher: Nexus Protect la manda al entrar al servidor
+    skins().writeToGame(p.game, account!.id);
     gameProcess = await launchGame({
       paths: p, versionId, java, account: account!, ramMb: options.ramMb, resolution: resolutionOf(options.resolution),
+      server: process.env.NEXOS_PRUEBA_ENTRAR === "1" ? pack.server : undefined,
       logFile: logFile(), launcherVersion: app.getVersion(),
     }, {
       onWindowReady: () => {
@@ -372,6 +386,38 @@ function registerIpc(): void {
   ipcMain.handle("cuentas:anadir", (_e, name: string) => accounts().addOffline(name));
   ipcMain.handle("cuentas:elegir", (_e, id: string) => accounts().select(id));
   ipcMain.handle("cuentas:borrar", (_e, id: string) => accounts().remove(id));
+  ipcMain.handle("skins:listar", () => skins().list(accounts().selected()?.id));
+  ipcMain.handle("skins:subir", async (e, variant: "classic" | "slim") => {
+    const account = skinAccount();
+    const win = BrowserWindow.fromWebContents(e.sender)!;
+    const pick = await dialog.showOpenDialog(win, {
+      title: "Elige tu skin (PNG de 64×64)",
+      filters: [{ name: "Skin de Minecraft", extensions: ["png"] }],
+      properties: ["openFile"],
+    });
+    if (!pick.canceled && pick.filePaths[0]) {
+      skins().addPng(account, pick.filePaths[0], variant);
+    }
+    return skins().list(account);
+  });
+  ipcMain.handle("skins:premium", async (_e, name: string) => {
+    const account = skinAccount();
+    await skins().addPremium(account, name.trim());
+    return skins().list(account);
+  });
+  ipcMain.handle("skins:elegir", (_e, id: string | null) => {
+    const account = skinAccount();
+    skins().select(account, id);
+    return skins().list(account);
+  });
+  ipcMain.handle("skins:variante", (_e, id: string, variant: "classic" | "slim") => {
+    skins().setVariant(id, variant);
+    return skins().list(accounts().selected()?.id);
+  });
+  ipcMain.handle("skins:borrar", (_e, id: string) => {
+    skins().remove(id);
+    return skins().list(accounts().selected()?.id);
+  });
   ipcMain.handle("actualizar:buscar", async () => {
     const s = await checkNow();
     if (s.phase === "disponible") sendAll("actualizar:estado", s);

@@ -178,7 +178,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 .play-btn:disabled { filter: grayscale(0.7); cursor: default; }
 
 /* ---- paneles (skins, opciones) ---- */
-.view-skins, #view-opciones { padding: 32px; background: radial-gradient(ellipse at top, #24104a 0%, var(--bg) 70%); }
+#view-skins, #view-opciones { padding: 32px; background: radial-gradient(ellipse at top, #24104a 0%, var(--bg) 70%); }
 .panel { max-width: 620px; padding: 24px 28px; border-radius: 10px; background: var(--panel); border: 1px solid var(--panel-border); }
 .panel h2 { margin: 0 0 12px; color: var(--lavender); letter-spacing: 1px; }
 .placeholder { margin-top: 18px; padding: 50px; text-align: center; border: 2px dashed #3a2560; border-radius: 8px; color: var(--muted); }
@@ -261,7 +261,7 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 
 /* ---- opciones ---- */
 #view-opciones { overflow-y: auto; }
-.panel h3.section { margin: 22px 0 6px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
+.panel h3.section, .skin-side h3.section { margin: 22px 0 6px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
 .panel h3.section:first-of-type { margin-top: 6px; }
 .row { display: flex; gap: 16px; }
 .field.half { flex: 1; }
@@ -276,3 +276,42 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 
 /* ---- boton verde de actualizar (barra de titulo) ---- */
 .update-btn.busy { background: #2d6e44; cursor: default; }
+
+/* ---- skins ---- */
+#view-skins { overflow-y: auto; }
+.skins { display: flex; gap: 22px; align-items: flex-start; }
+.skin-stage {
+  position: relative;
+  width: 340px;
+  flex-shrink: 0;
+  padding: 10px 10px 12px;
+  border-radius: 10px;
+  background: radial-gradient(ellipse at 50% 35%, #3a1d6e 0%, #150b26 70%);
+  border: 1px solid var(--panel-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+#skin-canvas { width: 320px; height: 420px; cursor: grab; }
+#skin-canvas:active { cursor: grabbing; }
+.skin-empty { position: absolute; top: 170px; left: 30px; right: 30px; text-align: center; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.skin-side { flex: 1; max-width: 520px; padding: 22px 26px; border-radius: 10px; background: var(--panel); border: 1px solid var(--panel-border); }
+.skin-side h2 { margin: 0 0 10px; color: var(--lavender); }
+.skin-current { display: flex; flex-direction: column; gap: 2px; margin-bottom: 12px; }
+.skin-current strong { font-size: 18px; }
+.variant { display: inline-flex; border: 1px solid #3a2560; border-radius: 6px; overflow: hidden; margin-bottom: 10px; }
+.variant button { padding: 6px 16px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.variant button.on { background: rgba(138, 76, 214, 0.45); color: var(--text); }
+.variant button:disabled { cursor: default; }
+.skin-note { margin-top: 10px; }
+.skin-history { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 8px; }
+.skin-tile { position: relative; padding: 8px 4px 6px; border-radius: 6px; background: #1d1131; border: 1px solid transparent; cursor: pointer; text-align: center; }
+.skin-tile:hover { border-color: #5a3a90; }
+.skin-tile.selected { border-color: var(--teal); }
+.skin-tile canvas { width: 48px; height: 48px; image-rendering: pixelated; }
+.skin-tile span { display: block; margin-top: 4px; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.skin-tile .remove { position: absolute; top: 2px; right: 2px; width: 18px; height: 18px; border-radius: 4px; font-size: 10px; color: var(--muted); display: none; }
+.skin-tile:hover .remove { display: block; }
+.skin-tile .remove:hover { background: var(--red); color: #fff; }
+.avatar canvas { width: 100%; height: 100%; image-rendering: pixelated; border-radius: 6px; }

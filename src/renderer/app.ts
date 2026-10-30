@@ -1,6 +1,8 @@
 // Interfaz del Nexos Launcher: vistas, cuentas, opciones y el boton JUGAR (con los pasos de la preparacion).
 // Lo que necesita el sistema (archivos, instalar, abrir el juego) se pide al proceso principal por window.nexos (preload).
 
+import { SkinsScreen, type SkinsApi } from "./skins-view.js";
+
 interface Account {
   id: string;
   type: "offline";
@@ -55,7 +57,7 @@ interface UpdateState {
   error?: string;
 }
 
-interface NexosApi {
+interface NexosApi extends SkinsApi {
   minimize(): void;
   close(): void;
   openDiscord(): void;
@@ -109,6 +111,7 @@ function showView(view: string): void {
   document.querySelectorAll<HTMLElement>(".nav-item").forEach((n) => n.classList.toggle("active", n.dataset.view === view));
   document.querySelectorAll(".view").forEach((v) => v.classList.remove("active"));
   $("view-" + view).classList.add("active");
+  skinsScreen.setVisible(view === "skins");
 }
 
 for (const item of Array.from(document.querySelectorAll<HTMLButtonElement>(".nav-item"))) {
@@ -253,6 +256,9 @@ $("btn-check-update").addEventListener("click", async () => {
   }
 });
 
+// ---- skins
+const skinsScreen = new SkinsScreen(nexos, cleanError);
+
 // ---- cuentas
 const modal = $("account-modal");
 const nameInput = $<HTMLInputElement>("account-name-input");
@@ -263,7 +269,9 @@ async function refreshAccounts(): Promise<Account | undefined> {
   const current = accounts.find((a) => a.id === selected) ?? accounts[0];
   $("account-name").textContent = current ? current.name : "Sin cuenta";
   $("account-type").textContent = current ? "No premium · cambiar" : "Añade una cuenta para jugar";
-  $("avatar").textContent = current ? current.name[0].toUpperCase() : "?";
+  const avatar = $("avatar");
+  avatar.dataset.letter = current ? current.name[0].toUpperCase() : "?";
+  avatar.textContent = avatar.dataset.letter;
   const list = $("account-list");
   list.innerHTML = "";
   if (accounts.length === 0) {
@@ -288,6 +296,7 @@ async function refreshAccounts(): Promise<Account | undefined> {
     });
     list.appendChild(li);
   }
+  skinsScreen.refresh(); // las skins son de cada cuenta (y el avatar es la cabeza de la skin)
   return current;
 }
 
