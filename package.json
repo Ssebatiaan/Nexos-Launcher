@@ -10,11 +10,16 @@
   "scripts": {
     "build": "tsc -p tsconfig.main.json && tsc -p tsconfig.renderer.json && node scripts/copy-static.mjs",
     "start": "npm run build && node scripts/electron.mjs",
-    "captura": "npm run build && node scripts/electron.mjs --captura=captura.png"
+    "captura": "npm run build && node scripts/electron.mjs --captura=captura.png",
+    "postinstall": "node scripts/fix-deps.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.20.5",
     "electron": "^45.1.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@xmcl/core": "2.15.1",
+    "@xmcl/installer": "6.1.2"
   }
 }
