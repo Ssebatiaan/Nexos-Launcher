@@ -24,6 +24,23 @@ if (!token) {
   process.exit(1);
 }
 
+// La Release se crea antes: si no, electron-builder sube varios archivos a la vez, cada subida crea "su" Release y
+// quedan dos con la misma etiqueta (paso con la v0.3.0: latest.yml en una y el resto en otra).
+const repo = "Ssebatiaan/Nexos-Launcher";
+const headers = { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "User-Agent": "nexos-launcher" };
+const existing = await fetch(`https://api.github.com/repos/${repo}/releases/tags/${tag}`, { headers });
+if (existing.status === 404) {
+  const created = await fetch(`https://api.github.com/repos/${repo}/releases`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ tag_name: tag, name: version, draft: false, prerelease: false }),
+  });
+  if (!created.ok) {
+    console.error(`[X] No se pudo crear la Release ${tag}: HTTP ${created.status}`);
+    process.exit(1);
+  }
+}
+
 const build = spawnSync("npm", ["run", "build"], { stdio: "inherit", shell: true });
 if (build.status !== 0) process.exit(build.status ?? 1);
 const env = { ...process.env, GH_TOKEN: token };
