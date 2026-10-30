@@ -1,0 +1,2891 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_personaje
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1793172003980
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:vis_1_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_1_0] = pj_tab:stats
+  source = [source:local]/config/fancymenu/assets/nexosmc/pj_panel.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:vis_2_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_2_0] = pj_tab:jobs
+  source = [source:local]/config/fancymenu/assets/nexosmc/pj_panel_oficios.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:]
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"pj_titulo"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -89
+  width = 82
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:vis_4_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_0] = pj_tab:stats
+  label = §lEstadísticas
+  description = Pestaña Estadísticas
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_activa.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_activa_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_activa_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.9
+  navigatable = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -89
+  width = 82
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:vis_5_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_0] = pj_tab:jobs
+  label = Estadísticas
+  description = Pestaña Estadísticas
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.9
+  navigatable = true
+  [executable_action_instance:nexo_act_5_0][action_type:set_variable] = pj_tab:stats
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -76
+  y = -89
+  width = 82
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:vis_6_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_0] = pj_tab:jobs
+  label = §lOficios
+  description = Pestaña Oficios
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_activa.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_activa_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_activa_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.9
+  navigatable = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -76
+  y = -89
+  width = 82
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:vis_7_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_0] = pj_tab:stats
+  label = Oficios
+  description = Pestaña Oficios
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_pestana_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.9
+  navigatable = true
+  [executable_action_instance:nexo_act_7_0][action_type:set_variable] = pj_tab:jobs
+}
+
+element {
+  element_type = player_entity_v2
+  instance_identifier = nexo_player_entity_v2_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -130
+  y = -72
+  width = 42
+  height = 54
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:vis_8_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_0] = pj_tab:stats
+  copy_client_player = true
+  showname = false
+  head_follows_mouse = true
+  body_follows_mouse = true
+  body_movement = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = -16
+  width = 118
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:vis_9_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_0] = pj_tab:stats
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"pj_nivel"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -4
+  width = 102
+  height = 6
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:vis_10_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"pj_xp_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 4
+  width = 118
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"pj_xp_txt"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 17
+  width = 118
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:vis_12_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_0] = pj_tab:stats
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"pj_puntos"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -161
+  y = 32
+  width = 102
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = pj_tab:stats
+  label = Reiniciar puntos
+  description = Devuelve todos los puntos para repartirlos de nuevo (pide confirmación).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_boton_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_boton_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_boton_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_13_0][action_type:sendmessage] = /personaje reiniciar
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 54
+  width = 118
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:vis_14_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"pj_reset_txt"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = -70
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = pj_tab:stats
+  item_key = minecraft:red_dye
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -70
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:vis_16_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_0] = pj_tab:stats
+  source = **Vida**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -60
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_vida_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -68
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_vida_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -60
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_vida_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = -69
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Vida.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_20_0][action_type:sendmessage] = /personaje subir vida
+  widget_active_state_requirement_container_identifier = act_20
+  [loading_requirement_container_meta:act_20] = [groups:][instances:act_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_20_0] = s_vida_mas:1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = -50
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = pj_tab:stats
+  item_key = minecraft:iron_sword
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -50
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = pj_tab:stats
+  source = **Fuerza**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -40
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_fuerza_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -48
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_fuerza_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -40
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_fuerza_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = -49
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Fuerza.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_26_0][action_type:sendmessage] = /personaje subir fuerza
+  widget_active_state_requirement_container_identifier = act_26
+  [loading_requirement_container_meta:act_26] = [groups:][instances:act_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_26_0] = s_fuerza_mas:1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = -30
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = pj_tab:stats
+  item_key = minecraft:iron_chestplate
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -30
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = pj_tab:stats
+  source = **Defensa**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -20
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_defensa_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -28
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_defensa_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -20
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_defensa_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = -29
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Defensa.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_32_0][action_type:sendmessage] = /personaje subir defensa
+  widget_active_state_requirement_container_identifier = act_32
+  [loading_requirement_container_meta:act_32] = [groups:][instances:act_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_32_0] = s_defensa_mas:1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = pj_tab:stats
+  item_key = minecraft:feather
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = -10
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = pj_tab:stats
+  source = **Agilidad**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 0
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_agilidad_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = -8
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_agilidad_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 0
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_agilidad_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = -9
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Agilidad.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_38_0][action_type:sendmessage] = /personaje subir agilidad
+  widget_active_state_requirement_container_identifier = act_38
+  [loading_requirement_container_meta:act_38] = [groups:][instances:act_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_38_0] = s_agilidad_mas:1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = 10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = pj_tab:stats
+  item_key = minecraft:iron_pickaxe
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 10
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = pj_tab:stats
+  source = **Minería**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 20
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_mineria_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 12
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:vis_42_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_mineria_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 20
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:vis_43_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_mineria_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = 11
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Minería.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_44_0][action_type:sendmessage] = /personaje subir mineria
+  widget_active_state_requirement_container_identifier = act_44
+  [loading_requirement_container_meta:act_44] = [groups:][instances:act_44_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_44_0] = s_mineria_mas:1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = 30
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:vis_45_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_0] = pj_tab:stats
+  item_key = minecraft:rabbit_foot
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 30
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:vis_46_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_0] = pj_tab:stats
+  source = **Suerte**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 40
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:vis_47_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_suerte_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 32
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:vis_48_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_suerte_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 40
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:vis_49_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_suerte_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_50
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = 31
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_50
+  [loading_requirement_container_meta:vis_50] = [groups:][instances:vis_50_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Suerte.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_50_0][action_type:sendmessage] = /personaje subir suerte
+  widget_active_state_requirement_container_identifier = act_50
+  [loading_requirement_container_meta:act_50] = [groups:][instances:act_50_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_50_0] = s_suerte_mas:1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_51
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = 50
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_51
+  [loading_requirement_container_meta:vis_51] = [groups:][instances:vis_51_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_0] = pj_tab:stats
+  item_key = minecraft:cooked_beef
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_52
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 50
+  width = 90
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_52
+  [loading_requirement_container_meta:vis_52] = [groups:][instances:vis_52_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_0] = pj_tab:stats
+  source = **Resistencia**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 0.95
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_53
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -24
+  y = 60
+  width = 86
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_53
+  [loading_requirement_container_meta:vis_53] = [groups:][instances:vis_53_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_0] = pj_tab:stats
+  source = {"placeholder":"getvariable","values":{"name":"s_resistencia_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_54
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 52
+  width = 68
+  height = 5
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_54
+  [loading_requirement_container_meta:vis_54] = [groups:][instances:vis_54_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_0] = pj_tab:stats
+  progress_source = {"placeholder":"getvariable","values":{"name":"s_resistencia_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+  bar_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_on.png
+  bar_nine_slice = false
+  background_texture = [source:local]/config/fancymenu/assets/nexosmc/pj_pips_off.png
+  background_nine_slice = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_55
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 60
+  width = 68
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_55
+  [loading_requirement_container_meta:vis_55] = [groups:][instances:vis_55_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_0] = pj_tab:stats
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"s_resistencia_num"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_56
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = 51
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_56
+  [loading_requirement_container_meta:vis_56] = [groups:][instances:vis_56_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_0] = pj_tab:stats
+  label = +
+  description = Gastar un punto en Resistencia.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_mas.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_56_0][action_type:sendmessage] = /personaje subir resistencia
+  widget_active_state_requirement_container_identifier = act_56
+  [loading_requirement_container_meta:act_56] = [groups:][instances:act_56_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_56_0] = s_resistencia_mas:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_57
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 81
+  width = 220
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_57
+  [loading_requirement_container_meta:vis_57] = [groups:][instances:vis_57_0;vis_57_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_0] = pj_tab:stats
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_1] = pj_confirmar:1
+  source = {"placeholder":"getvariable","values":{"name":"pj_confirmar_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_58
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 66
+  y = 82
+  width = 44
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_58
+  [loading_requirement_container_meta:vis_58] = [groups:][instances:vis_58_0;vis_58_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_0] = pj_tab:stats
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_1] = pj_confirmar:1
+  label = Sí
+  description = Reiniciar
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_si.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_si_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_si_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_58_0][action_type:sendmessage] = /personaje confirmar
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_59
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 114
+  y = 82
+  width = 48
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_59
+  [loading_requirement_container_meta:vis_59] = [groups:][instances:vis_59_0;vis_59_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_0] = pj_tab:stats
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_1] = pj_confirmar:1
+  label = No
+  description = Cancelar
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_59_0][action_type:sendmessage] = /personaje cancelar
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_60
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 84
+  width = 250
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_60
+  [loading_requirement_container_meta:vis_60] = [groups:][instances:vis_60_0;vis_60_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_0] = pj_tab:stats
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_1] = pj_confirmar:0
+  source = Sube de nivel con los oficios, las grietas y los jefes. 1 punto por nivel.
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #968060
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_61
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -65
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_61
+  [loading_requirement_container_meta:vis_61] = [groups:][instances:vis_61_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_0] = pj_tab:jobs
+  item_key = minecraft:iron_axe
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_62
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -67
+  width = 64
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_62
+  [loading_requirement_container_meta:vis_62] = [groups:][instances:vis_62_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_0] = pj_tab:jobs
+  source = **Leñador**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_63
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -64
+  y = -67
+  width = 40
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_63
+  [loading_requirement_container_meta:vis_63] = [groups:][instances:vis_63_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_lenador_nivel"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_64
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -54
+  width = 78
+  height = 4
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_64
+  [loading_requirement_container_meta:vis_64] = [groups:][instances:vis_64_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_0] = pj_tab:jobs
+  progress_source = {"placeholder":"getvariable","values":{"name":"o_lenador_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_65
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = -56
+  width = 28
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_65
+  [loading_requirement_container_meta:vis_65] = [groups:][instances:vis_65_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_lenador_xp"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.65
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_66
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -67
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_66
+  [loading_requirement_container_meta:vis_66] = [groups:][instances:vis_66_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_lenador_hab"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_67
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -56
+  width = 180
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_67
+  [loading_requirement_container_meta:vis_67] = [groups:][instances:vis_67_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_lenador_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_68
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -67
+  width = 70
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_68
+  [loading_requirement_container_meta:vis_68] = [groups:][instances:vis_68_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_0] = pj_tab:jobs
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"o_lenador_sig"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_69
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -36
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_69
+  [loading_requirement_container_meta:vis_69] = [groups:][instances:vis_69_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_0] = pj_tab:jobs
+  item_key = minecraft:iron_pickaxe
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_70
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -38
+  width = 64
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_70
+  [loading_requirement_container_meta:vis_70] = [groups:][instances:vis_70_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_0] = pj_tab:jobs
+  source = **Minero**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_71
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -64
+  y = -38
+  width = 40
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_71
+  [loading_requirement_container_meta:vis_71] = [groups:][instances:vis_71_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_71_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_minero_nivel"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_72
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -25
+  width = 78
+  height = 4
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_72
+  [loading_requirement_container_meta:vis_72] = [groups:][instances:vis_72_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_0] = pj_tab:jobs
+  progress_source = {"placeholder":"getvariable","values":{"name":"o_minero_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_73
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = -27
+  width = 28
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_73
+  [loading_requirement_container_meta:vis_73] = [groups:][instances:vis_73_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_minero_xp"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.65
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_74
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -38
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_74
+  [loading_requirement_container_meta:vis_74] = [groups:][instances:vis_74_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_minero_hab"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_75
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -27
+  width = 180
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_75
+  [loading_requirement_container_meta:vis_75] = [groups:][instances:vis_75_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_minero_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_76
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -38
+  width = 70
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_76
+  [loading_requirement_container_meta:vis_76] = [groups:][instances:vis_76_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_0] = pj_tab:jobs
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"o_minero_sig"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_77
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -7
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_77
+  [loading_requirement_container_meta:vis_77] = [groups:][instances:vis_77_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_0] = pj_tab:jobs
+  item_key = minecraft:iron_sword
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_78
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -9
+  width = 64
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_78
+  [loading_requirement_container_meta:vis_78] = [groups:][instances:vis_78_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_78_0] = pj_tab:jobs
+  source = **Cazador**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_79
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -64
+  y = -9
+  width = 40
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_79
+  [loading_requirement_container_meta:vis_79] = [groups:][instances:vis_79_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_79_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_cazador_nivel"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_80
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 4
+  width = 78
+  height = 4
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_80
+  [loading_requirement_container_meta:vis_80] = [groups:][instances:vis_80_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_80_0] = pj_tab:jobs
+  progress_source = {"placeholder":"getvariable","values":{"name":"o_cazador_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_81
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = 2
+  width = 28
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_81
+  [loading_requirement_container_meta:vis_81] = [groups:][instances:vis_81_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_cazador_xp"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.65
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_82
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -9
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_82
+  [loading_requirement_container_meta:vis_82] = [groups:][instances:vis_82_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_cazador_hab"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_83
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 2
+  width = 180
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_83
+  [loading_requirement_container_meta:vis_83] = [groups:][instances:vis_83_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_83_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_cazador_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_84
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -9
+  width = 70
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_84
+  [loading_requirement_container_meta:vis_84] = [groups:][instances:vis_84_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_0] = pj_tab:jobs
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"o_cazador_sig"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_85
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = 22
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_85
+  [loading_requirement_container_meta:vis_85] = [groups:][instances:vis_85_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_0] = pj_tab:jobs
+  item_key = minecraft:fishing_rod
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_86
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 20
+  width = 64
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_86
+  [loading_requirement_container_meta:vis_86] = [groups:][instances:vis_86_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_0] = pj_tab:jobs
+  source = **Pescador**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_87
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -64
+  y = 20
+  width = 40
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_87
+  [loading_requirement_container_meta:vis_87] = [groups:][instances:vis_87_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_87_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_pescador_nivel"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_88
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 33
+  width = 78
+  height = 4
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_88
+  [loading_requirement_container_meta:vis_88] = [groups:][instances:vis_88_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_88_0] = pj_tab:jobs
+  progress_source = {"placeholder":"getvariable","values":{"name":"o_pescador_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_89
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = 31
+  width = 28
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_89
+  [loading_requirement_container_meta:vis_89] = [groups:][instances:vis_89_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_pescador_xp"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.65
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_90
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 20
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_90
+  [loading_requirement_container_meta:vis_90] = [groups:][instances:vis_90_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_pescador_hab"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_91
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 31
+  width = 180
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_91
+  [loading_requirement_container_meta:vis_91] = [groups:][instances:vis_91_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_pescador_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_92
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = 20
+  width = 70
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_92
+  [loading_requirement_container_meta:vis_92] = [groups:][instances:vis_92_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_92_0] = pj_tab:jobs
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"o_pescador_sig"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_93
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = 51
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_93
+  [loading_requirement_container_meta:vis_93] = [groups:][instances:vis_93_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_0] = pj_tab:jobs
+  item_key = minecraft:compass
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_94
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 49
+  width = 64
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_94
+  [loading_requirement_container_meta:vis_94] = [groups:][instances:vis_94_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_0] = pj_tab:jobs
+  source = **Explorador**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFF5E1
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_95
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -64
+  y = 49
+  width = 40
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_95
+  [loading_requirement_container_meta:vis_95] = [groups:][instances:vis_95_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_explorador_nivel"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD76E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_96
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 62
+  width = 78
+  height = 4
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_96
+  [loading_requirement_container_meta:vis_96] = [groups:][instances:vis_96_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_96_0] = pj_tab:jobs
+  progress_source = {"placeholder":"getvariable","values":{"name":"o_explorador_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #F0AA28
+  background_color = #32220F
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_97
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = 60
+  width = 28
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_97
+  [loading_requirement_container_meta:vis_97] = [groups:][instances:vis_97_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_97_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_explorador_xp"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.65
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_98
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 49
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_98
+  [loading_requirement_container_meta:vis_98] = [groups:][instances:vis_98_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_98_0] = pj_tab:jobs
+  source = **{"placeholder":"getvariable","values":{"name":"o_explorador_hab"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_99
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 60
+  width = 180
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_99
+  [loading_requirement_container_meta:vis_99] = [groups:][instances:vis_99_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_0] = pj_tab:jobs
+  source = {"placeholder":"getvariable","values":{"name":"o_explorador_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_100
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = 49
+  width = 70
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_100
+  [loading_requirement_container_meta:vis_100] = [groups:][instances:vis_100_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_0] = pj_tab:jobs
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"o_explorador_sig"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_101
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 78
+  width = 236
+  height = 32
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_101
+  [loading_requirement_container_meta:vis_101] = [groups:][instances:vis_101_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_101_0] = pj_tab:jobs
+  source = Cada oficio sube haciendo su actividad. Habilidad: agachado + clic derecho con su herramienta.
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #968060
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_102
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_102
+  [loading_requirement_container_meta:vis_102] = [groups:][instances:vis_102_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_0] = pj_tab:jobs
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_102_0][action_type:closegui] = 
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_103
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_103
+  [loading_requirement_container_meta:vis_103] = [groups:][instances:vis_103_0;vis_103_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_0] = pj_tab:stats
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_1] = pj_confirmar:0
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/pj_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/pj_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/pj_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_103_0][action_type:closegui] = 
+}

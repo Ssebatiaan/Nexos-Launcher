@@ -1,0 +1,3597 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_subasta
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1792872142480
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:]
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_panel.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:]
+  source = ^^^%n%**🏛 CASA DE SUBASTAS**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE08A
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 52
+  y = -104
+  width = 100
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:]
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"ah_saldo"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -89
+  width = 56
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:vis_4_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_0] = ah_vista:tienda
+  label = Tienda
+  description = Todo lo que hay a la venta.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_on.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_on_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_on_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_4_0][action_type:sendmessage] = /ah vista tienda
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -89
+  width = 56
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:vis_5_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_0] = ah_vista_tienda:0
+  label = Tienda
+  description = Todo lo que hay a la venta.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_5_0][action_type:sendmessage] = /ah vista tienda
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -104
+  y = -89
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:vis_6_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_0] = ah_vista:mias
+  label = {"placeholder":"getvariable","values":{"name":"ah_tab_mias"}}
+  description = Lo que tienes tú a la venta (y retirarlo).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_tab92_on.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_tab92_on_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_tab92_on_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_6_0][action_type:sendmessage] = /ah vista mias
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -104
+  y = -89
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:vis_7_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_0] = ah_vista_mias:0
+  label = {"placeholder":"getvariable","values":{"name":"ah_tab_mias"}}
+  description = Lo que tienes tú a la venta (y retirarlo).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_tab92.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_tab92_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_tab92_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_7_0][action_type:sendmessage] = /ah vista mias
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -89
+  width = 56
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:vis_8_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_0] = ah_vista:vender
+  label = Vender
+  description = Poner a la venta lo que tienes en la mano.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_on.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_on_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_on_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_8_0][action_type:sendmessage] = /ah vista vender
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -89
+  width = 56
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:vis_9_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_0] = ah_vista_vender:0
+  label = Vender
+  description = Poner a la venta lo que tienes en la mano.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_tab56_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_9_0][action_type:sendmessage] = /ah vista vender
+}
+
+element {
+  element_type = fancymenu_customization_item_input_field
+  instance_identifier = nexo_fancymenu_customization_item_input_field_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 52
+  y = -89
+  width = 82
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:vis_10_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_0] = ah_vista:tienda
+  linked_variable = ah_buscar_in
+  input_field_type = text
+  max_text_length = 40
+  hint_text = Buscar objeto...
+  background_color = #140A24
+  border_color = #6A44A8
+  border_color_focused = #3EE6D8
+  text_color = #F0E6FF
+  hint_text_color = #7A6E90
+  navigatable = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 136
+  y = -89
+  width = 26
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = ah_vista:tienda
+  label = 🔍
+  description = Buscar por nombre del objeto o del vendedor (vacío = ver todo).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_lupa.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_lupa_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_lupa_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_11_0][action_type:sendmessage] = /ah buscar {"placeholder":"getvariable","values":{"name":"ah_buscar_in"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -72
+  width = 250
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:vis_12_0;vis_12_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_0] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_1] = ah_msg_on:0
+  source = {"placeholder":"getvariable","values":{"name":"ah_buscar_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 100
+  y = -74
+  width = 62
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = ah_vista:tienda
+  label = {"placeholder":"getvariable","values":{"name":"ah_orden_txt"}}
+  description = Cambiar el orden: recientes, más baratos o más caros.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_orden.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_orden_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_orden_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_13_0][action_type:sendmessage] = /ah orden
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -72
+  width = 260
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:vis_14_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_0] = ah_msg_on:1
+  source = {"placeholder":"getvariable","values":{"name":"ah_msg"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -59
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = a_1:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -54
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:vis_16_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_0] = a_1:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_1_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_1_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -149
+  y = -44
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = a_1:1
+  source = {"placeholder":"getvariable","values":{"name":"a_1_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -56
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;vis_18_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = a_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_1] = a_1_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_1_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -56
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;vis_19_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = a_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_1] = a_1_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_1_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -46
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = a_1:1
+  source = {"placeholder":"getvariable","values":{"name":"a_1_precio"}} {"placeholder":"getvariable","values":{"name":"a_1_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = -54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;vis_21_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = a_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_21_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_1_id"}}
+  widget_active_state_requirement_container_identifier = act_21
+  [loading_requirement_container_meta:act_21] = [groups:][instances:act_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_21_0] = a_1_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = -54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;vis_22_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = a_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_22_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_1_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -60
+  y = -53
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;vis_23_1;vis_23_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = a_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_23_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_1_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -59
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = a_2:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -54
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = a_2:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_2_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_2_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 15
+  y = -44
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = a_2:1
+  source = {"placeholder":"getvariable","values":{"name":"a_2_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -56
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;vis_27_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = a_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_1] = a_2_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_2_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -56
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;vis_28_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = a_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_1] = a_2_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_2_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -46
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = a_2:1
+  source = {"placeholder":"getvariable","values":{"name":"a_2_precio"}} {"placeholder":"getvariable","values":{"name":"a_2_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = -54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;vis_30_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = a_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_30_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_2_id"}}
+  widget_active_state_requirement_container_identifier = act_30
+  [loading_requirement_container_meta:act_30] = [groups:][instances:act_30_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_30_0] = a_2_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = -54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;vis_31_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = a_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_31_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_2_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 104
+  y = -53
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;vis_32_1;vis_32_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = a_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_32_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_2_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -32
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = a_3:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -27
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = a_3:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_3_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_3_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -149
+  y = -17
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = a_3:1
+  source = {"placeholder":"getvariable","values":{"name":"a_3_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -29
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;vis_36_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = a_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_1] = a_3_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_3_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -29
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;vis_37_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = a_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_1] = a_3_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_3_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -19
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = a_3:1
+  source = {"placeholder":"getvariable","values":{"name":"a_3_precio"}} {"placeholder":"getvariable","values":{"name":"a_3_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = -27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;vis_39_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = a_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_39_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_3_id"}}
+  widget_active_state_requirement_container_identifier = act_39
+  [loading_requirement_container_meta:act_39] = [groups:][instances:act_39_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_39_0] = a_3_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = -27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;vis_40_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = a_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_40_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_3_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -60
+  y = -26
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;vis_41_1;vis_41_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = a_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_41_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_3_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -32
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:vis_42_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_0] = a_4:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -27
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:vis_43_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_0] = a_4:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_4_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_4_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 15
+  y = -17
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = a_4:1
+  source = {"placeholder":"getvariable","values":{"name":"a_4_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -29
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:vis_45_0;vis_45_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_0] = a_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_1] = a_4_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_4_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -29
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:vis_46_0;vis_46_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_0] = a_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_1] = a_4_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_4_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -19
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:vis_47_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_0] = a_4:1
+  source = {"placeholder":"getvariable","values":{"name":"a_4_precio"}} {"placeholder":"getvariable","values":{"name":"a_4_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = -27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:vis_48_0;vis_48_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_0] = a_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_48_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_4_id"}}
+  widget_active_state_requirement_container_identifier = act_48
+  [loading_requirement_container_meta:act_48] = [groups:][instances:act_48_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_48_0] = a_4_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = -27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:vis_49_0;vis_49_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_0] = a_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_49_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_4_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_50
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 104
+  y = -26
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_50
+  [loading_requirement_container_meta:vis_50] = [groups:][instances:vis_50_0;vis_50_1;vis_50_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_0] = a_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_50_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_4_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_51
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -5
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_51
+  [loading_requirement_container_meta:vis_51] = [groups:][instances:vis_51_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_0] = a_5:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_52
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 0
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_52
+  [loading_requirement_container_meta:vis_52] = [groups:][instances:vis_52_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_0] = a_5:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_5_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_5_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_53
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -149
+  y = 10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_53
+  [loading_requirement_container_meta:vis_53] = [groups:][instances:vis_53_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_0] = a_5:1
+  source = {"placeholder":"getvariable","values":{"name":"a_5_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_54
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -2
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_54
+  [loading_requirement_container_meta:vis_54] = [groups:][instances:vis_54_0;vis_54_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_0] = a_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_1] = a_5_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_5_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_55
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = -2
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_55
+  [loading_requirement_container_meta:vis_55] = [groups:][instances:vis_55_0;vis_55_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_0] = a_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_1] = a_5_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_5_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_56
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 8
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_56
+  [loading_requirement_container_meta:vis_56] = [groups:][instances:vis_56_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_0] = a_5:1
+  source = {"placeholder":"getvariable","values":{"name":"a_5_precio"}} {"placeholder":"getvariable","values":{"name":"a_5_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_57
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = 0
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_57
+  [loading_requirement_container_meta:vis_57] = [groups:][instances:vis_57_0;vis_57_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_0] = a_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_57_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_5_id"}}
+  widget_active_state_requirement_container_identifier = act_57
+  [loading_requirement_container_meta:act_57] = [groups:][instances:act_57_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_57_0] = a_5_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_58
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = 0
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_58
+  [loading_requirement_container_meta:vis_58] = [groups:][instances:vis_58_0;vis_58_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_0] = a_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_58_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_5_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_59
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -60
+  y = 1
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_59
+  [loading_requirement_container_meta:vis_59] = [groups:][instances:vis_59_0;vis_59_1;vis_59_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_0] = a_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_59_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_5_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_60
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -5
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_60
+  [loading_requirement_container_meta:vis_60] = [groups:][instances:vis_60_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_0] = a_6:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_61
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 0
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_61
+  [loading_requirement_container_meta:vis_61] = [groups:][instances:vis_61_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_0] = a_6:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_6_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_6_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_62
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 15
+  y = 10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_62
+  [loading_requirement_container_meta:vis_62] = [groups:][instances:vis_62_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_0] = a_6:1
+  source = {"placeholder":"getvariable","values":{"name":"a_6_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_63
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -2
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_63
+  [loading_requirement_container_meta:vis_63] = [groups:][instances:vis_63_0;vis_63_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_0] = a_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_1] = a_6_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_6_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_64
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = -2
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_64
+  [loading_requirement_container_meta:vis_64] = [groups:][instances:vis_64_0;vis_64_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_0] = a_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_1] = a_6_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_6_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_65
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 8
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_65
+  [loading_requirement_container_meta:vis_65] = [groups:][instances:vis_65_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_0] = a_6:1
+  source = {"placeholder":"getvariable","values":{"name":"a_6_precio"}} {"placeholder":"getvariable","values":{"name":"a_6_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_66
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = 0
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_66
+  [loading_requirement_container_meta:vis_66] = [groups:][instances:vis_66_0;vis_66_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_0] = a_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_66_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_6_id"}}
+  widget_active_state_requirement_container_identifier = act_66
+  [loading_requirement_container_meta:act_66] = [groups:][instances:act_66_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_66_0] = a_6_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_67
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = 0
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_67
+  [loading_requirement_container_meta:vis_67] = [groups:][instances:vis_67_0;vis_67_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_0] = a_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_67_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_6_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_68
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 104
+  y = 1
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_68
+  [loading_requirement_container_meta:vis_68] = [groups:][instances:vis_68_0;vis_68_1;vis_68_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_0] = a_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_68_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_6_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_69
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 22
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_69
+  [loading_requirement_container_meta:vis_69] = [groups:][instances:vis_69_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_0] = a_7:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_70
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 27
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_70
+  [loading_requirement_container_meta:vis_70] = [groups:][instances:vis_70_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_0] = a_7:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_7_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_7_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_71
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -149
+  y = 37
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_71
+  [loading_requirement_container_meta:vis_71] = [groups:][instances:vis_71_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_71_0] = a_7:1
+  source = {"placeholder":"getvariable","values":{"name":"a_7_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_72
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 25
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_72
+  [loading_requirement_container_meta:vis_72] = [groups:][instances:vis_72_0;vis_72_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_0] = a_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_1] = a_7_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_7_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_73
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 25
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_73
+  [loading_requirement_container_meta:vis_73] = [groups:][instances:vis_73_0;vis_73_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_0] = a_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_1] = a_7_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_7_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_74
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 35
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_74
+  [loading_requirement_container_meta:vis_74] = [groups:][instances:vis_74_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_0] = a_7:1
+  source = {"placeholder":"getvariable","values":{"name":"a_7_precio"}} {"placeholder":"getvariable","values":{"name":"a_7_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_75
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = 27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_75
+  [loading_requirement_container_meta:vis_75] = [groups:][instances:vis_75_0;vis_75_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_0] = a_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_75_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_7_id"}}
+  widget_active_state_requirement_container_identifier = act_75
+  [loading_requirement_container_meta:act_75] = [groups:][instances:act_75_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_75_0] = a_7_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_76
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = 27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_76
+  [loading_requirement_container_meta:vis_76] = [groups:][instances:vis_76_0;vis_76_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_0] = a_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_76_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_7_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_77
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -60
+  y = 28
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_77
+  [loading_requirement_container_meta:vis_77] = [groups:][instances:vis_77_0;vis_77_1;vis_77_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_0] = a_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_77_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_7_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_78
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 22
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_78
+  [loading_requirement_container_meta:vis_78] = [groups:][instances:vis_78_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_78_0] = a_8:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_79
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 27
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_79
+  [loading_requirement_container_meta:vis_79] = [groups:][instances:vis_79_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_79_0] = a_8:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_8_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_8_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_80
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 15
+  y = 37
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_80
+  [loading_requirement_container_meta:vis_80] = [groups:][instances:vis_80_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_80_0] = a_8:1
+  source = {"placeholder":"getvariable","values":{"name":"a_8_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_81
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 25
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_81
+  [loading_requirement_container_meta:vis_81] = [groups:][instances:vis_81_0;vis_81_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_0] = a_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_1] = a_8_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_8_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_82
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 25
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_82
+  [loading_requirement_container_meta:vis_82] = [groups:][instances:vis_82_0;vis_82_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_0] = a_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_1] = a_8_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_8_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_83
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 35
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_83
+  [loading_requirement_container_meta:vis_83] = [groups:][instances:vis_83_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_83_0] = a_8:1
+  source = {"placeholder":"getvariable","values":{"name":"a_8_precio"}} {"placeholder":"getvariable","values":{"name":"a_8_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_84
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = 27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_84
+  [loading_requirement_container_meta:vis_84] = [groups:][instances:vis_84_0;vis_84_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_0] = a_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_84_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_8_id"}}
+  widget_active_state_requirement_container_identifier = act_84
+  [loading_requirement_container_meta:act_84] = [groups:][instances:act_84_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_84_0] = a_8_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_85
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = 27
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_85
+  [loading_requirement_container_meta:vis_85] = [groups:][instances:vis_85_0;vis_85_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_0] = a_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_85_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_8_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_86
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 104
+  y = 28
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_86
+  [loading_requirement_container_meta:vis_86] = [groups:][instances:vis_86_0;vis_86_1;vis_86_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_0] = a_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_86_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_8_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_87
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 49
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_87
+  [loading_requirement_container_meta:vis_87] = [groups:][instances:vis_87_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_87_0] = a_9:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_88
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 54
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_88
+  [loading_requirement_container_meta:vis_88] = [groups:][instances:vis_88_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_88_0] = a_9:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_9_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_9_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_89
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -149
+  y = 64
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_89
+  [loading_requirement_container_meta:vis_89] = [groups:][instances:vis_89_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_0] = a_9:1
+  source = {"placeholder":"getvariable","values":{"name":"a_9_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_90
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 52
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_90
+  [loading_requirement_container_meta:vis_90] = [groups:][instances:vis_90_0;vis_90_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_0] = a_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_1] = a_9_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_9_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_91
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 52
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_91
+  [loading_requirement_container_meta:vis_91] = [groups:][instances:vis_91_0;vis_91_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_0] = a_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_1] = a_9_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_9_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_92
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 62
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_92
+  [loading_requirement_container_meta:vis_92] = [groups:][instances:vis_92_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_92_0] = a_9:1
+  source = {"placeholder":"getvariable","values":{"name":"a_9_precio"}} {"placeholder":"getvariable","values":{"name":"a_9_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_93
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = 54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_93
+  [loading_requirement_container_meta:vis_93] = [groups:][instances:vis_93_0;vis_93_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_0] = a_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_93_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_9_id"}}
+  widget_active_state_requirement_container_identifier = act_93
+  [loading_requirement_container_meta:act_93] = [groups:][instances:act_93_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_93_0] = a_9_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_94
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -44
+  y = 54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_94
+  [loading_requirement_container_meta:vis_94] = [groups:][instances:vis_94_0;vis_94_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_0] = a_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_94_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_9_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_95
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -60
+  y = 55
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_95
+  [loading_requirement_container_meta:vis_95] = [groups:][instances:vis_95_0;vis_95_1;vis_95_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_0] = a_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_95_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_9_id"}}
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_96
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 49
+  width = 160
+  height = 25
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_96
+  [loading_requirement_container_meta:vis_96] = [groups:][instances:vis_96_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_96_0] = a_10:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_card.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_97
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 54
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_97
+  [loading_requirement_container_meta:vis_97] = [groups:][instances:vis_97_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_97_0] = a_10:1
+  item_key = {"placeholder":"getvariable","values":{"name":"a_10_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"a_10_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_98
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 15
+  y = 64
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_98
+  [loading_requirement_container_meta:vis_98] = [groups:][instances:vis_98_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_98_0] = a_10:1
+  source = {"placeholder":"getvariable","values":{"name":"a_10_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.55
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_99
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 52
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_99
+  [loading_requirement_container_meta:vis_99] = [groups:][instances:vis_99_0;vis_99_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_0] = a_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_1] = a_10_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"a_10_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_100
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 52
+  width = 92
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_100
+  [loading_requirement_container_meta:vis_100] = [groups:][instances:vis_100_0;vis_100_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_0] = a_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_1] = a_10_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"a_10_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_101
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 26
+  y = 62
+  width = 94
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_101
+  [loading_requirement_container_meta:vis_101] = [groups:][instances:vis_101_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_101_0] = a_10:1
+  source = {"placeholder":"getvariable","values":{"name":"a_10_precio"}} {"placeholder":"getvariable","values":{"name":"a_10_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_102
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = 54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_102
+  [loading_requirement_container_meta:vis_102] = [groups:][instances:vis_102_0;vis_102_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_0] = a_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_1] = ah_vista:tienda
+  label = Comprar
+  description = Comprar todo el montón (te pide confirmar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_102_0][action_type:sendmessage] = /ah comprar {"placeholder":"getvariable","values":{"name":"a_10_id"}}
+  widget_active_state_requirement_container_identifier = act_102
+  [loading_requirement_container_meta:act_102] = [groups:][instances:act_102_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_102_0] = a_10_puede:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_103
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 120
+  y = 54
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_103
+  [loading_requirement_container_meta:vis_103] = [groups:][instances:vis_103_0;vis_103_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_0] = a_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_1] = ah_vista:mias
+  label = Retirar
+  description = Quitarlo de la venta: vuelve a tu inventario.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_buy.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.72
+  navigatable = true
+  [executable_action_instance:nexo_act_103_0][action_type:sendmessage] = /ah retirar {"placeholder":"getvariable","values":{"name":"a_10_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_104
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 104
+  y = 55
+  width = 14
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_104
+  [loading_requirement_container_meta:vis_104] = [groups:][instances:vis_104_0;vis_104_1;vis_104_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_0] = a_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_1] = ah_vista:tienda
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_2] = ah_admin:1
+  label = §c✖
+  description = (Admin) Retirar esta venta y devolvérsela a su dueño.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_x.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_x_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_x_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.7
+  navigatable = true
+  [executable_action_instance:nexo_act_104_0][action_type:sendmessage] = /ah admin quitar {"placeholder":"getvariable","values":{"name":"a_10_id"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_105
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 0
+  width = 324
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_105
+  [loading_requirement_container_meta:vis_105] = [groups:][instances:vis_105_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_105_0] = ah_vacio:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"ah_vacio_txt"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #8FA89A
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_106
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -58
+  width = 200
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_106
+  [loading_requirement_container_meta:vis_106] = [groups:][instances:vis_106_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_106_0] = ah_vista:vender
+  source = **Lo que tienes en la mano**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE08A
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_107
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -46
+  width = 32
+  height = 32
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_107
+  [loading_requirement_container_meta:vis_107] = [groups:][instances:vis_107_0;vis_107_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_107_0] = ah_vista:vender
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_107_1] = ah_mano:1
+  item_key = {"placeholder":"getvariable","values":{"name":"ah_mano_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"ah_mano_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_108
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -114
+  y = -42
+  width = 260
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_108
+  [loading_requirement_container_meta:vis_108] = [groups:][instances:vis_108_0;vis_108_1;vis_108_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_108_0] = ah_vista:vender
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_108_1] = ah_mano:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_108_2] = ah_mano_custom:1
+  source = §f{"placeholder":"getvariable","values":{"name":"ah_mano_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_109
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -114
+  y = -42
+  width = 260
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_109
+  [loading_requirement_container_meta:vis_109] = [groups:][instances:vis_109_0;vis_109_1;vis_109_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_109_0] = ah_vista:vender
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_109_1] = ah_mano:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_109_2] = ah_mano_custom:0
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"ah_mano_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_110
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -114
+  y = -30
+  width = 100
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_110
+  [loading_requirement_container_meta:vis_110] = [groups:][instances:vis_110_0;vis_110_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_110_0] = ah_vista:vender
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_110_1] = ah_mano:1
+  source = {"placeholder":"getvariable","values":{"name":"ah_mano_cant"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_111
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -42
+  width = 300
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_111
+  [loading_requirement_container_meta:vis_111] = [groups:][instances:vis_111_0;vis_111_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_111_0] = ah_vista:vender
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_111_1] = ah_mano:0
+  source = Pon en tu mano lo que quieras vender y vuelve a abrir esta pestaña.
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #8FA89A
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_112
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -6
+  width = 200
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_112
+  [loading_requirement_container_meta:vis_112] = [groups:][instances:vis_112_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_112_0] = ah_vista:vender
+  source = Precio por todo el montón (Nex):
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #C8D8CC
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = fancymenu_customization_item_input_field
+  instance_identifier = nexo_fancymenu_customization_item_input_field_113
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = 4
+  width = 110
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_113
+  [loading_requirement_container_meta:vis_113] = [groups:][instances:vis_113_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_113_0] = ah_vista:vender
+  linked_variable = ah_precio_in
+  input_field_type = text
+  max_text_length = 12
+  hint_text = Ej.: 250
+  background_color = #140A24
+  border_color = #6A44A8
+  border_color_focused = #3EE6D8
+  text_color = #F0E6FF
+  hint_text_color = #7A6E90
+  navigatable = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_114
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -40
+  y = 3
+  width = 110
+  height = 17
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_114
+  [loading_requirement_container_meta:vis_114] = [groups:][instances:vis_114_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_114_0] = ah_vista:vender
+  label = §lPoner a la venta
+  description = Pone a la venta todo lo que tienes en la mano por ese precio.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_vender.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_vender_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_vender_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_114_0][action_type:sendmessage] = /ah vender {"placeholder":"getvariable","values":{"name":"ah_precio_in"}}
+  [executable_action_instance:nexo_act_114_1][action_type:set_variable] = ah_precio_in:
+  widget_active_state_requirement_container_identifier = act_114
+  [loading_requirement_container_meta:act_114] = [groups:][instances:act_114_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_114_0] = ah_mano:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_115
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 74
+  y = 3
+  width = 20
+  height = 17
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_115
+  [loading_requirement_container_meta:vis_115] = [groups:][instances:vis_115_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_115_0] = ah_vista:vender
+  label = ↻
+  description = Actualizar.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_refresh.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_refresh_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_refresh_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_115_0][action_type:sendmessage] = /ah vista vender
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_116
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = 28
+  width = 308
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_116
+  [loading_requirement_container_meta:vis_116] = [groups:][instances:vis_116_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_116_0] = ah_vista:vender
+  source = {"placeholder":"getvariable","values":{"name":"ah_vender_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_117
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 84
+  width = 20
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_117
+  [loading_requirement_container_meta:vis_117] = [groups:][instances:vis_117_0;vis_117_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_117_0] = ah_conf:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_117_1] = ah_pag_ant:1
+  label = ◀
+  description = Página anterior
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_flecha.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_flecha_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_flecha_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_117_0][action_type:sendmessage] = /ah pagina {"placeholder":"getvariable","values":{"name":"ah_pag_prev"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_118
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -138
+  y = 84
+  width = 20
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_118
+  [loading_requirement_container_meta:vis_118] = [groups:][instances:vis_118_0;vis_118_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_118_0] = ah_conf:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_118_1] = ah_pag_sig:1
+  label = ▶
+  description = Página siguiente
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_flecha.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_flecha_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_flecha_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_118_0][action_type:sendmessage] = /ah pagina {"placeholder":"getvariable","values":{"name":"ah_pag_next"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_119
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -114
+  y = 89
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_119
+  [loading_requirement_container_meta:vis_119] = [groups:][instances:vis_119_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_119_0] = ah_conf:0
+  source = {"placeholder":"getvariable","values":{"name":"ah_pag_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #8FA89A
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_120
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 22
+  y = 84
+  width = 76
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_120
+  [loading_requirement_container_meta:vis_120] = [groups:][instances:vis_120_0;vis_120_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_120_0] = ah_conf:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_120_1] = ah_recoger:1
+  label = {"placeholder":"getvariable","values":{"name":"ah_recoger_txt"}}
+  description = Objetos que no te cabían (compras, ventas caducadas o retiradas). Haz hueco y recógelos.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_recoger.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_recoger_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_recoger_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.75
+  navigatable = true
+  [executable_action_instance:nexo_act_120_0][action_type:sendmessage] = /ah recoger
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_121
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 84
+  width = 60
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_121
+  [loading_requirement_container_meta:vis_121] = [groups:][instances:vis_121_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_121_0] = ah_conf:0
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_121_0][action_type:closegui] = 
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_122
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 81
+  width = 324
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_122
+  [loading_requirement_container_meta:vis_122] = [groups:][instances:vis_122_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_122_0] = ah_conf:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/ah_conf_bar.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_123
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = 89
+  width = 190
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_123
+  [loading_requirement_container_meta:vis_123] = [groups:][instances:vis_123_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_123_0] = ah_conf:1
+  source = {"placeholder":"getvariable","values":{"name":"ah_conf_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_124
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 46
+  y = 84
+  width = 58
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_124
+  [loading_requirement_container_meta:vis_124] = [groups:][instances:vis_124_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_124_0] = ah_conf:1
+  label = §lComprar
+  description = Sí, comprarlo.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_si.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_si_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_si_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_124_0][action_type:sendmessage] = /ah confirmar
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_125
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 106
+  y = 84
+  width = 52
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_125
+  [loading_requirement_container_meta:vis_125] = [groups:][instances:vis_125_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_125_0] = ah_conf:1
+  label = No
+  description = Mejor no.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/ah_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/ah_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/ah_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_125_0][action_type:sendmessage] = /ah nocomprar
+}

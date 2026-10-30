@@ -1,0 +1,3193 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_coliseo
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1793328912358
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:]
+  source = [source:local]/config/fancymenu/assets/nexosmc/col_panel.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:]
+  source = ^^^%n%**MÁXIMO · COLISEO**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -91
+  width = 74
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:vis_3_0;vis_3_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_3_0] = coliseo_libre:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_3_1] = coliseo_vista:actual
+  label = Pelea actual
+  description = Estás viendo la pelea de la arena.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_tab.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_tab_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_tab_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  widget_active_state_requirement_container_identifier = act_3
+  [loading_requirement_container_meta:act_3] = [groups:][instances:act_3_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_3_0] = coliseo_nunca:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -91
+  width = 74
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:vis_4_0;vis_4_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_0] = coliseo_libre:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_1] = coliseo_vista:siguiente
+  label = Pelea actual
+  description = Ver la pelea de la arena.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_tab.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_tab_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_tab_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_4_0][action_type:set_variable] = coliseo_vista:actual
+  [executable_action_instance:nexo_act_4_1][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 88
+  y = -91
+  width = 74
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:vis_5_0;vis_5_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_0] = coliseo_libre:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_1] = coliseo_vista:actual
+  label = Siguiente ▶
+  description = La pelea en cola: entra a la arena cuando termine la actual.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_tab.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_tab_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_tab_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_5_0][action_type:set_variable] = coliseo_vista:siguiente
+  [executable_action_instance:nexo_act_5_1][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 88
+  y = -91
+  width = 74
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:vis_6_0;vis_6_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_0] = coliseo_libre:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_1] = coliseo_vista:siguiente
+  label = Siguiente ▶
+  description = Estás viendo la pelea en cola.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_tab.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_tab_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_tab_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  widget_active_state_requirement_container_identifier = act_6
+  [loading_requirement_container_meta:act_6] = [groups:][instances:act_6_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_6_0] = coliseo_nunca:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -89
+  width = 340
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:vis_7_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_0] = coliseo_libre:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"coliseo_estado"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -86
+  y = -89
+  width = 172
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:vis_8_0;vis_8_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_0] = coliseo_libre:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_1] = coliseo_vista:actual
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"coliseo_estado"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -86
+  y = -89
+  width = 172
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:vis_9_0;vis_9_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_0] = coliseo_libre:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_1] = coliseo_vista:siguiente
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"coliseo_n_txt"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -78
+  width = 340
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:vis_10_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_0] = coliseo_vista:actual
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"coliseo_modo"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -78
+  width = 340
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;vis_11_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_1] = coliseo_n_hay:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"coliseo_n_modo"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -65
+  width = 156
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:vis_12_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_0] = coliseo_vista:actual
+  source = ^^^%n%**EQUIPO ROJO**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FF6B5A
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -51
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_r1"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -41
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:vis_14_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_r2"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -31
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_r3"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -21
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:vis_16_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_r4"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -11
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_r5"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = 0
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_r_apuestas"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -134
+  y = 10
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;vis_19_1;vis_19_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_1] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_2] = coliseo_libre:0
+  label = Unirse al rojo
+  description = Luchar en el equipo rojo
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_19_0][action_type:sendmessage] = /coliseo unirse rojo
+  widget_active_state_requirement_container_identifier = act_19
+  [loading_requirement_container_meta:act_19] = [groups:][instances:act_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_19_0] = coliseo_unir_r:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -65
+  width = 156
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = coliseo_vista:actual
+  source = ^^^%n%**EQUIPO AZUL**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #6FA8FF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -51
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_a1"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -41
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_a2"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -31
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_a3"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -21
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_a4"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -11
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_a5"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = 0
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = coliseo_vista:actual
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_a_apuestas"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 34
+  y = 10
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;vis_27_1;vis_27_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_1] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_2] = coliseo_libre:0
+  label = Unirse al azul
+  description = Luchar en el equipo azul
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_27_0][action_type:sendmessage] = /coliseo unirse azul
+  widget_active_state_requirement_container_identifier = act_27
+  [loading_requirement_container_meta:act_27] = [groups:][instances:act_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_27_0] = coliseo_unir_a:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -65
+  width = 156
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;vis_28_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_1] = coliseo_n_hay:1
+  source = ^^^%n%**EQUIPO ROJO**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FF6B5A
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -51
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;vis_29_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_r1"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -41
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;vis_30_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_r2"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -31
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;vis_31_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_r3"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -21
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;vis_32_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_r4"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -11
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;vis_33_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_r5"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = 0
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;vis_34_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_r_apuestas"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -134
+  y = 10
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;vis_35_1;vis_35_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_1] = coliseo_n_hay:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_2] = coliseo_kitsel:0
+  label = Unirse al rojo
+  description = Luchar en el equipo rojo
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_35_0][action_type:sendmessage] = /coliseo unirse rojo siguiente
+  widget_active_state_requirement_container_identifier = act_35
+  [loading_requirement_container_meta:act_35] = [groups:][instances:act_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_35_0] = coliseo_n_unir_r:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -65
+  width = 156
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;vis_36_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_1] = coliseo_n_hay:1
+  source = ^^^%n%**EQUIPO AZUL**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #6FA8FF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -51
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;vis_37_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_a1"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -41
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;vis_38_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_a2"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -31
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;vis_39_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_a3"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -21
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;vis_40_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_a4"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -11
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;vis_41_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_a5"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = 0
+  width = 140
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:vis_42_0;vis_42_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_1] = coliseo_n_hay:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_n_a_apuestas"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 34
+  y = 10
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:vis_43_0;vis_43_1;vis_43_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_1] = coliseo_n_hay:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_2] = coliseo_kitsel:0
+  label = Unirse al azul
+  description = Luchar en el equipo azul
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_43_0][action_type:sendmessage] = /coliseo unirse azul siguiente
+  widget_active_state_requirement_container_identifier = act_43
+  [loading_requirement_container_meta:act_43] = [groups:][instances:act_43_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_43_0] = coliseo_n_unir_a:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -150
+  y = -30
+  width = 300
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;vis_44_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_1] = coliseo_n_hay:0
+  source = ^^^%n%Nadie ha creado la siguiente pelea todavía. Créala abajo: entrará a la arena en cuanto termine la actual.%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #D8C8A0
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 28
+  width = 100
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:vis_45_0;vis_45_1;vis_45_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_1] = coliseo_libre:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_2] = coliseo_kitsel:0
+  label = 1 contra 1
+  description = Duelo: tú contra uno.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_crear.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_crear_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_crear_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_45_0][action_type:sendmessage] = /coliseo crear 1v1 {"placeholder":"getvariable","values":{"name":"coliseo_amistoso"}} {"placeholder":"getvariable","values":{"name":"coliseo_kit"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = 28
+  width = 100
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:vis_46_0;vis_46_1;vis_46_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_1] = coliseo_libre:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_2] = coliseo_kitsel:0
+  label = 2 contra 2
+  description = Parejas: tú y otro contra dos.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_crear.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_crear_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_crear_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_46_0][action_type:sendmessage] = /coliseo crear 2v2 {"placeholder":"getvariable","values":{"name":"coliseo_amistoso"}} {"placeholder":"getvariable","values":{"name":"coliseo_kit"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 60
+  y = 28
+  width = 100
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:vis_47_0;vis_47_1;vis_47_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_1] = coliseo_libre:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_2] = coliseo_kitsel:0
+  label = Clan contra clan
+  description = Tu clan contra otro (2 a 5 por equipo).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_crear.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_crear_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_crear_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_47_0][action_type:sendmessage] = /coliseo crear clan {"placeholder":"getvariable","values":{"name":"coliseo_amistoso"}} {"placeholder":"getvariable","values":{"name":"coliseo_kit"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 49
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:vis_48_0;vis_48_1;vis_48_2;vis_48_3;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_1] = coliseo_libre:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_2] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_3] = coliseo_amistoso:0
+  label = §cA muerte
+  description = A muerte: quien muere suelta todo en la arena. Pulsa para cambiar a amistoso.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_48_0][action_type:set_variable] = coliseo_amistoso:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 49
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:vis_49_0;vis_49_1;vis_49_2;vis_49_3;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_1] = coliseo_libre:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_2] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_3] = coliseo_amistoso:1
+  label = §aAmistoso
+  description = Amistoso: nadie pierde nada; el vencido va a las gradas. Pulsa para cambiar a muerte.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_49_0][action_type:set_variable] = coliseo_amistoso:0
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_50
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = 49
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_50
+  [loading_requirement_container_meta:vis_50] = [groups:][instances:vis_50_0;vis_50_1;vis_50_2;vis_50_3;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_1] = coliseo_libre:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_2] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_3] = coliseo_amistoso:1
+  label = Modo: {"placeholder":"getvariable","values":{"name":"coliseo_kit_nombre"}} ▼
+  description = Elegir el modo de la pelea amistosa: con tu inventario o con un kit (tus cosas se guardan).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_50_0][action_type:set_variable] = coliseo_kitsel:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_51
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 28
+  width = 100
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_51
+  [loading_requirement_container_meta:vis_51] = [groups:][instances:vis_51_0;vis_51_1;vis_51_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_1] = coliseo_puede_cola:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_2] = coliseo_kitsel:0
+  label = 1 contra 1
+  description = Duelo: tú contra uno.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_crear.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_crear_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_crear_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_51_0][action_type:sendmessage] = /coliseo crear 1v1 {"placeholder":"getvariable","values":{"name":"coliseo_amistoso"}} {"placeholder":"getvariable","values":{"name":"coliseo_kit"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_52
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = 28
+  width = 100
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_52
+  [loading_requirement_container_meta:vis_52] = [groups:][instances:vis_52_0;vis_52_1;vis_52_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_1] = coliseo_puede_cola:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_2] = coliseo_kitsel:0
+  label = 2 contra 2
+  description = Parejas: tú y otro contra dos.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_crear.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_crear_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_crear_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_52_0][action_type:sendmessage] = /coliseo crear 2v2 {"placeholder":"getvariable","values":{"name":"coliseo_amistoso"}} {"placeholder":"getvariable","values":{"name":"coliseo_kit"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_53
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 60
+  y = 28
+  width = 100
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_53
+  [loading_requirement_container_meta:vis_53] = [groups:][instances:vis_53_0;vis_53_1;vis_53_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_1] = coliseo_puede_cola:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_2] = coliseo_kitsel:0
+  label = Clan contra clan
+  description = Tu clan contra otro (2 a 5 por equipo).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_crear.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_crear_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_crear_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_53_0][action_type:sendmessage] = /coliseo crear clan {"placeholder":"getvariable","values":{"name":"coliseo_amistoso"}} {"placeholder":"getvariable","values":{"name":"coliseo_kit"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_54
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 49
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_54
+  [loading_requirement_container_meta:vis_54] = [groups:][instances:vis_54_0;vis_54_1;vis_54_2;vis_54_3;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_1] = coliseo_puede_cola:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_2] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_3] = coliseo_amistoso:0
+  label = §cA muerte
+  description = A muerte: quien muere suelta todo en la arena. Pulsa para cambiar a amistoso.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_54_0][action_type:set_variable] = coliseo_amistoso:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_55
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 49
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_55
+  [loading_requirement_container_meta:vis_55] = [groups:][instances:vis_55_0;vis_55_1;vis_55_2;vis_55_3;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_1] = coliseo_puede_cola:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_2] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_3] = coliseo_amistoso:1
+  label = §aAmistoso
+  description = Amistoso: nadie pierde nada; el vencido va a las gradas. Pulsa para cambiar a muerte.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_55_0][action_type:set_variable] = coliseo_amistoso:0
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_56
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = 49
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_56
+  [loading_requirement_container_meta:vis_56] = [groups:][instances:vis_56_0;vis_56_1;vis_56_2;vis_56_3;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_1] = coliseo_puede_cola:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_2] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_3] = coliseo_amistoso:1
+  label = Modo: {"placeholder":"getvariable","values":{"name":"coliseo_kit_nombre"}} ▼
+  description = Elegir el modo de la pelea amistosa: con tu inventario o con un kit (tus cosas se guardan).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_56_0][action_type:set_variable] = coliseo_kitsel:1
+}
+
+element {
+  element_type = fancymenu_customization_item_input_field
+  instance_identifier = nexo_fancymenu_customization_item_input_field_57
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 38
+  width = 70
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_57
+  [loading_requirement_container_meta:vis_57] = [groups:][instances:vis_57_0;vis_57_1;vis_57_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_1] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_2] = coliseo_apostar_on:1
+  linked_variable = coliseo_monto
+  input_field_type = text
+  max_text_length = 9
+  hint_text = Nex
+  background_color = #140A24
+  border_color = #6A44A8
+  border_color_focused = #3EE6D8
+  text_color = #F0E6FF
+  hint_text_color = #7A6E90
+  navigatable = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_58
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -84
+  y = 37
+  width = 78
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_58
+  [loading_requirement_container_meta:vis_58] = [groups:][instances:vis_58_0;vis_58_1;vis_58_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_1] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_2] = coliseo_apostar_on:1
+  label = §cApostar rojo
+  description = Apostar esos Nex al equipo rojo
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_apostar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_apostar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_apostar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_58_0][action_type:sendmessage] = /coliseo apostar rojo {"placeholder":"getvariable","values":{"name":"coliseo_monto"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_59
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -2
+  y = 37
+  width = 78
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_59
+  [loading_requirement_container_meta:vis_59] = [groups:][instances:vis_59_0;vis_59_1;vis_59_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_1] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_2] = coliseo_apostar_on:1
+  label = §9Apostar azul
+  description = Apostar esos Nex al equipo azul
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_apostar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_apostar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_apostar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_59_0][action_type:sendmessage] = /coliseo apostar azul {"placeholder":"getvariable","values":{"name":"coliseo_monto"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_60
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 80
+  y = 37
+  width = 84
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_60
+  [loading_requirement_container_meta:vis_60] = [groups:][instances:vis_60_0;vis_60_1;vis_60_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_1] = coliseo_kitsel:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_2] = coliseo_apostar_on:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_mi_apuesta"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.62
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_61
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 71
+  width = 320
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_61
+  [loading_requirement_container_meta:vis_61] = [groups:][instances:vis_61_0;vis_61_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_0] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_1] = coliseo_msg_on:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_msg"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_62
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 71
+  width = 320
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_62
+  [loading_requirement_container_meta:vis_62] = [groups:][instances:vis_62_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_0] = coliseo_confirmar:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_confirmar_txt"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_63
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_63
+  [loading_requirement_container_meta:vis_63] = [groups:][instances:vis_63_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_0] = coliseo_confirmar:1
+  label = §c§lSí, luchar
+  description = Aceptar: es a muerte, si pierdes sueltas tus cosas.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_63_0][action_type:sendmessage] = /coliseo confirmar
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_64
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -84
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_64
+  [loading_requirement_container_meta:vis_64] = [groups:][instances:vis_64_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_0] = coliseo_confirmar:1
+  label = No
+  description = Mejor no.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_64_0][action_type:sendmessage] = /coliseo no
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_65
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_65
+  [loading_requirement_container_meta:vis_65] = [groups:][instances:vis_65_0;vis_65_1;vis_65_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_1] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_2] = coliseo_espectar_on:1
+  label = Espectar
+  description = Mirar la pelea desde las gradas (sin tirar objetos ni disparar).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_65_0][action_type:sendmessage] = /coliseo espectar
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_66
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -84
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_66
+  [loading_requirement_container_meta:vis_66] = [groups:][instances:vis_66_0;vis_66_1;vis_66_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_1] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_2] = coliseo_salir_on:1
+  label = Salir
+  description = Salir de la pelea antes de que empiece.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_66_0][action_type:sendmessage] = /coliseo salir
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_67
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -8
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_67
+  [loading_requirement_container_meta:vis_67] = [groups:][instances:vis_67_0;vis_67_1;vis_67_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_1] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_2] = coliseo_empezar_on:1
+  label = §l¡Empezar!
+  description = Lanzar la cuenta atrás (clanes, mínimo 2 por equipo).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_67_0][action_type:sendmessage] = /coliseo empezar
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_68
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -8
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_68
+  [loading_requirement_container_meta:vis_68] = [groups:][instances:vis_68_0;vis_68_1;vis_68_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_0] = coliseo_vista:actual
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_1] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_2] = coliseo_listo_on:1
+  label = {"placeholder":"getvariable","values":{"name":"coliseo_listo_txt"}}
+  description = Cuando todos los luchadores están listos, la pelea empieza en 10 s.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_68_0][action_type:sendmessage] = /coliseo listo
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_69
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -84
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_69
+  [loading_requirement_container_meta:vis_69] = [groups:][instances:vis_69_0;vis_69_1;vis_69_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_1] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_2] = coliseo_n_salir_on:1
+  label = Salir
+  description = Salir de la siguiente pelea.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_69_0][action_type:sendmessage] = /coliseo salir
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_70
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -8
+  y = 82
+  width = 70
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_70
+  [loading_requirement_container_meta:vis_70] = [groups:][instances:vis_70_0;vis_70_1;vis_70_2;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_0] = coliseo_vista:siguiente
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_1] = coliseo_confirmar:0
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_2] = coliseo_n_empezar_on:1
+  label = §l¡Empezar!
+  description = La pelea de clanes empezará en cuanto termine la actual.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_peq.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_peq_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_peq_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_70_0][action_type:sendmessage] = /coliseo empezar
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_71
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 100
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_71
+  [loading_requirement_container_meta:vis_71] = [groups:][instances:]
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_71_0][action_type:closegui] = 
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_72
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -164
+  y = -70
+  width = 328
+  height = 140
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_72
+  [loading_requirement_container_meta:vis_72] = [groups:][instances:vis_72_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_0] = coliseo_kitsel:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/col_kits_panel.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_73
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -164
+  y = -66
+  width = 328
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_73
+  [loading_requirement_container_meta:vis_73] = [groups:][instances:vis_73_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_0] = coliseo_kitsel:1
+  source = ^^^%n%**Elige el modo de la pelea amistosa**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_74
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 146
+  y = -67
+  width = 14
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_74
+  [loading_requirement_container_meta:vis_74] = [groups:][instances:vis_74_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_0] = coliseo_kitsel:1
+  label = ✖
+  description = Cerrar sin cambiar
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_tab.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_tab_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_tab_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_74_0][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_75
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -54
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_75
+  [loading_requirement_container_meta:vis_75] = [groups:][instances:vis_75_0;vis_75_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_1] = coliseo_k1:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k1_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_75_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k1_id"}}
+  [executable_action_instance:nexo_act_75_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k1_nombre"}}
+  [executable_action_instance:nexo_act_75_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_76
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -153
+  y = -48
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_76
+  [loading_requirement_container_meta:vis_76] = [groups:][instances:vis_76_0;vis_76_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_1] = coliseo_k1:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k1_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_77
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -50
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_77
+  [loading_requirement_container_meta:vis_77] = [groups:][instances:vis_77_0;vis_77_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_1] = coliseo_k1:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k1_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_78
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -40
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_78
+  [loading_requirement_container_meta:vis_78] = [groups:][instances:vis_78_0;vis_78_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_78_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_78_1] = coliseo_k1:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k1_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_79
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -54
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_79
+  [loading_requirement_container_meta:vis_79] = [groups:][instances:vis_79_0;vis_79_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_79_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_79_1] = coliseo_k2:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k2_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_79_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k2_id"}}
+  [executable_action_instance:nexo_act_79_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k2_nombre"}}
+  [executable_action_instance:nexo_act_79_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_80
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 7
+  y = -48
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_80
+  [loading_requirement_container_meta:vis_80] = [groups:][instances:vis_80_0;vis_80_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_80_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_80_1] = coliseo_k2:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k2_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_81
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = -50
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_81
+  [loading_requirement_container_meta:vis_81] = [groups:][instances:vis_81_0;vis_81_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_1] = coliseo_k2:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k2_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_82
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = -40
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_82
+  [loading_requirement_container_meta:vis_82] = [groups:][instances:vis_82_0;vis_82_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_1] = coliseo_k2:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k2_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_83
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -24
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_83
+  [loading_requirement_container_meta:vis_83] = [groups:][instances:vis_83_0;vis_83_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_83_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_83_1] = coliseo_k3:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k3_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_83_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k3_id"}}
+  [executable_action_instance:nexo_act_83_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k3_nombre"}}
+  [executable_action_instance:nexo_act_83_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_84
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -153
+  y = -18
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_84
+  [loading_requirement_container_meta:vis_84] = [groups:][instances:vis_84_0;vis_84_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_1] = coliseo_k3:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k3_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_85
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -20
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_85
+  [loading_requirement_container_meta:vis_85] = [groups:][instances:vis_85_0;vis_85_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_1] = coliseo_k3:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k3_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_86
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -10
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_86
+  [loading_requirement_container_meta:vis_86] = [groups:][instances:vis_86_0;vis_86_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_1] = coliseo_k3:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k3_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_87
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -24
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_87
+  [loading_requirement_container_meta:vis_87] = [groups:][instances:vis_87_0;vis_87_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_87_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_87_1] = coliseo_k4:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k4_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_87_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k4_id"}}
+  [executable_action_instance:nexo_act_87_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k4_nombre"}}
+  [executable_action_instance:nexo_act_87_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_88
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 7
+  y = -18
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_88
+  [loading_requirement_container_meta:vis_88] = [groups:][instances:vis_88_0;vis_88_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_88_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_88_1] = coliseo_k4:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k4_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_89
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = -20
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_89
+  [loading_requirement_container_meta:vis_89] = [groups:][instances:vis_89_0;vis_89_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_1] = coliseo_k4:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k4_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_90
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = -10
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_90
+  [loading_requirement_container_meta:vis_90] = [groups:][instances:vis_90_0;vis_90_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_1] = coliseo_k4:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k4_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_91
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 6
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_91
+  [loading_requirement_container_meta:vis_91] = [groups:][instances:vis_91_0;vis_91_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_1] = coliseo_k5:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k5_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_91_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k5_id"}}
+  [executable_action_instance:nexo_act_91_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k5_nombre"}}
+  [executable_action_instance:nexo_act_91_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_92
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -153
+  y = 12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_92
+  [loading_requirement_container_meta:vis_92] = [groups:][instances:vis_92_0;vis_92_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_92_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_92_1] = coliseo_k5:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k5_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_93
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 10
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_93
+  [loading_requirement_container_meta:vis_93] = [groups:][instances:vis_93_0;vis_93_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_1] = coliseo_k5:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k5_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_94
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 20
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_94
+  [loading_requirement_container_meta:vis_94] = [groups:][instances:vis_94_0;vis_94_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_1] = coliseo_k5:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k5_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_95
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 6
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_95
+  [loading_requirement_container_meta:vis_95] = [groups:][instances:vis_95_0;vis_95_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_1] = coliseo_k6:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k6_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_95_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k6_id"}}
+  [executable_action_instance:nexo_act_95_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k6_nombre"}}
+  [executable_action_instance:nexo_act_95_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_96
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 7
+  y = 12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_96
+  [loading_requirement_container_meta:vis_96] = [groups:][instances:vis_96_0;vis_96_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_96_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_96_1] = coliseo_k6:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k6_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_97
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = 10
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_97
+  [loading_requirement_container_meta:vis_97] = [groups:][instances:vis_97_0;vis_97_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_97_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_97_1] = coliseo_k6:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k6_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_98
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = 20
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_98
+  [loading_requirement_container_meta:vis_98] = [groups:][instances:vis_98_0;vis_98_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_98_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_98_1] = coliseo_k6:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k6_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_99
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 36
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_99
+  [loading_requirement_container_meta:vis_99] = [groups:][instances:vis_99_0;vis_99_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_1] = coliseo_k7:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k7_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_99_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k7_id"}}
+  [executable_action_instance:nexo_act_99_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k7_nombre"}}
+  [executable_action_instance:nexo_act_99_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_100
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -153
+  y = 42
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_100
+  [loading_requirement_container_meta:vis_100] = [groups:][instances:vis_100_0;vis_100_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_1] = coliseo_k7:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k7_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_101
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 40
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_101
+  [loading_requirement_container_meta:vis_101] = [groups:][instances:vis_101_0;vis_101_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_101_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_101_1] = coliseo_k7:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k7_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_102
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = 50
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_102
+  [loading_requirement_container_meta:vis_102] = [groups:][instances:vis_102_0;vis_102_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_1] = coliseo_k7:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k7_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_103
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 36
+  width = 156
+  height = 28
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_103
+  [loading_requirement_container_meta:vis_103] = [groups:][instances:vis_103_0;vis_103_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_1] = coliseo_k8:1
+  label = 
+  description = {"placeholder":"getvariable","values":{"name":"coliseo_k8_desc"}}
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/col_kit.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/col_kit_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/col_kit_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_103_0][action_type:set_variable] = coliseo_kit:{"placeholder":"getvariable","values":{"name":"coliseo_k8_id"}}
+  [executable_action_instance:nexo_act_103_1][action_type:set_variable] = coliseo_kit_nombre:{"placeholder":"getvariable","values":{"name":"coliseo_k8_nombre"}}
+  [executable_action_instance:nexo_act_103_2][action_type:set_variable] = coliseo_kitsel:0
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_104
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 7
+  y = 42
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_104
+  [loading_requirement_container_meta:vis_104] = [groups:][instances:vis_104_0;vis_104_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_1] = coliseo_k8:1
+  item_key = {"placeholder":"getvariable","values":{"name":"coliseo_k8_icono"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_105
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = 40
+  width = 126
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_105
+  [loading_requirement_container_meta:vis_105] = [groups:][instances:vis_105_0;vis_105_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_105_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_105_1] = coliseo_k8:1
+  source = **{"placeholder":"getvariable","values":{"name":"coliseo_k8_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE3A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_106
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 28
+  y = 50
+  width = 126
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_106
+  [loading_requirement_container_meta:vis_106] = [groups:][instances:vis_106_0;vis_106_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_106_0] = coliseo_kitsel:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_106_1] = coliseo_k8:1
+  source = {"placeholder":"getvariable","values":{"name":"coliseo_k8_desc"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.58
+  text_border = 0
+  line_spacing = 1
+}

@@ -1,0 +1,1359 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_carrera
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1792564382068
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:]
+  source = [source:local]/config/fancymenu/assets/nexosmc/cas_panel_carrera.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:]
+  source = ^^^%n%**CARRERA DE CABALLOS**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFE08A
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -89
+  width = 340
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"carrera_estado"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -74
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:vis_4_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_0] = h_1:1
+  source = {"placeholder":"getvariable","values":{"name":"h_1_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -74
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:vis_5_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_0] = h_1:1
+  source = {"placeholder":"getvariable","values":{"name":"h_1_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = -74
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:vis_6_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_0] = h_1:1
+  source = {"placeholder":"getvariable","values":{"name":"h_1_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = -76
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:vis_7_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_0] = h_1:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_7_0][action_type:sendmessage] = /carrera apostar 1 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_7
+  [loading_requirement_container_meta:act_7] = [groups:][instances:act_7_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_7_0] = h_1_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -59
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:vis_8_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_0] = h_2:1
+  source = {"placeholder":"getvariable","values":{"name":"h_2_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -59
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:vis_9_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_0] = h_2:1
+  source = {"placeholder":"getvariable","values":{"name":"h_2_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = -59
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:vis_10_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_0] = h_2:1
+  source = {"placeholder":"getvariable","values":{"name":"h_2_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = -61
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = h_2:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_11_0][action_type:sendmessage] = /carrera apostar 2 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_11
+  [loading_requirement_container_meta:act_11] = [groups:][instances:act_11_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_11_0] = h_2_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -44
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:vis_12_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_0] = h_3:1
+  source = {"placeholder":"getvariable","values":{"name":"h_3_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -44
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = h_3:1
+  source = {"placeholder":"getvariable","values":{"name":"h_3_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = -44
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:vis_14_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_0] = h_3:1
+  source = {"placeholder":"getvariable","values":{"name":"h_3_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = -46
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = h_3:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_15_0][action_type:sendmessage] = /carrera apostar 3 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_15
+  [loading_requirement_container_meta:act_15] = [groups:][instances:act_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_15_0] = h_3_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -29
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:vis_16_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_0] = h_4:1
+  source = {"placeholder":"getvariable","values":{"name":"h_4_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -29
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = h_4:1
+  source = {"placeholder":"getvariable","values":{"name":"h_4_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = -29
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = h_4:1
+  source = {"placeholder":"getvariable","values":{"name":"h_4_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = -31
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = h_4:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_19_0][action_type:sendmessage] = /carrera apostar 4 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_19
+  [loading_requirement_container_meta:act_19] = [groups:][instances:act_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_19_0] = h_4_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = -14
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = h_5:1
+  source = {"placeholder":"getvariable","values":{"name":"h_5_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = -14
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = h_5:1
+  source = {"placeholder":"getvariable","values":{"name":"h_5_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = -14
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = h_5:1
+  source = {"placeholder":"getvariable","values":{"name":"h_5_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = -16
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = h_5:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_23_0][action_type:sendmessage] = /carrera apostar 5 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_23
+  [loading_requirement_container_meta:act_23] = [groups:][instances:act_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_23_0] = h_5_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 1
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = h_6:1
+  source = {"placeholder":"getvariable","values":{"name":"h_6_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = 1
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = h_6:1
+  source = {"placeholder":"getvariable","values":{"name":"h_6_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = 1
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = h_6:1
+  source = {"placeholder":"getvariable","values":{"name":"h_6_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = -1
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = h_6:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_27_0][action_type:sendmessage] = /carrera apostar 6 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_27
+  [loading_requirement_container_meta:act_27] = [groups:][instances:act_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_27_0] = h_6_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 16
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = h_7:1
+  source = {"placeholder":"getvariable","values":{"name":"h_7_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = 16
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = h_7:1
+  source = {"placeholder":"getvariable","values":{"name":"h_7_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = 16
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = h_7:1
+  source = {"placeholder":"getvariable","values":{"name":"h_7_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = 14
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = h_7:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_31_0][action_type:sendmessage] = /carrera apostar 7 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_31
+  [loading_requirement_container_meta:act_31] = [groups:][instances:act_31_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_31_0] = h_7_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 31
+  width = 150
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = h_8:1
+  source = {"placeholder":"getvariable","values":{"name":"h_8_nombre"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -10
+  y = 31
+  width = 40
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = h_8:1
+  source = {"placeholder":"getvariable","values":{"name":"h_8_cuota"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 30
+  y = 31
+  width = 60
+  height = 15
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = h_8:1
+  source = {"placeholder":"getvariable","values":{"name":"h_8_apostado"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 94
+  y = 29
+  width = 66
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = h_8:1
+  label = Apostar
+  description = Apostar las fichas de la casilla a este caballo (si gana cobras fichas x (cuota + 1))
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.8
+  navigatable = true
+  [executable_action_instance:nexo_act_35_0][action_type:sendmessage] = /carrera apostar 8 {"placeholder":"getvariable","values":{"name":"carrera_monto"}}
+  widget_active_state_requirement_container_identifier = act_35
+  [loading_requirement_container_meta:act_35] = [groups:][instances:act_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_35_0] = h_8_on:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -158
+  y = 50
+  width = 60
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:]
+  source = Fichas:
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #B8A6C8
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = fancymenu_customization_item_input_field
+  instance_identifier = nexo_fancymenu_customization_item_input_field_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -124
+  y = 48
+  width = 46
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:]
+  linked_variable = carrera_monto
+  input_field_type = text
+  max_text_length = 4
+  hint_text = 1
+  background_color = #140A24
+  border_color = #6A44A8
+  border_color_focused = #3EE6D8
+  text_color = #F0E6FF
+  hint_text_color = #7A6E90
+  navigatable = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -74
+  y = 48
+  width = 26
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:]
+  label = 1
+  description = 1 fichas
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_mini.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.75
+  navigatable = true
+  [executable_action_instance:nexo_act_38_0][action_type:set_variable] = carrera_monto:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -46
+  y = 48
+  width = 26
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:]
+  label = 5
+  description = 5 fichas
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_mini.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.75
+  navigatable = true
+  [executable_action_instance:nexo_act_39_0][action_type:set_variable] = carrera_monto:5
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -18
+  y = 48
+  width = 26
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:]
+  label = 10
+  description = 10 fichas
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_mini.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.75
+  navigatable = true
+  [executable_action_instance:nexo_act_40_0][action_type:set_variable] = carrera_monto:10
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 10
+  y = 48
+  width = 26
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:]
+  label = 50
+  description = 50 fichas
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_mini.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_mini_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.75
+  navigatable = true
+  [executable_action_instance:nexo_act_41_0][action_type:set_variable] = carrera_monto:50
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 48
+  width = 120
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:]
+  source = {"placeholder":"getvariable","values":{"name":"carrera_fichas"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 57
+  width = 120
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:]
+  source = {"placeholder":"getvariable","values":{"name":"carrera_mia"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.68
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 67
+  width = 320
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = carrera_msg_on:1
+  source = {"placeholder":"getvariable","values":{"name":"carrera_msg"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 100
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:]
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cas_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cas_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cas_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_45_0][action_type:closegui] = 
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 88
+  width = 240
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:]
+  source = Mira la pista: ¡los caballos corren de verdad!
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #8C7A9C
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}

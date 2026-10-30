@@ -1,0 +1,2711 @@
+{
+  "formatVersion": 1,
+  "name": "Nexos MC",
+  "version": "0.43.0",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.259",
+  "java": 21,
+  "ramMb": 5120,
+  "server": {
+    "name": "Nexos MC",
+    "host": "192.168.1.26",
+    "port": 25565
+  },
+  "files": [
+    {
+      "path": "mods/[1.21.1] SecurityCraft v1.10.2.1.jar",
+      "url": "https://cdn.modrinth.com/data/v8jzRtAt/versions/X9nq0PvS/%5B1.21.1%5D%20SecurityCraft%20v1.10.2.1.jar",
+      "sha1": "8760079e80039f982f1a92d3ee9d60a2bcab3251",
+      "size": 5193371
+    },
+    {
+      "path": "mods/alex-mobs-tweaks-omni-1.3.5.jar",
+      "url": "https://mediafilez.forgecdn.net/files/9142/824/alex-mobs-tweaks-omni-1.3.5.jar",
+      "sha1": "b91869123ca8646479f79adc98b23bfebd82f97a",
+      "size": 160055
+    },
+    {
+      "path": "mods/alexsmobs-2.2.2-neoforge+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/kYIaHHfw/versions/ThZbQpga/alexsmobs-2.2.2-neoforge%2B1.21.1.jar",
+      "sha1": "60fdf6379ff891aa1bbff541787cb8d40a8d227a",
+      "size": 27464680
+    },
+    {
+      "path": "mods/architectury-13.0.11-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1IiqEQGl/architectury-13.0.11-neoforge.jar",
+      "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1",
+      "size": 584734
+    },
+    {
+      "path": "mods/artifacts-neoforge-13.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/P0Mu4wcQ/versions/lMfuK0o7/artifacts-neoforge-13.2.5.jar",
+      "sha1": "fb6cd3be2d034dde369ffd7558c95c6daa44189e",
+      "size": 1086922
+    },
+    {
+      "path": "mods/baguettelib-1.21.1-NeoForge-2.0.7.jar",
+      "url": "https://cdn.modrinth.com/data/OfKzpbRU/versions/5RiJQA1Z/baguettelib-1.21.1-NeoForge-2.0.7.jar",
+      "sha1": "3f4d8f7548a71a93ac60feefad0722d92a42d4bd",
+      "size": 85738
+    },
+    {
+      "path": "mods/balm-neoforge-1.21.1-21.0.66.jar",
+      "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/CquiaiDj/balm-neoforge-1.21.1-21.0.66.jar",
+      "sha1": "dd3606a349f4a3c8fb5bd0ab22905675c02b0d74",
+      "size": 783793
+    },
+    {
+      "path": "mods/blueprint-1.21.1-8.2.0.jar",
+      "url": "https://cdn.modrinth.com/data/VsM5EDoI/versions/FHOjk8Ez/blueprint-1.21.1-8.2.0.jar",
+      "sha1": "b947d5faef872a3f4c856a814c994d70f2065666",
+      "size": 1214507
+    },
+    {
+      "path": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "url": "https://cdn.modrinth.com/data/uy4Cnpcm/versions/1sdJl7J1/bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "sha1": "efc4cda6da4dd879f24d057ed0a6413764c9ba40",
+      "size": 328813
+    },
+    {
+      "path": "mods/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/jo7lDoK4/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c",
+      "size": 18382
+    },
+    {
+      "path": "mods/codxlib-1.6.1-neoforge+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/6oyMM4yX/versions/MMcDASmX/codxlib-1.6.1-neoforge%2B1.21.1.jar",
+      "sha1": "d11c51c10d86420c4ba9a18ce42b5b7bbc1fd3ca",
+      "size": 193045
+    },
+    {
+      "path": "mods/comforts-neoforge-9.0.5+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/3kpPjcTc/comforts-neoforge-9.0.5%2B1.21.1.jar",
+      "sha1": "21d6bee3821d62fe3356c51fb1d697871a3087ff",
+      "size": 422658
+    },
+    {
+      "path": "mods/curios-neoforge-9.5.1+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/yohfFbgD/curios-neoforge-9.5.1%2B1.21.1.jar",
+      "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4",
+      "size": 410690
+    },
+    {
+      "path": "mods/easy_npc-neoforge-1.21.1-7.16.0.jar",
+      "url": "https://cdn.modrinth.com/data/Epm6R3P2/versions/JgVXyplm/easy_npc-neoforge-1.21.1-7.16.0.jar",
+      "sha1": "d97559a1436fe6c7cefb5b4083547eccdac076cf",
+      "size": 3256971
+    },
+    {
+      "path": "mods/easy_npc_config_ui-neoforge-1.21.1-7.16.0.jar",
+      "url": "https://cdn.modrinth.com/data/uTGjf7vA/versions/XL6nv37h/easy_npc_config_ui-neoforge-1.21.1-7.16.0.jar",
+      "sha1": "f70fcd7e25f439db1973dbb8372788f41ee27202",
+      "size": 1207679
+    },
+    {
+      "path": "mods/ElysiumAPI-1.21.1-2.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/6YTvv3aI/versions/d2JaQ362/ElysiumAPI-1.21.1-2.0.1.jar",
+      "sha1": "01754addbc1d0607d81fcd37e0605138bec4ceaf",
+      "size": 307526
+    },
+    {
+      "path": "mods/enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/UVtY3ZAC/versions/IktklYWh/enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "4d453df785ac21e0e7389cba949f4fa460c3e267",
+      "size": 82648
+    },
+    {
+      "path": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/eieYbWYb/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "sha1": "f122f84f329793675b2625d51b77f990d7de3579",
+      "size": 1510075
+    },
+    {
+      "path": "mods/fancy-entity-renderer-neoforge-1.21-0.4.9.jar",
+      "url": "https://cdn.modrinth.com/data/RQ6INv2n/versions/rxYHELTJ/fancy-entity-renderer-neoforge-1.21-0.4.9.jar",
+      "sha1": "427df4a943f0b52430235cd610688e589870de2f",
+      "size": 410875
+    },
+    {
+      "path": "mods/fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/P9dDosz2/fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
+      "sha1": "cafbef98afb4f60adea426b950c5452655040c40",
+      "size": 25922080
+    },
+    {
+      "path": "mods/FazRoleplayClothes-Neo1.21.1-1.6.1.jar",
+      "url": "https://cdn.modrinth.com/data/zjMFbe7B/versions/urYgvUDy/FazRoleplayClothes-Neo1.21.1-1.6.1.jar",
+      "sha1": "d82a48b3e830611a4bd9e006193f1bc30f19cc8b",
+      "size": 522086
+    },
+    {
+      "path": "mods/ferritecore-7.0.3-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
+      "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+      "size": 121559
+    },
+    {
+      "path": "mods/ftb-backups-3-21.1.5.jar",
+      "url": "https://mediafilez.forgecdn.net/files/8078/605/ftb-backups-3-21.1.5.jar",
+      "sha1": "c375dd0e4c673b39297c09211f4bf225bf1141ba",
+      "size": 91354
+    },
+    {
+      "path": "mods/ftb-library-neoforge-2101.1.37.jar",
+      "url": "https://mediafilez.forgecdn.net/files/9008/89/ftb-library-neoforge-2101.1.37.jar",
+      "sha1": "b6e503587afcd678ec257e4abdc6362ff18c2fef",
+      "size": 1439881
+    },
+    {
+      "path": "mods/ftb-teams-neoforge-2101.1.11.jar",
+      "url": "https://mediafilez.forgecdn.net/files/8724/782/ftb-teams-neoforge-2101.1.11.jar",
+      "sha1": "62b65f752d0326edd13244e58d5f2aec035da4e9",
+      "size": 308236
+    },
+    {
+      "path": "mods/fzzy_config-0.7.7+1.21+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/uG7oHgw6/fzzy_config-0.7.7%2B1.21%2Bneoforge.jar",
+      "sha1": "518eadc53c065a74a49207769209c116e77d1849",
+      "size": 2392693
+    },
+    {
+      "path": "mods/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/Grwn5rUB/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "sha1": "5cfe835472a5c5457ae9ac192d9d7b317454d5ac",
+      "size": 634531
+    },
+    {
+      "path": "mods/gliders-1.21.1-neoforge-1.1.8.jar",
+      "url": "https://cdn.modrinth.com/data/XiC6HzoU/versions/XMduptKZ/gliders-1.21.1-neoforge-1.1.8.jar",
+      "sha1": "f68e8fa4fb1a126cfb660df32fb009b2cc900c6b",
+      "size": 677846
+    },
+    {
+      "path": "mods/gravestone-neoforge-1.21.1-1.0.40.jar",
+      "url": "https://cdn.modrinth.com/data/RYtXKJPr/versions/rMGJpjaM/gravestone-neoforge-1.21.1-1.0.40.jar",
+      "sha1": "97230b93af34ac6581ed36b0cc98f6b16b06c04e",
+      "size": 322082
+    },
+    {
+      "path": "mods/gravestonecurioscompat-1.21.1-NeoForge-3.0.1.jar",
+      "url": "https://cdn.modrinth.com/data/NaiL8bPN/versions/HwlTVmVu/gravestonecurioscompat-1.21.1-NeoForge-3.0.1.jar",
+      "sha1": "6af464b8bc270c8d21fca7022051d42b6f736484",
+      "size": 14841
+    },
+    {
+      "path": "mods/Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/IMssx9du/Iceberg-1.21.1-neoforge-1.3.2.jar",
+      "sha1": "f6014d198be9503573cd9cb41cc789d282768ad8",
+      "size": 213853
+    },
+    {
+      "path": "mods/ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/EJzmEPZV/ImmediatelyFast-NeoForge-1.6.15%2B1.21.1.jar",
+      "sha1": "f991166f7c82b493481c876e3c83c9fac4159671",
+      "size": 368896
+    },
+    {
+      "path": "mods/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/O7RBXm3n/versions/vjuNnHLv/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+      "sha1": "b09d7c0820c233ea34af54d0a3ab7ed510b32dcc",
+      "size": 1295466
+    },
+    {
+      "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
+      "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+      "size": 2540723
+    },
+    {
+      "path": "mods/Jade-1.21.1-NeoForge-15.10.6.jar",
+      "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar",
+      "sha1": "88ee316e68900080b017f60c12162e2731924cf8",
+      "size": 726853
+    },
+    {
+      "path": "mods/Jadens-Nether-Expansion-2.4.1.jar",
+      "url": "https://cdn.modrinth.com/data/v3UlehfS/versions/NactTrv2/Jadens-Nether-Expansion-2.4.1.jar",
+      "sha1": "ccbf6bce83cb9c73c3160a5395fb898132205117",
+      "size": 21052417
+    },
+    {
+      "path": "mods/jei-1.21.1-neoforge-19.51.0.418.jar",
+      "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/ufHUqt9b/jei-1.21.1-neoforge-19.51.0.418.jar",
+      "sha1": "d19552586f686eae4ef5e7199f31604d1d3cfca7",
+      "size": 1804792
+    },
+    {
+      "path": "mods/konkrete_neoforge_1.9.9_MC_1.21.jar",
+      "url": "https://cdn.modrinth.com/data/J81TRJWm/versions/stJDU839/konkrete_neoforge_1.9.9_MC_1.21.jar",
+      "sha1": "97771eb287d5ac7fe667d1df9493d5e54c8ca1fa",
+      "size": 618842
+    },
+    {
+      "path": "mods/kotlinforforge-5.12.0-all.jar",
+      "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/uhJhCT7X/kotlinforforge-5.12.0-all.jar",
+      "sha1": "d10d062caf1aad9aec82d7852f2fee1781735c1f",
+      "size": 7279264
+    },
+    {
+      "path": "mods/L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "url": "https://cdn.modrinth.com/data/46KJle7n/versions/PsPYpoCC/L_Ender%27s%20Cataclysm%201.21.1-3.33.jar",
+      "sha1": "f0310277167c82fd16a5c2bab220b5c5c262f133",
+      "size": 73375667
+    },
+    {
+      "path": "mods/legendary_monsters-2.2.3 MC 1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/9d9Bkqva/versions/Dfoikvr0/legendary_monsters-2.2.3%20MC%201.21.1.jar",
+      "sha1": "0fbe7bfd238e64c6c54e8b9c2c8af44b4b1ce475",
+      "size": 44748618
+    },
+    {
+      "path": "mods/LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+      "url": "https://cdn.modrinth.com/data/atHH8NyV/versions/BabRJO04/LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+      "sha1": "e7d3b66f3afe115c709749739f26f807ca8e827b",
+      "size": 81808
+    },
+    {
+      "path": "mods/libIPN-neoforge-1.21.1-6.6.3.jar",
+      "url": "https://cdn.modrinth.com/data/onSQdWhM/versions/BGe4KMlE/libIPN-neoforge-1.21.1-6.6.3.jar",
+      "sha1": "baab9e8cae3d2b77b5e172b5694e465ee9f30d4a",
+      "size": 626146
+    },
+    {
+      "path": "mods/lionfishapi-3.1.jar",
+      "url": "https://cdn.modrinth.com/data/FoVacERa/versions/fTRMVgyZ/lionfishapi-3.1.jar",
+      "sha1": "353ca00ed118eb67cf11085abbbd699884722326",
+      "size": 91596
+    },
+    {
+      "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/DDUrRVCA/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+      "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+      "size": 774220
+    },
+    {
+      "path": "mods/lodestone-1.21.1-1.8.2.jar",
+      "url": "https://cdn.modrinth.com/data/bN3xUWdo/versions/CohX6yP1/lodestone-1.21.1-1.8.2.jar",
+      "sha1": "d1f7c638fac5192e01b1873f27e694a3c262ad11",
+      "size": 818829
+    },
+    {
+      "path": "mods/Luminous Nether V1.3.4 - NeoForge 1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/2CL6BDdJ/versions/vjpgXRBu/Luminous%20Nether%20V1.3.4%20-%20NeoForge%201.21.1.jar",
+      "sha1": "d70045e9463291dc06498863840e281b751244cd",
+      "size": 24107665
+    },
+    {
+      "path": "mods/melody_neoforge_1.0.10_MC_1.21.jar",
+      "url": "https://cdn.modrinth.com/data/CVT4pFB2/versions/efcdRVZP/melody_neoforge_1.0.10_MC_1.21.jar",
+      "sha1": "e83052a92c4ca0016bcfe7f0207273983dc84698",
+      "size": 36096
+    },
+    {
+      "path": "mods/minevegas-casino-neoforge-1.21.1-1.0.4.jar",
+      "url": "https://mediafilez.forgecdn.net/files/9275/402/minevegas-casino-neoforge-1.21.1-1.0.4.jar",
+      "sha1": "15b53346d20479674c56e193a9169c93435ff1e8",
+      "size": 26179793
+    },
+    {
+      "path": "mods/modernfix-neoforge-5.27.26+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/7Jy58lnT/modernfix-neoforge-5.27.26%2Bmc1.21.1.jar",
+      "sha1": "69d468b70e53f6a014c778a81116a41a38fbab33",
+      "size": 611043
+    },
+    {
+      "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
+      "size": 73938
+    },
+    {
+      "path": "mods/naturalist-2.0.5-neoforge-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/F8BQNPWX/versions/ETgOvHHS/naturalist-2.0.5-neoforge-1.21.1.jar",
+      "sha1": "ea9ebf082eb978dcf583255e8fca1004a8114ab6",
+      "size": 11325729
+    },
+    {
+      "path": "mods/nexusprotect-0.38.0.jar",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/mods/nexusprotect-0.38.0.jar",
+      "sha1": "7c0a9ec1ebb015a87537fa5332a3aee31799a99b",
+      "size": 1137626
+    },
+    {
+      "path": "mods/nirvana-forge-2.0.11.jar",
+      "url": "https://mediafilez.forgecdn.net/files/8164/363/nirvana-forge-2.0.11.jar",
+      "sha1": "95915c4f41ff1b7880155fe383d37b0e296be202",
+      "size": 3963759
+    },
+    {
+      "path": "mods/open-parties-and-claims-neoforge-1.21.1-0.32.7.jar",
+      "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/qMR7tHTs/open-parties-and-claims-neoforge-1.21.1-0.32.7.jar",
+      "sha1": "1c564ecb944277993716e2c7fc9d35dc403e515c",
+      "size": 1871092
+    },
+    {
+      "path": "mods/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "url": "https://cdn.modrinth.com/data/ZX66K16c/versions/5NZounJc/PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "sha1": "90d3fe207c95a3a5d849ebf8d70ffa885694e30f",
+      "size": 97094
+    },
+    {
+      "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/aaRl8GiW/versions/EE1FHDyD/prickle-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36",
+      "size": 84812
+    },
+    {
+      "path": "mods/Prism-1.21.1-neoforge-1.0.11.jar",
+      "url": "https://cdn.modrinth.com/data/1OE8wbN0/versions/kMcz2lDj/Prism-1.21.1-neoforge-1.0.11.jar",
+      "sha1": "1ae6f7be2ba8f963344dbf27e552920a7bc7a35f",
+      "size": 62031
+    },
+    {
+      "path": "mods/puzzleslib-v21.1.64-mc1.21.1+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/lATqZwtV/puzzleslib-v21.1.64-mc1.21.1%2Bneoforge.jar",
+      "sha1": "8562ac65d4f2a55365d4522934fb0e00cd3d3ec3",
+      "size": 1451067
+    },
+    {
+      "path": "mods/simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/bK3Ubu9p/versions/nS0Yahr5/simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "sha1": "05b074ff774467f1fe9fb5592151b7845c321cbc",
+      "size": 16282660
+    },
+    {
+      "path": "mods/SimplyTooltips-neoforge-0.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/6avVoBVB/versions/Zb6dytvm/SimplyTooltips-neoforge-0.1.5.jar",
+      "sha1": "6227453d5b628b1009d6ec516a0da5b588849744",
+      "size": 5512986
+    },
+    {
+      "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
+      "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
+      "size": 1292934
+    },
+    {
+      "path": "mods/sophisticatedbackpacks-1.21.1-3.26.14.2222.jar",
+      "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/eg9lPtG4/sophisticatedbackpacks-1.21.1-3.26.14.2222.jar",
+      "sha1": "ccaaa38967d561a4c49f26364ec0ba68d593b95d",
+      "size": 1257036
+    },
+    {
+      "path": "mods/sophisticatedcore-1.21.1-1.5.17.2426.jar",
+      "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/gtPF4VTh/sophisticatedcore-1.21.1-1.5.17.2426.jar",
+      "sha1": "2fec77e21c5da32b32e1be543a0f191a6db62291",
+      "size": 1819706
+    },
+    {
+      "path": "mods/spark-1.10.124-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/v5qtqRQi/spark-1.10.124-neoforge.jar",
+      "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6",
+      "size": 3642581
+    },
+    {
+      "path": "mods/structurify-neoforge-2.0.43+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/yz7AM2zx/versions/KDqZzIc2/structurify-neoforge-2.0.43%2Bmc1.21.1.jar",
+      "sha1": "efd954533911c8a63f96cad82b96bcde47120ca2",
+      "size": 530369
+    },
+    {
+      "path": "mods/studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar",
+      "url": "https://mediafilez.forgecdn.net/files/9106/885/studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar",
+      "sha1": "774dae2a81ba825edd5decde37f466b052aeeb5e",
+      "size": 50696
+    },
+    {
+      "path": "mods/trashslot-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/vRYk0bv7/versions/HY8Ybozd/trashslot-neoforge-1.21.1-21.1.11.jar",
+      "sha1": "ce09d0128e6a7d225e731e1307f9c1deddac209a",
+      "size": 77535
+    },
+    {
+      "path": "mods/VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar",
+      "url": "https://cdn.modrinth.com/data/kfqD1JRw/versions/3646RfLS/VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar",
+      "sha1": "dd5b71bff42ce3f845afc9c3640d4f4f63ccdb1b",
+      "size": 76670
+    },
+    {
+      "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/7TVdVtxF/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
+      "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb",
+      "size": 1118651
+    },
+    {
+      "path": "mods/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "url": "https://cdn.modrinth.com/data/Ua7DFN59/versions/2prKITKh/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "sha1": "2c4b740c8ad27bbcb2a21b85b64f011b809aed91",
+      "size": 413763
+    },
+    {
+      "path": "config/ftblibrary-client.snbt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/ftblibrary-client.snbt",
+      "sha1": "2b0f5392012e90bf1dc12286b6f40910b51e35bf",
+      "size": 1662
+    },
+    {
+      "path": "config/artifacts/items.toml",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/artifacts/items.toml",
+      "sha1": "94d08b98135159e788ea735b2fa49dfdbe467e5e",
+      "size": 20345
+    },
+    {
+      "path": "config/fancymenu/custom_gui_screens.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/custom_gui_screens.txt",
+      "sha1": "34a94caea38b0fc7dbc915db0626fa4e7dc2341b",
+      "size": 3871
+    },
+    {
+      "path": "config/fancymenu/customizablemenus.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customizablemenus.txt",
+      "sha1": "9ded5c75941b1b9966cc8ab786de097d2b3aac77",
+      "size": 1543
+    },
+    {
+      "path": "config/fancymenu/listener_instances.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/listener_instances.txt",
+      "sha1": "b9aa42a9ba156778ffc518ec319fcb4f667c0bbc",
+      "size": 2713
+    },
+    {
+      "path": "config/fancymenu/options.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/options.txt",
+      "sha1": "a287ab800b1870966fa83d3a82347518856e3701",
+      "size": 144
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_abrir.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_abrir.png",
+      "sha1": "cf21b3fe93eedd4ec6249cb421c0c5e4792f58f2",
+      "size": 387
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_abrir_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_abrir_hover.png",
+      "sha1": "e44aa64df2c9e802b4292d9ebcac2be97c4705d0",
+      "size": 388
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_abrir_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_abrir_inactivo.png",
+      "sha1": "28ad322979bb71bb1ba689d51626538e4126069a",
+      "size": 380
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_ancho.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_ancho.png",
+      "sha1": "70bf6191eab5e8470edd6c5ba389737088c15337",
+      "size": 631
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_ancho_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_ancho_hover.png",
+      "sha1": "11b839b4b33466a3f2eddb107c3d01d8c2e949e9",
+      "size": 633
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_ancho_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_ancho_inactivo.png",
+      "sha1": "42bdf9bbec3198a63b4f5adfb953ecc31557b224",
+      "size": 624
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_cerrar.png",
+      "sha1": "bea780684462a94537dc6c3c723b83561bd794b3",
+      "size": 426
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_cerrar_hover.png",
+      "sha1": "13626fbfa2e961eddc6b77598c24e2bfbad8a8a7",
+      "size": 426
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_cerrar_inactivo.png",
+      "sha1": "b9bc129c9bfa3576d63bcd43ea3da5f36e831b43",
+      "size": 417
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_der.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_der.png",
+      "sha1": "b716325edf5bcc2d7c69405b23380918f7bf096e",
+      "size": 646
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_der_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_der_hover.png",
+      "sha1": "467c90d0cf5a5111290a4abca36182e9ecf417af",
+      "size": 648
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_der_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_der_inactivo.png",
+      "sha1": "43894759a23d57f9bbfd3d18093a21a66af3c009",
+      "size": 637
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_doble.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_doble.png",
+      "sha1": "5d3767568976f134e18ee5871317d858a6c59b7f",
+      "size": 665
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_doble_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_doble_hover.png",
+      "sha1": "ff09f60f1f9bf1d7585a57ed86fa48b17fa50219",
+      "size": 668
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_doble_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_doble_inactivo.png",
+      "sha1": "fd7c4f9f41bb1b1e5b4520086048259b2d151461",
+      "size": 658
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_flecha.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_flecha.png",
+      "sha1": "931302d55c24606a70956e6baeef73749cb168ab",
+      "size": 290
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_flecha_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_flecha_hover.png",
+      "sha1": "067bb83fa3b927dff16bdb1adb1dce6ed06478dd",
+      "size": 291
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_flecha_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_flecha_inactivo.png",
+      "sha1": "0a4062167461a63d34a7896f9752a6209061ef99",
+      "size": 285
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_int.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_int.png",
+      "sha1": "1e037345b16d3d7feff63cd51367d9640552c48f",
+      "size": 364
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_int_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_int_hover.png",
+      "sha1": "a5e24ba0a0179755dc0b2b712a1a5dfbe880628a",
+      "size": 366
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_int_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_int_inactivo.png",
+      "sha1": "c5855f9f0b58515245c7b6996f0e27e8d4e85e2c",
+      "size": 356
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_largo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_largo.png",
+      "sha1": "fd455ee8e3916d3eee5ed9b0ea15b030f1257be4",
+      "size": 576
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_largo_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_largo_hover.png",
+      "sha1": "c77d85a8707961648f180181d1b085614dc01b1f",
+      "size": 577
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_largo_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_largo_inactivo.png",
+      "sha1": "7d8f4f9920989e72f811e1ce9c97d5409bd092e3",
+      "size": 569
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_lista.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_lista.png",
+      "sha1": "632dfc425e6d021a3a75244c9f5a3cca481ff686",
+      "size": 614
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_lista_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_lista_hover.png",
+      "sha1": "720a4435838d6412170480f2cfc593d9f9b792aa",
+      "size": 616
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_lista_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_lista_inactivo.png",
+      "sha1": "52a9e91bc89ecfaddb85925865d5ff7c122eb170",
+      "size": 607
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_mas.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_mas.png",
+      "sha1": "8c20b87f3f67a365b39ebbe4472fdae722fd17e3",
+      "size": 345
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_mas_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_mas_hover.png",
+      "sha1": "bf5c031d4d19d95b2155e24f79a88ea4ed24b864",
+      "size": 346
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_mas_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_mas_inactivo.png",
+      "sha1": "620e4f0a0e32876b19e65fbfa1b216c4be551686",
+      "size": 337
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_medio.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_medio.png",
+      "sha1": "e08e73e63ece3afb7f6b6ff3c4fc4fe0a75254de",
+      "size": 476
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_medio_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_medio_hover.png",
+      "sha1": "41c3e62283c97698de1b83ba1fb1ba37b7c235aa",
+      "size": 478
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_medio_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_medio_inactivo.png",
+      "sha1": "f05cc826071a3b1ee7e18f6bed1c3a0ef7d66d3a",
+      "size": 468
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_micro.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_micro.png",
+      "sha1": "e8bdcca9040f274ab0a5135e0ffef716fec597d7",
+      "size": 327
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_micro_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_micro_hover.png",
+      "sha1": "0ccbffe5f54b5c4b8eea0643c3ec6c0f80e3bb3a",
+      "size": 329
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_micro_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_micro_inactivo.png",
+      "sha1": "5f6bd3068b2b2b0c99a1eae06cbd1f14f935f38b",
+      "size": 320
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_mini.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_mini.png",
+      "sha1": "46ffe49ef827b9e183f9282c93ce57ce884ff300",
+      "size": 368
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_mini_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_mini_hover.png",
+      "sha1": "85f9fbbd377490e9f5122b78a229a27db47da88d",
+      "size": 368
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_mini_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_mini_inactivo.png",
+      "sha1": "e9a390f29ed87d205805740aae8a4157b0c6fa90",
+      "size": 361
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_tiny.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_tiny.png",
+      "sha1": "24607a3802d108d7ec83e46d96e14f677ff4eec2",
+      "size": 251
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_tiny_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_tiny_hover.png",
+      "sha1": "6d6ef64d243fcf333d8b91d06b501821b5869c95",
+      "size": 252
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_b_tiny_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_b_tiny_inactivo.png",
+      "sha1": "6b948d7bc2dcad2d2ad077791e2cfdb3cd0e7ca4",
+      "size": 250
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/adm_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/adm_panel.png",
+      "sha1": "658754b1a1fd9bb021b9f3aae0e1c8e855dc0b5b",
+      "size": 2685
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_buy.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_buy.png",
+      "sha1": "57e5fc78dcfca41807b51d136e4adec901ba269a",
+      "size": 367
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_buy_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_buy_hover.png",
+      "sha1": "9a7bd214711afd0aaa338253fd1e777709670835",
+      "size": 365
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_buy_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_buy_inactivo.png",
+      "sha1": "6f8c1f77d76e2c71d3f74a456284c38ead68c8d2",
+      "size": 359
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_card.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_card.png",
+      "sha1": "ed4ae974382680ad33604e6a4517b3cce94e0197",
+      "size": 271
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_cerrar.png",
+      "sha1": "fff9538658bee3694f54073d01067927ae156ecf",
+      "size": 428
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_cerrar_hover.png",
+      "sha1": "2b453faf777a56ba5228fdd37d53d28a971bfad1",
+      "size": 425
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_cerrar_inactivo.png",
+      "sha1": "e1bdfc94066ee452e325746d9765eee7f7ec69bc",
+      "size": 422
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_conf_bar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_conf_bar.png",
+      "sha1": "119b082d9921fd916167a94c316793a724335edc",
+      "size": 294
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_flecha.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_flecha.png",
+      "sha1": "4a83c3ec0e702a8a09576bd82dd8f5cdbbe337ad",
+      "size": 290
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_flecha_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_flecha_hover.png",
+      "sha1": "367d9f857d64afb607e582bb43d93896c09a7cbe",
+      "size": 291
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_flecha_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_flecha_inactivo.png",
+      "sha1": "5378a9ab3566595f629f1faf03a193711563ebe5",
+      "size": 288
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_lupa.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_lupa.png",
+      "sha1": "d77c2d3e70e2d5e5a1b398c2bc5d75817b36beec",
+      "size": 294
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_lupa_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_lupa_hover.png",
+      "sha1": "25c48bb088c79a022b873d2623b1a5ccbccdaaa1",
+      "size": 294
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_lupa_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_lupa_inactivo.png",
+      "sha1": "91199ed7b29136b2161fc969c1a5963ce6d1b1fa",
+      "size": 289
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_no.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_no.png",
+      "sha1": "84316c0d25004dd34a781b926e1f828a3a65d8fb",
+      "size": 412
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_no_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_no_hover.png",
+      "sha1": "a9caa5eabbd07f7758c8123f23901c117896ab60",
+      "size": 410
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_no_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_no_inactivo.png",
+      "sha1": "e1b755f4bb321b359cab4a3436cc1af2b63f32c8",
+      "size": 404
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_orden.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_orden.png",
+      "sha1": "e62f1587615adbf4852a79127bc1858b42435488",
+      "size": 377
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_orden_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_orden_hover.png",
+      "sha1": "209129fef0f14750ed29e8b24459a5aedb409315",
+      "size": 375
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_orden_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_orden_inactivo.png",
+      "sha1": "eb2ddc3915a1482d617578e1890e849f7b4f63e0",
+      "size": 368
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_panel.png",
+      "sha1": "acec8503b5661f3d3203f8180657ff754e57d3a6",
+      "size": 2776
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_recoger.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_recoger.png",
+      "sha1": "79bee2d4b78608246997f2a22f7230ea2d394213",
+      "size": 507
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_recoger_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_recoger_hover.png",
+      "sha1": "6f96542f3cd44e7541d97301c66e84aa2b58f244",
+      "size": 505
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_recoger_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_recoger_inactivo.png",
+      "sha1": "3dda00d05e0ac5b6826674a64b93fbf51277b154",
+      "size": 500
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_refresh.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_refresh.png",
+      "sha1": "8d3e93b69df483bf6e6140243417926a9f85a539",
+      "size": 297
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_refresh_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_refresh_hover.png",
+      "sha1": "d116f2571e893445c9d00314360a97c03d79292c",
+      "size": 297
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_refresh_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_refresh_inactivo.png",
+      "sha1": "90e3966dcc5665bf12e5771049034fc01db4dfed",
+      "size": 293
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_si.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_si.png",
+      "sha1": "063e2bc8107d05c4779328edc9e161ab887789af",
+      "size": 423
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_si_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_si_hover.png",
+      "sha1": "047db149e0cb956ac9327401f0b1dc6fab683523",
+      "size": 421
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_si_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_si_inactivo.png",
+      "sha1": "d7f25f437422a08c5846b9cf9fb9cccb66daa1fe",
+      "size": 415
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab56.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab56.png",
+      "sha1": "8ffa22ac3c9ee09002deb724558bb11185f921f3",
+      "size": 389
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab56_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab56_hover.png",
+      "sha1": "4061a817ae5f7396a9f6fada59566943fd6e3b84",
+      "size": 388
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab56_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab56_inactivo.png",
+      "sha1": "b235343b6a3f51b6e28afa34c04c120fdfb369d8",
+      "size": 381
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab56_on.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab56_on.png",
+      "sha1": "5df1a47dfb7384a396dde6d995293f22abd40338",
+      "size": 389
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab56_on_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab56_on_hover.png",
+      "sha1": "4061a817ae5f7396a9f6fada59566943fd6e3b84",
+      "size": 388
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab56_on_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab56_on_inactivo.png",
+      "sha1": "b235343b6a3f51b6e28afa34c04c120fdfb369d8",
+      "size": 381
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab92.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab92.png",
+      "sha1": "240695f6db26f5fc515896de525e3518dad41b2f",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab92_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab92_hover.png",
+      "sha1": "9922203615544e2cdcb2b1159c2653852c7c254b",
+      "size": 461
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab92_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab92_inactivo.png",
+      "sha1": "a25f09f82b4571b24461cd4a7948f5fc384f482d",
+      "size": 455
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab92_on.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab92_on.png",
+      "sha1": "3ff0e765588a6cf213bd58d0ab57ab27175c791b",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab92_on_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab92_on_hover.png",
+      "sha1": "9922203615544e2cdcb2b1159c2653852c7c254b",
+      "size": 461
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_tab92_on_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_tab92_on_inactivo.png",
+      "sha1": "a25f09f82b4571b24461cd4a7948f5fc384f482d",
+      "size": 455
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_vender.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_vender.png",
+      "sha1": "dd7d81958d6117ba34ab1361ea6e030adf61af89",
+      "size": 592
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_vender_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_vender_hover.png",
+      "sha1": "7b97313a2f659a3a081566817d6f3dc9b8ba39fb",
+      "size": 590
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_vender_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_vender_inactivo.png",
+      "sha1": "654479ddf937a4b9396f200e7b9e665a5ee37aae",
+      "size": 582
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_x.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_x.png",
+      "sha1": "e288b4016128d8220ac3cd29bf7eeb63766756b1",
+      "size": 230
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_x_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_x_hover.png",
+      "sha1": "86ea016c81c59c188985585f2fd96953c3d591b0",
+      "size": 230
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/ah_x_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/ah_x_inactivo.png",
+      "sha1": "130d915b3cfa6828818b23c8d47b260e065b7b53",
+      "size": 229
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/boton.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/boton.png",
+      "sha1": "ca918866849c946226188c57f929def82085d4ff",
+      "size": 706
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/boton_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/boton_hover.png",
+      "sha1": "cba2d0df2b3e06c228d46136585cd254b0dadd58",
+      "size": 701
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/boton_principal.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/boton_principal.png",
+      "sha1": "d68efb0c93c14d63a0ffeb9fa00310cf1d25d035",
+      "size": 1115
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/boton_principal_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/boton_principal_hover.png",
+      "sha1": "3f11accb0207a0d8b4fc52588fed5fe47520ec85",
+      "size": 1107
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_b.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_b.png",
+      "sha1": "bf490e29245f62a538c8aaa6e32881f8897f7e8d",
+      "size": 682
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_b_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_b_hover.png",
+      "sha1": "dad44f384a97c0a64cf4931eff8b6993a2b2c0dd",
+      "size": 680
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_b_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_b_inactivo.png",
+      "sha1": "641c464e3f378cd8b9ec9c3d2805c1cd9e9bd6ea",
+      "size": 675
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_cerrar.png",
+      "sha1": "767d906825b0b18e992472c7d78b8a3215e29f8c",
+      "size": 460
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_cerrar_hover.png",
+      "sha1": "13aca2a793c7c60c3a8fe477a4231566aa7811e4",
+      "size": 460
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_cerrar_inactivo.png",
+      "sha1": "88cc68ee3c7f094a898261f8ce707f51fa7328d1",
+      "size": 453
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_mini.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_mini.png",
+      "sha1": "02617dcc667ad4182255e42c309bbb1de9b2b55c",
+      "size": 347
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_mini_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_mini_hover.png",
+      "sha1": "42c9fcbe0bb0b7259207b2aba070700509ce97fc",
+      "size": 347
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_mini_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_mini_inactivo.png",
+      "sha1": "51e7442c2cda033c8573818c89313e3a6362f927",
+      "size": 340
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/bounty_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/bounty_panel.png",
+      "sha1": "f7f1e0277a6d5e462cf7923dc6902722f2d87f96",
+      "size": 3113
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_ancho.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_ancho.png",
+      "sha1": "de026a3a337fa1ec8cb2b1d53cd59144421f3bfd",
+      "size": 440
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_ancho_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_ancho_hover.png",
+      "sha1": "5f9858adf4684888b0a9a28fa75180860920e188",
+      "size": 437
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_ancho_inactivo.png",
+      "sha1": "676dfc75db96f3066b5f2b16016cfdea3a6357c3",
+      "size": 433
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_b.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_b.png",
+      "sha1": "d6680abbc4d89da6dfd26bb6c10bf55d8bf6463a",
+      "size": 392
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_b_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_b_hover.png",
+      "sha1": "2f780acc5c16d8a62dab4f1a42ae01bd2f31c570",
+      "size": 389
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_b_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_b_inactivo.png",
+      "sha1": "964921a948c83d43a62247b1d556839b05fd7ec2",
+      "size": 385
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_cerrar.png",
+      "sha1": "e91f23d78951f38f3185ff1ad23478ac769289f2",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_cerrar_hover.png",
+      "sha1": "f9186716ced18c28b2d01cafe5d0cfad0e207327",
+      "size": 461
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_cerrar_inactivo.png",
+      "sha1": "22b3071d4bb4b18e88e9248bc818a37cf8f5dc38",
+      "size": 457
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_mini.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_mini.png",
+      "sha1": "d857c5674f31da58d820fbb8d45f4a5b5ae509d1",
+      "size": 294
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_mini_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_mini_hover.png",
+      "sha1": "425e23dbcef4cbfee9c684378b714c328aa64192",
+      "size": 295
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_mini_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_mini_inactivo.png",
+      "sha1": "868ee4638816b483167a6f2e3f55ad6163d0bcc8",
+      "size": 291
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_panel.png",
+      "sha1": "7bf9ceff35cfa0f71c9235220195a1348681ed5c",
+      "size": 2954
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cas_panel_carrera.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cas_panel_carrera.png",
+      "sha1": "6cfeb765024d31a3f979dababed9b98e4d3da3ae",
+      "size": 2852
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_aceptar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png",
+      "sha1": "5c64b595d9c985b588b93aab91d0faa7811c2936",
+      "size": 426
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png",
+      "sha1": "2604e22f3f1e73cac4b58f83b8e6e9914c7d0806",
+      "size": 420
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png",
+      "sha1": "6b2a5e6efe23670c6fb33f21a6217ac6c752fdc0",
+      "size": 423
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_ancho.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_ancho.png",
+      "sha1": "4efd4e8397be67735a4c132248d164e96590289a",
+      "size": 637
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_ancho_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_ancho_hover.png",
+      "sha1": "4a8d541074d9fdc72ddda2c7855937ba423df66e",
+      "size": 627
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_ancho_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_ancho_inactivo.png",
+      "sha1": "5419a31c492416f6219cb58482f12249b74322ce",
+      "size": 632
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_ancho_principal.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_ancho_principal.png",
+      "sha1": "54dbdb30e256398a83a004e50750487d22dfde89",
+      "size": 635
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_ancho_principal_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_ancho_principal_hover.png",
+      "sha1": "6222e5ac272cf798cd73246ebf85fb221631c567",
+      "size": 627
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_ancho_principal_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_ancho_principal_inactivo.png",
+      "sha1": "5419a31c492416f6219cb58482f12249b74322ce",
+      "size": 632
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_cerrar.png",
+      "sha1": "27899e09a0422a658d65e6373c4a8d5f86786ed2",
+      "size": 466
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_cerrar_hover.png",
+      "sha1": "cc28b24bf0350fdbfa77c002eb90f16faf5761bd",
+      "size": 456
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_cerrar_inactivo.png",
+      "sha1": "8eab9f7ceb9ffec43140a054c9f67d46cf12e370",
+      "size": 460
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_conf_no.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_conf_no.png",
+      "sha1": "c9cb32544e0fd5e99a99e39ef13afcab82c1878c",
+      "size": 447
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_conf_no_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_conf_no_hover.png",
+      "sha1": "167109cb6cd6cda72907840f6d83aa20afd912fe",
+      "size": 440
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_conf_no_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_conf_no_inactivo.png",
+      "sha1": "0075145287d32d7dce11a05d8403c2e69c323b18",
+      "size": 443
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_enviar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_enviar.png",
+      "sha1": "f29e62a0a9de388b6ddb108e85e9ad6d30b9fdaa",
+      "size": 448
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_enviar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_enviar_hover.png",
+      "sha1": "8be9873b0ad4bd6ea74bf4560dc4ba2d79f0731c",
+      "size": 443
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_enviar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_enviar_inactivo.png",
+      "sha1": "41405dd913ffa0dd8cf9db20b992c1e19e107bce",
+      "size": 445
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_etq.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_etq.png",
+      "sha1": "0b33c034bd30806137728f1b571b9ae6954a7701",
+      "size": 406
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_etq_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_etq_hover.png",
+      "sha1": "963c460feec36e6d3e50941aa527adbdf25ef285",
+      "size": 394
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_etq_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_etq_inactivo.png",
+      "sha1": "913c744541e8189094a288d0b25a4837609b5eb2",
+      "size": 402
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_flecha.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_flecha.png",
+      "sha1": "faf7becec1324059a985b17dc5c086b16fe9aa08",
+      "size": 159
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_flecha_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_flecha_hover.png",
+      "sha1": "00ffe5696535d081e0e0d95b9d8a438ba9320f31",
+      "size": 161
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_flecha_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_flecha_inactivo.png",
+      "sha1": "588dd9060d05e95ddc02bc1ec6d52a2f1dd02bf6",
+      "size": 160
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_inv.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_inv.png",
+      "sha1": "b3ea2641ffc31f67356ac878232cf1c0c2f0a83a",
+      "size": 456
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_inv_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_inv_hover.png",
+      "sha1": "4b3631372be440c18e36d3e9910593efc83c06c8",
+      "size": 450
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_inv_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_inv_inactivo.png",
+      "sha1": "f78c27c2077b9273fad8deb25a3d730590a47076",
+      "size": 453
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_invitar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_invitar.png",
+      "sha1": "0ae4e391e5209627b1c86b4056edeb293e02e7d6",
+      "size": 651
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_invitar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_invitar_hover.png",
+      "sha1": "f5ef9f1d2757dd436d31f54611741c5af07337fd",
+      "size": 643
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_invitar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_invitar_inactivo.png",
+      "sha1": "a5f1cb4062e98efbb38fe8187d881430109fd1ab",
+      "size": 647
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_medio.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_medio.png",
+      "sha1": "3a1152bd6cb0502150e293e8067cd55b089f965b",
+      "size": 473
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_medio_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_medio_hover.png",
+      "sha1": "4017d1e7b29c7b3077e87871dbc769d6ffd1f589",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_medio_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_medio_inactivo.png",
+      "sha1": "6f1960b18784e0e2c5019991af7d9f6900fea319",
+      "size": 468
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_mini.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_mini.png",
+      "sha1": "2a453ff671a77a8b10edaea282c00e4c0c2506d7",
+      "size": 134
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_mini_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_mini_hover.png",
+      "sha1": "8cd795e1004981134c47c888747945c3db9e193c",
+      "size": 134
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_mini_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_mini_inactivo.png",
+      "sha1": "61a4d3e5c77c848756bdadddc4c4627cc351979f",
+      "size": 134
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_no.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_no.png",
+      "sha1": "dd9ef1b9964dd07d1dfc192b7c4c8da8b6e3ab97",
+      "size": 161
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_no_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png",
+      "sha1": "65c187818a85efc7bbe60f12c6abfeff463257ed",
+      "size": 162
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png",
+      "sha1": "f95ae19b92c71b41947f050a2cd79da3533b2fe1",
+      "size": 161
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_pedir.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_pedir.png",
+      "sha1": "0065b2dd102a779d5df21c4dae49198b9c4783c2",
+      "size": 500
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png",
+      "sha1": "ad05397d54fb7e6c1039fd74c20e9b2dbdd817e4",
+      "size": 495
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png",
+      "sha1": "6e04e5f96ea54c6b4b7bcc620ab1c4b365ca3498",
+      "size": 496
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_si.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_si.png",
+      "sha1": "fd919732221927bcadc91d11a6ff949ab4f73a9f",
+      "size": 416
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_si_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_si_hover.png",
+      "sha1": "3b4e53fa7082f5c49f65b0728d92cc45a95941f6",
+      "size": 410
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_si_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_si_inactivo.png",
+      "sha1": "b91fc8833eae4fd18feed251bab88bb1fc220536",
+      "size": 413
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_sol.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_sol.png",
+      "sha1": "711b3bdb5d476a18358a70c04343034dded6a6b8",
+      "size": 504
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_sol_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_sol_hover.png",
+      "sha1": "647358f5221a20cdfd60e218e9d4f7adb30f62ac",
+      "size": 493
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_boton_sol_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_boton_sol_inactivo.png",
+      "sha1": "7696c925a89ae66af7cff3b812f58368f5350f0a",
+      "size": 499
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_6.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_6.png",
+      "sha1": "e5b88cfdd764e9640fda54effe5fd09d0cbceca4",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_6_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_6_hover.png",
+      "sha1": "24568ac2369a2e110c3913b7c4667a2c6a407245",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_6_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_6_inactivo.png",
+      "sha1": "8d5ef152e1132d16dab6062ef3ccf36ebeb8b066",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_9.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_9.png",
+      "sha1": "d31d59472595483874d52fd169131adaf2ba723a",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_9_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_9_hover.png",
+      "sha1": "1b17f024d896179bd49e659347e9c95cab1da9ba",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_9_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_9_inactivo.png",
+      "sha1": "ce9350d8a79bf46745e30878964971510cb32c49",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_a.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_a.png",
+      "sha1": "97d211021bddf6ece1b6585d238c885ff324a331",
+      "size": 100
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_a_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_a_hover.png",
+      "sha1": "57110e541cb18d86429df0c47fc960b9e246f554",
+      "size": 100
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_a_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_a_inactivo.png",
+      "sha1": "bfb3c35d5739855ea16fc8923d19f4f39088e8a6",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_b.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_b.png",
+      "sha1": "2437fa3018e5529671c603df594eee5d205609a9",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_b_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_b_hover.png",
+      "sha1": "6dc4f0ae1a9c7e91cc3a80509e113eb18aa5749e",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_b_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_b_inactivo.png",
+      "sha1": "294a13b8303eba099555624a381c5bd94096dedf",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_c.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_c.png",
+      "sha1": "efb1b92a147807d0fce9a0782cfefd373105705f",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_c_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_c_hover.png",
+      "sha1": "6e203c78a8bb8b9f7e68c4e2fa05ad11475f21d0",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_c_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_c_inactivo.png",
+      "sha1": "982e7296787821c2d11183941983049d9076eacf",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_d.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_d.png",
+      "sha1": "7899d66213d148dca53f11c0044482343f5b2175",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_d_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_d_hover.png",
+      "sha1": "eed6459c5c3ecbeaeaea779b39732a9678ce2b99",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_d_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_d_inactivo.png",
+      "sha1": "d2e162e43c9a0c87a8d162dc4c5d2cb05c86023d",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_e.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_e.png",
+      "sha1": "490eb8c4b6cbba2c1a3ae6d4ef789dcda2ae5e1f",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_e_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_e_hover.png",
+      "sha1": "e2b927e69226b8447e261671a83c64010a5c7e81",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_e_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_e_inactivo.png",
+      "sha1": "959aebe86d9c027170eb9d0784d759b4ce78e17f",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_f.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_f.png",
+      "sha1": "026767d75bc13d16f60f166e05cf73e681f7be3b",
+      "size": 99
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_f_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_f_hover.png",
+      "sha1": "640cbf97243f7c5ba794266a901f515cad59d750",
+      "size": 99
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_f_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_f_inactivo.png",
+      "sha1": "fe8b357951447bd376e82849e2907212166b5229",
+      "size": 102
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_color_sel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_color_sel.png",
+      "sha1": "6ad53e980ff7f1470b1efd289bd1a4025aa734fc",
+      "size": 123
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_panel.png",
+      "sha1": "66510f127ca602e13864d8ce669219752b597d90",
+      "size": 3094
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_panel_chat.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_panel_chat.png",
+      "sha1": "6d3c3d5fb0493524c9fd6e33d422aca13c0c71b1",
+      "size": 2624
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_panel_invitar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_panel_invitar.png",
+      "sha1": "15fe0a4bdfffcc4d5af575f00d87480effdbfd54",
+      "size": 2970
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/clan_panel_nuevo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/clan_panel_nuevo.png",
+      "sha1": "faec13aaef6b8383b594e077f756ea41e81248a7",
+      "size": 3078
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_apostar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_apostar.png",
+      "sha1": "b774ed667f57b963fa9bf0b391e500500872be82",
+      "size": 474
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_apostar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_apostar_hover.png",
+      "sha1": "bfae876c6f9462b53e7f2f2427babfb9c8ce6b51",
+      "size": 471
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_apostar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_apostar_inactivo.png",
+      "sha1": "53238f472f389a20bc2870d9014ff8f33cc1f2f2",
+      "size": 466
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_b.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_b.png",
+      "sha1": "52f1f8da46765a13a94419bdb829c2cb9c41b901",
+      "size": 556
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_b_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_b_hover.png",
+      "sha1": "304e61281ba8b91810b13f1bd74dde68a4c1afcb",
+      "size": 553
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_b_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_b_inactivo.png",
+      "sha1": "ba9de9cae38ab7562e4b8e6ff3f975cadba83750",
+      "size": 549
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_cerrar.png",
+      "sha1": "c05732dbddb42f4a4ad58db5b1c426e5fc3b5150",
+      "size": 464
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_cerrar_hover.png",
+      "sha1": "3b1b1d2657ffb4fb91cccba54bef1c14bd97c989",
+      "size": 462
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_cerrar_inactivo.png",
+      "sha1": "3574ef4f92b8119b4bdbe1f51055b85dce99c498",
+      "size": 457
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_crear.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_crear.png",
+      "sha1": "9bc2f4ba5a0ce3919f19f3bfa664ee26f65c076e",
+      "size": 588
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_crear_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_crear_hover.png",
+      "sha1": "82bdfb85f18fc51a534b002a18fe1e1197602783",
+      "size": 586
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_crear_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_crear_inactivo.png",
+      "sha1": "2a5c2497064f049546a956e87e7fb170b4bec070",
+      "size": 581
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_kit.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_kit.png",
+      "sha1": "8c98694f1913c30e07c691c0d1960d53560c0752",
+      "size": 975
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_kit_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_kit_hover.png",
+      "sha1": "cddbc745d6eb52cd11c2570956ac1877bbb1c658",
+      "size": 982
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_kit_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_kit_inactivo.png",
+      "sha1": "8c98694f1913c30e07c691c0d1960d53560c0752",
+      "size": 975
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_kits_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_kits_panel.png",
+      "sha1": "abfc82b971ea26b5268a0ed393b28a3f6ae4e71c",
+      "size": 1261
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_panel.png",
+      "sha1": "fc99f9235d71b5ca8152899e19f41bf1dc829182",
+      "size": 3277
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_peq.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_peq.png",
+      "sha1": "0eacbf48e2da6da593550015f44f6bc144fba64e",
+      "size": 516
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_peq_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_peq_hover.png",
+      "sha1": "daa387fb99f3239373ddb2c9ace5301f9a026d4e",
+      "size": 514
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_peq_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_peq_inactivo.png",
+      "sha1": "3cf93acb0f9fc49796cba7496452486222e7712f",
+      "size": 508
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_tab.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_tab.png",
+      "sha1": "66034129af7f4ca670b0d76f33646ee1424a5076",
+      "size": 449
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_tab_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_tab_hover.png",
+      "sha1": "1c2c40955e0b1e212708e6c7efe23a97e958a6d0",
+      "size": 448
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/col_tab_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/col_tab_inactivo.png",
+      "sha1": "2ddfc844309618da4a176b5a952aa8b31deb5417",
+      "size": 443
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cr_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cr_cerrar.png",
+      "sha1": "2d47bba10d7e1731d01e8e394ecebf2ddf64f399",
+      "size": 464
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cr_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cr_cerrar_hover.png",
+      "sha1": "7ba449ca2ca6010afdacd50e83edbaeaf651a9c7",
+      "size": 445
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cr_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cr_cerrar_inactivo.png",
+      "sha1": "244dd8a6f2f13b801029dbfd93520a3be2a87a5d",
+      "size": 458
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cr_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cr_panel.png",
+      "sha1": "8e14eb8c4c1494b22361fa498bd78a563ee50386",
+      "size": 2623
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cr_slot.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cr_slot.png",
+      "sha1": "026e5c99c0da71c8a210f261e66ec0961ee99e18",
+      "size": 199
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/cr_slot_raro.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/cr_slot_raro.png",
+      "sha1": "21895efac443058edddddc3ff46e5554b9fcfa39",
+      "size": 194
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/fondo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/fondo.png",
+      "sha1": "48e0869dd3038644951d0ee12594814de78ac7f4",
+      "size": 237040
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/fondo_oscuro.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/fondo_oscuro.png",
+      "sha1": "bcfbde08c88e802e2bc4556b4ab2ae8f62442caf",
+      "size": 148167
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_cancelar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_cancelar.png",
+      "sha1": "a737e39678231f8ed73fd92553f6bdde459d3c1f",
+      "size": 614
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_cancelar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_cancelar_hover.png",
+      "sha1": "8bc7ef719d88b0f8300b0c8184a7beedb278e4e9",
+      "size": 607
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_cancelar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_cancelar_inactivo.png",
+      "sha1": "a60672a9809968019ac06783ff72dbfbf4913f36",
+      "size": 603
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_entrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_entrar.png",
+      "sha1": "97e807d41e963ed791c08aa7c663377c28295521",
+      "size": 655
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_entrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_entrar_hover.png",
+      "sha1": "65085b345046e75c5f1ebb4db0c68e920d863e90",
+      "size": 648
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_entrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_entrar_inactivo.png",
+      "sha1": "010ff78e8160a06c57f10a88309f173a789f85f4",
+      "size": 650
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/gr_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/gr_panel.png",
+      "sha1": "26d59f3608b86cd84cd98bddd455045b4dc2ec03",
+      "size": 3099
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/logo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/logo.png",
+      "sha1": "86b5d15a15eccead1e0bb263fd1a661cf014b8f3",
+      "size": 31035
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_ancho.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_ancho.png",
+      "sha1": "d66e9daff96590379a7775a9c0d377571f60133f",
+      "size": 219
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_ancho2.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_ancho2.png",
+      "sha1": "a798583497b2c91c8c336cc6bf750412aec7f973",
+      "size": 220
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_ancho2_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_ancho2_hover.png",
+      "sha1": "bec0a7695a69d5a3483f05393d30cdb993f283b7",
+      "size": 219
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_ancho2_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_ancho2_inactivo.png",
+      "sha1": "47dd501b855c9cc92eb15dda14a6ab4019fa4a73",
+      "size": 219
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_ancho_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_ancho_hover.png",
+      "sha1": "57855236350506684cd5ee771308c486edf3d4a5",
+      "size": 218
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_ancho_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_ancho_inactivo.png",
+      "sha1": "47dd501b855c9cc92eb15dda14a6ab4019fa4a73",
+      "size": 219
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_contacto.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_contacto.png",
+      "sha1": "2ceff80292bdbcd704f654ff6ad9acb243e68fe4",
+      "size": 172
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_contacto_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_contacto_hover.png",
+      "sha1": "f643aaf16f271be1694e2d6d91f965c3bc85aa44",
+      "size": 170
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_contacto_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_contacto_inactivo.png",
+      "sha1": "6324d6a60bb621bada70df09af830c7e0a3de4e9",
+      "size": 171
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_fino.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_fino.png",
+      "sha1": "e88030b7e874a66e8195b506174d680550cc9bf4",
+      "size": 198
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_fino_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_fino_hover.png",
+      "sha1": "123fdfc6e0cf826237d03061533ad2d6b3dbe415",
+      "size": 197
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_fino_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_fino_inactivo.png",
+      "sha1": "95a6d9488079a1e292df172ef4c0849ec89ea150",
+      "size": 197
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_flecha.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_flecha.png",
+      "sha1": "a80c9b2393a39099222b88d583ca9cc8c54f542b",
+      "size": 158
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_flecha_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_flecha_hover.png",
+      "sha1": "5dd22f781b7778aac07aa788f58ba502c357578a",
+      "size": 157
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_flecha_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_flecha_inactivo.png",
+      "sha1": "eb75f602fbed55c43cd27cef73be5dda306d0cdb",
+      "size": 157
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_mitad.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_mitad.png",
+      "sha1": "c7e574cbbd176cb1731aab3c5d18b2a7fa083991",
+      "size": 194
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_mitad2.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_mitad2.png",
+      "sha1": "c9e5d9af3a6a315c89855e228ba822249fb59c1d",
+      "size": 185
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_mitad2_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_mitad2_hover.png",
+      "sha1": "4165bfd1cf5a8b8de43d6750d7f78ccd5fab0136",
+      "size": 184
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_mitad2_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_mitad2_inactivo.png",
+      "sha1": "46feebc686af2899e01436cf39dd44a6a58ad11a",
+      "size": 184
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_mitad_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_mitad_hover.png",
+      "sha1": "685d64e8877c71fcff2a538b2757f63968bdf1d0",
+      "size": 192
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_mitad_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_mitad_inactivo.png",
+      "sha1": "315763de977cdc06c413af71d8aa12dbda7bda9b",
+      "size": 195
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_pagar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_pagar.png",
+      "sha1": "074d9663a08a8ca5d6edae89f85a69ab86444e65",
+      "size": 162
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_pagar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_pagar_hover.png",
+      "sha1": "2f34754e505b6e840cdcb003203fc35be2a8d9ad",
+      "size": 160
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_pagar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_pagar_inactivo.png",
+      "sha1": "aefd55c5baa9c3e87315e9a2a126745d87d04882",
+      "size": 162
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_rapido.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_rapido.png",
+      "sha1": "355072f831bb832574e154034683f545ba69d808",
+      "size": 158
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_rapido_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_rapido_hover.png",
+      "sha1": "0b79675a5fcc4454783b46b66c23eaefece268f0",
+      "size": 157
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_rapido_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_rapido_inactivo.png",
+      "sha1": "17612ebd1afdacadb05b9f889c6bf98564618c9d",
+      "size": 157
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_rechazar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_rechazar.png",
+      "sha1": "04652e9e1d3b4de73ebb9558fa8576dd620696d7",
+      "size": 163
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_rechazar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_rechazar_hover.png",
+      "sha1": "c185d8b169a25bc43c893011b7df5b420331566c",
+      "size": 162
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_b_rechazar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_b_rechazar_inactivo.png",
+      "sha1": "aefd55c5baa9c3e87315e9a2a126745d87d04882",
+      "size": 162
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_celular.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_celular.png",
+      "sha1": "85ebcbc2224ed69ccc8f3c9d802226931a0de4d7",
+      "size": 1613
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_fila.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_fila.png",
+      "sha1": "391eac735a0d20b9c66ee4f443a1962fac08a075",
+      "size": 243
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_mas.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_mas.png",
+      "sha1": "e1251664c3f0ac814bc7e001a7d313d3bcc794f2",
+      "size": 156
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_menos.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_menos.png",
+      "sha1": "8f1b706288594a99cc81f13b994b4973e0523b85",
+      "size": 156
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_tarjeta_saldo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_tarjeta_saldo.png",
+      "sha1": "b3f04f19870e32c87001dadd2f81242295f5528d",
+      "size": 357
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/necu_tarjeta_sol.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/necu_tarjeta_sol.png",
+      "sha1": "dc6713b340b1f67fda22ddd8121ee3550229a41b",
+      "size": 304
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton.png",
+      "sha1": "1dd6d6c543943f59bd3552a2731032c3832a7ff8",
+      "size": 504
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_ancho.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_ancho.png",
+      "sha1": "ed1b08d2c32e7afc9c33f24cba27201f3b5af7ef",
+      "size": 613
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_ancho_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_ancho_hover.png",
+      "sha1": "d69cb51fb540d38b60864d59593a08e9efe25398",
+      "size": 602
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_ancho_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_ancho_inactivo.png",
+      "sha1": "f30f7ff1ea833a17754f4099639e48bfd2130d87",
+      "size": 608
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal.png",
+      "sha1": "08e2c1347943519265b9ced105e00d1ff4820b90",
+      "size": 611
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal_hover.png",
+      "sha1": "ffe9ec648455f1bfbfad42298d87364e78f1ad6e",
+      "size": 603
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal_inactivo.png",
+      "sha1": "f30f7ff1ea833a17754f4099639e48bfd2130d87",
+      "size": 608
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_corto.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_corto.png",
+      "sha1": "705e76da9aba1b3504b9fd82763e72a1cab14dad",
+      "size": 459
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_corto_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_corto_hover.png",
+      "sha1": "80041828c03e8894cd5e8ad3572c7833980c8a3e",
+      "size": 449
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_corto_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_corto_inactivo.png",
+      "sha1": "f78c27c2077b9273fad8deb25a3d730590a47076",
+      "size": 453
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_hover.png",
+      "sha1": "b0fbf35fb9ce4965fcd12c14110809c7b78d5f91",
+      "size": 495
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_boton_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_boton_inactivo.png",
+      "sha1": "60761b7c9fd22468f2aea80af3df28fb8fcdd021",
+      "size": 499
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/nexo_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/nexo_panel.png",
+      "sha1": "6898b77c3763ec0920803da293746c847e2887e9",
+      "size": 3094
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_boton_ancho.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_boton_ancho.png",
+      "sha1": "da1240a30091610b6eb728175f582824045db796",
+      "size": 600
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_boton_ancho_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_boton_ancho_hover.png",
+      "sha1": "cd0b1e377b98098274f5e8d994f29f933420f40a",
+      "size": 598
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_boton_ancho_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_boton_ancho_inactivo.png",
+      "sha1": "a42e4b983ae7c1419edf593db5edef7e29747e33",
+      "size": 596
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_cerrar.png",
+      "sha1": "1f5ddf894611ab86f5907660a3817d2d7df9cc7b",
+      "size": 464
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_cerrar_hover.png",
+      "sha1": "74877d80be74d0e7dad384b64c777c50f71d8a0a",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_cerrar_inactivo.png",
+      "sha1": "e322f673e3569d689ce9dafe5b687edc86449f4b",
+      "size": 459
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_mas.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_mas.png",
+      "sha1": "42e283848195653af89afacdd014101457c685cf",
+      "size": 125
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_mas_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_mas_hover.png",
+      "sha1": "12ea7f2e879cc0ac39b878ad205d52162f53d57f",
+      "size": 124
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_mas_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_mas_inactivo.png",
+      "sha1": "abf1c35487e6dab67cd1f26d9db23412f3b8539d",
+      "size": 125
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_no.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_no.png",
+      "sha1": "90b8077d63e5df3649e2a3bdc977f6e32fa24f1d",
+      "size": 447
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_no_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_no_hover.png",
+      "sha1": "5120beed590a2c2b134e02942ea3b7fb5b1c86c2",
+      "size": 445
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_no_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_no_inactivo.png",
+      "sha1": "21d530f89398f23e97cf03715e114db94e852b8e",
+      "size": 442
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_panel.png",
+      "sha1": "6c67d86fd84ffd6d648de2f37895169bc69fbaf4",
+      "size": 2973
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_panel_oficios.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_panel_oficios.png",
+      "sha1": "0d24d256b749082c72f2d744568635c240fa7683",
+      "size": 2814
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pestana.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pestana.png",
+      "sha1": "23039eb0704e90628d5167829af45d9fe739b704",
+      "size": 185
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pestana_activa.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pestana_activa.png",
+      "sha1": "e9347e3e5c0122211cb3e4c171f8ba37f4f23f24",
+      "size": 187
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pestana_activa_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pestana_activa_hover.png",
+      "sha1": "e9347e3e5c0122211cb3e4c171f8ba37f4f23f24",
+      "size": 187
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pestana_activa_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pestana_activa_inactivo.png",
+      "sha1": "6adace21d99b7564be3708133d7df0e9fa6291db",
+      "size": 186
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pestana_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pestana_hover.png",
+      "sha1": "d186d6f6169f768ed679b9d369736ce6564564e6",
+      "size": 185
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pestana_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pestana_inactivo.png",
+      "sha1": "6adace21d99b7564be3708133d7df0e9fa6291db",
+      "size": 186
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pips_off.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pips_off.png",
+      "sha1": "d833e8a8fab23125ddb3523f9e31d2c98b456769",
+      "size": 118
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_pips_on.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_pips_on.png",
+      "sha1": "f6b45f874161c295dd4723e299da8958ee0d65c0",
+      "size": 115
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_si.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_si.png",
+      "sha1": "0f4808adbf1cadf30643053a70709805bb64de16",
+      "size": 416
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_si_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_si_hover.png",
+      "sha1": "c094bf16f5a5358666c3c53e5c6bb23dba67479a",
+      "size": 412
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/pj_si_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/pj_si_inactivo.png",
+      "sha1": "fb3264dc6de17209dc6b71a1b45f14dab3697fe4",
+      "size": 412
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_b_grieta.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_b_grieta.png",
+      "sha1": "a1c55bef1decda3681d06e00f0718c23e3edcb79",
+      "size": 161
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png",
+      "sha1": "204344b1b1fd783d4f0ee4c854a4d869a87472d2",
+      "size": 160
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png",
+      "sha1": "285dea616ac0eecacfac6fa537b33bb6be67404b",
+      "size": 153
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_b_verde.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_b_verde.png",
+      "sha1": "2e73931982605d4535e40bb6bbf1cf367db760f8",
+      "size": 160
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png",
+      "sha1": "caba18f79346afd26c8ce130940be00f1e0a6a03",
+      "size": 158
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png",
+      "sha1": "285dea616ac0eecacfac6fa537b33bb6be67404b",
+      "size": 153
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_cerrar_grieta.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_cerrar_grieta.png",
+      "sha1": "4946131344066d5985f090bf49103bab8a4ee93a",
+      "size": 466
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_cerrar_grieta_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_cerrar_grieta_hover.png",
+      "sha1": "8a7f8146217119e7e02b53ef9c2cc513f34dc5db",
+      "size": 459
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_cerrar_grieta_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_cerrar_grieta_inactivo.png",
+      "sha1": "4946131344066d5985f090bf49103bab8a4ee93a",
+      "size": 466
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_cerrar_verde.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_cerrar_verde.png",
+      "sha1": "1676967eb4335b0997dabfdb5785e9bba4e27de9",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_cerrar_verde_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_cerrar_verde_hover.png",
+      "sha1": "09dbdcf6f68f32568a85cc2822da3753650ff1c7",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_cerrar_verde_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_cerrar_verde_inactivo.png",
+      "sha1": "1676967eb4335b0997dabfdb5785e9bba4e27de9",
+      "size": 463
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_panel_grieta.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_panel_grieta.png",
+      "sha1": "15105a5e63f5567985fac694ad4807b8153d3dbd",
+      "size": 2668
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_panel_verde.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_panel_verde.png",
+      "sha1": "c099857672ad3408699d0634029b30199033c498",
+      "size": 2569
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png",
+      "sha1": "cd24366c6b10424f7a5fabc4c7753bf8eacf33ee",
+      "size": 268
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png",
+      "sha1": "c3aee61549bf4f6fadc4dbb476a52867500183cd",
+      "size": 268
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_b.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_b.png",
+      "sha1": "d9fa5f8f2e81febf61c6387c3e0d3429c0509ce3",
+      "size": 509
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_b_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_b_hover.png",
+      "sha1": "32164933190cd09b17a2a69455ff5239fcdc29e6",
+      "size": 513
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_b_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_b_inactivo.png",
+      "sha1": "72a6e3ea599293a764f6cd6637a59eab439f6c88",
+      "size": 501
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_cerrar.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_cerrar.png",
+      "sha1": "468f5026992d88aa30e52def64d0c0496b9f639b",
+      "size": 457
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_cerrar_hover.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_cerrar_hover.png",
+      "sha1": "8bbd324b57e2f5d8b6dfae5048ab1a4958f7d0ff",
+      "size": 461
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_cerrar_inactivo.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_cerrar_inactivo.png",
+      "sha1": "d42e6a0bf1a579f8517a85eadcbc9995d6ce8213",
+      "size": 449
+    },
+    {
+      "path": "config/fancymenu/assets/nexosmc/tut_panel.png",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/assets/nexosmc/tut_panel.png",
+      "sha1": "19e8f7bb120b113290b887e0121fec20bb73fc60",
+      "size": 2619
+    },
+    {
+      "path": "config/fancymenu/customization/nexosadmin_panel.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosadmin_panel.txt",
+      "sha1": "90a3331c16c247825efce88c767acf8703b90c95",
+      "size": 110793
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_bounty.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_bounty.txt",
+      "sha1": "3277767049799f7b4faef6712aa901f2c07133a4",
+      "size": 42504
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_cambio.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_cambio.txt",
+      "sha1": "e66e2eae3a4801a2d6529c4db44f51dd8a3d5df5",
+      "size": 16131
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_cargando.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_cargando.txt",
+      "sha1": "eb36f8d4e50c6476427b207d3cc9e281fd6e451d",
+      "size": 1070
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_cargando_mundo.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_cargando_mundo.txt",
+      "sha1": "2c7d41db955fc1355b93ca2a039cf075acfb02ed",
+      "size": 1064
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_carrera.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_carrera.txt",
+      "sha1": "1a2b7c8b7923097c104363ccebee8cd8a7387b25",
+      "size": 45005
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_clan.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_clan.txt",
+      "sha1": "2ac823ac420e53367cc642f354d17cf74161ee6f",
+      "size": 198920
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_clan_nuevo.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_clan_nuevo.txt",
+      "sha1": "2334f1f8c71493745f74a8fae4d3c2255f1b024f",
+      "size": 67415
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_coliseo.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_coliseo.txt",
+      "sha1": "5fde2730745a1b2e667a1af3baf8c874868f8ab1",
+      "size": 125554
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_conectando.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_conectando.txt",
+      "sha1": "e718abfb006bf003d57aca724448d27ab76251ce",
+      "size": 1046
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_crate.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_crate.txt",
+      "sha1": "0b3c3b1aba93eb47a1ce546e671701d9ded6b09a",
+      "size": 77754
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_desconectado.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_desconectado.txt",
+      "sha1": "a7c4f5a00ca2ba241ed2361c6745a2b1614b4de0",
+      "size": 1061
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_grieta.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_grieta.txt",
+      "sha1": "fe8d98c6f260976621907d4091f551382e69be2e",
+      "size": 12413
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_mensaje.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_mensaje.txt",
+      "sha1": "4dd23ea288b27fa088e0280e3f60b2296b4fc0e9",
+      "size": 1085
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_mods.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_mods.txt",
+      "sha1": "badff862d1ec48cbdf22d83b421662c16547605e",
+      "size": 741
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_multijugador.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_multijugador.txt",
+      "sha1": "7c76ca647d7787375eebbf2d82a77bc872f58993",
+      "size": 693
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_necu.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_necu.txt",
+      "sha1": "80ead30af0e3ce901afdc017f43eb9b7391b6bd4",
+      "size": 111871
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_nexo.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_nexo.txt",
+      "sha1": "cb915d7063af183f914037ff5b5f26df2af507f9",
+      "size": 42929
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_accesibilidad.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_accesibilidad.txt",
+      "sha1": "54f856df390e6d85469c4eefd9cb82b7ca167db8",
+      "size": 703
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_chat.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_chat.txt",
+      "sha1": "00e20f689863756cbc8607894e6c39d0d28dd01f",
+      "size": 685
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_controles.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_controles.txt",
+      "sha1": "2e4595eb4a2576b5926575b74d57ebb2d6c4f397",
+      "size": 677
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_fuente.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_fuente.txt",
+      "sha1": "9ff82c4144fdba3d84ef2ababd8b3d669e1d27e7",
+      "size": 763
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_idioma.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_idioma.txt",
+      "sha1": "1ba7352ae28ab184c4e01df699394e16a38e7b39",
+      "size": 691
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_online.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_online.txt",
+      "sha1": "459f488c1334f41ce2473591c204d908445c2e80",
+      "size": 689
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_paquetes.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_paquetes.txt",
+      "sha1": "549411531f82d3ae987abb1cc3c457a8fb847db0",
+      "size": 689
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_raton.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_raton.txt",
+      "sha1": "4d7925287f239f32adf2f6b3e8785ac22cc7d76a",
+      "size": 689
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_skin.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_skin.txt",
+      "sha1": "e37e27cb9e2237ed395a2cd18a9b656ad5a4dc7d",
+      "size": 697
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_sonido.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_sonido.txt",
+      "sha1": "88d1c559b2654d7b662906ddc995f4fac5153641",
+      "size": 687
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_teclas.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_teclas.txt",
+      "sha1": "78bfdae600177cb1219c2a3308af8d4fc8be6b0a",
+      "size": 775
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opc_video.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opc_video.txt",
+      "sha1": "84b0e762db57784684a979fc30f159255a07f1ff",
+      "size": 689
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_opciones.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_opciones.txt",
+      "sha1": "a24401033d63a1802128604506db79cc62c43638",
+      "size": 675
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_personaje.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_personaje.txt",
+      "sha1": "17720c1a376569856fd82bdf6f698142087bcebc",
+      "size": 94336
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_progreso.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_progreso.txt",
+      "sha1": "a12ba40e39448e2d24b9628b4803df47e3f3e541",
+      "size": 1049
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_subasta.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_subasta.txt",
+      "sha1": "b704c991a4c4a1ab8c1345e1696dd2cf315fa4d9",
+      "size": 134914
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_tienda.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_tienda.txt",
+      "sha1": "8be31f83a4a2ac0f7137bc56d561ef699c550564",
+      "size": 136162
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_titulo.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_titulo.txt",
+      "sha1": "3449f4a629689dc32ef52913512a8f682cedd3f7",
+      "size": 6512
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_tutorial.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_tutorial.txt",
+      "sha1": "ecb44a1ddc6f356e8b26c1cc69628c51c93d8cf7",
+      "size": 17666
+    },
+    {
+      "path": "config/fancymenu/customization/nexosmc_un_jugador.txt",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/fancymenu/customization/nexosmc_un_jugador.txt",
+      "sha1": "f642a85204c7d95afb0de780cc3723ef398ce060",
+      "size": 685
+    },
+    {
+      "path": "config/inventoryprofilesnext/inventoryprofiles.json",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/config/inventoryprofilesnext/inventoryprofiles.json",
+      "sha1": "e079cbcb0ae7346f49ad05c8eff6c816643b9d23",
+      "size": 445
+    },
+    {
+      "path": "servers.dat",
+      "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/overrides/servers.dat",
+      "sha1": "b7baec6cb21ff03421f968501480658e6c80a121",
+      "size": 74,
+      "onlyIfMissing": true
+    }
+  ]
+}

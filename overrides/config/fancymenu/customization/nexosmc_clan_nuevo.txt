@@ -1,0 +1,1847 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_clan_nuevo
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1793174201816
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:]
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_panel_nuevo.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:]
+  source = ^^^%n%**CLANES**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #D9B8FF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -86
+  width = 116
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:]
+  source = **Crear un clan**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFC828
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -74
+  width = 116
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:]
+  source = Nombre (3 a 24 letras):
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #AAAAAA
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = fancymenu_customization_item_input_field
+  instance_identifier = nexo_fancymenu_customization_item_input_field_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -65
+  width = 108
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:]
+  linked_variable = clan_input_nombre
+  input_field_type = text
+  max_text_length = 24
+  hint_text = Nombre del clan
+  background_color = #140A24
+  border_color = #6A44A8
+  border_color_focused = #3EE6D8
+  text_color = #F0E6FF
+  hint_text_color = #7A6E90
+  navigatable = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -47
+  width = 116
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:]
+  source = Etiqueta (2 a 4 letras):
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #AAAAAA
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = fancymenu_customization_item_input_field
+  instance_identifier = nexo_fancymenu_customization_item_input_field_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -38
+  width = 44
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:]
+  linked_variable = clan_input_tag
+  input_field_type = text
+  max_text_length = 4
+  hint_text = TLK
+  background_color = #140A24
+  border_color = #6A44A8
+  border_color_focused = #3EE6D8
+  text_color = #F0E6FF
+  hint_text_color = #7A6E90
+  navigatable = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -112
+  y = -35
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:]
+  source = §{"placeholder":"getvariable","values":{"name":"clan_input_color"}}**[{"placeholder":"getvariable","values":{"name":"clan_input_tag"}}]**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -20
+  width = 116
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:]
+  source = Color:
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #AAAAAA
+  scale = 0.75
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:]
+  label = 
+  description = Rojo
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_c.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_c_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_c_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_10_0][action_type:set_variable] = clan_input_color:c
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = clan_input_color:c
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -146
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:]
+  label = 
+  description = Naranja
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_6.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_6_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_6_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_12_0][action_type:set_variable] = clan_input_color:6
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -148
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = clan_input_color:6
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -132
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:]
+  label = 
+  description = Amarillo
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_e.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_e_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_e_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_14_0][action_type:set_variable] = clan_input_color:e
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -134
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = clan_input_color:e
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -118
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:]
+  label = 
+  description = Verde
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_a.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_a_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_a_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_16_0][action_type:set_variable] = clan_input_color:a
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = clan_input_color:a
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -104
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:]
+  label = 
+  description = Turquesa
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_b.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_b_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_b_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_18_0][action_type:set_variable] = clan_input_color:b
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -106
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = clan_input_color:b
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -90
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:]
+  label = 
+  description = Azul
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_9.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_9_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_9_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_20_0][action_type:set_variable] = clan_input_color:9
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = clan_input_color:9
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -76
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:]
+  label = 
+  description = Rosa
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_d.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_d_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_d_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_22_0][action_type:set_variable] = clan_input_color:d
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -78
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = clan_input_color:d
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -62
+  y = -10
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:]
+  label = 
+  description = Blanco
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_color_f.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_color_f_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_color_f_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_24_0][action_type:set_variable] = clan_input_color:f
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -64
+  y = -12
+  width = 16
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = clan_input_color:f
+  source = [source:local]/config/fancymenu/assets/nexosmc/clan_color_sel.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 8
+  width = 116
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:]
+  source = Así se verá sobre tu cabeza:
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #8C82A0
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 17
+  width = 116
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:]
+  source = §{"placeholder":"getvariable","values":{"name":"clan_input_color"}}[{"placeholder":"getvariable","values":{"name":"clan_input_tag"}}] §fTuNombre
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 31
+  width = 108
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:]
+  label = Crear clan
+  description = Crea el clan con ese nombre, etiqueta y color. Nombre y etiqueta no pueden estar repetidos.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_ancho_principal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_ancho_principal_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_ancho_principal_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_28_0][action_type:sendmessage] = /clan crear {"placeholder":"getvariable","values":{"name":"clan_input_color"}} [{"placeholder":"getvariable","values":{"name":"clan_input_tag"}}] {"placeholder":"getvariable","values":{"name":"clan_input_nombre"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 55
+  width = 114
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:]
+  source = Serás el líder y recibirás un Nexo para proteger vuestra base.
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #8C82A0
+  scale = 0.7
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -86
+  width = 110
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:]
+  source = **Clanes**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #C9A8FF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -86
+  width = 100
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:]
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"clan_lpag_txt"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -66
+  width = 196
+  height = 36
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = clan_sin_lista:1
+  source = No hay clanes con gente conectada. ¡Crea el tuyo!
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #8C82A0
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -73
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = clan_l1:1
+  source = **{"placeholder":"getvariable","values":{"name":"clan_l1_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -63
+  width = 122
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = clan_l1:1
+  source = {"placeholder":"getvariable","values":{"name":"clan_l1_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 82
+  y = -72
+  width = 48
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;vis_35_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = clan_l1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_1] = clan_l1_inv:1
+  label = Aceptar
+  description = Te han invitado: unirte a este clan.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_35_0][action_type:sendmessage] = /clan aceptar {"placeholder":"getvariable","values":{"name":"clan_l1_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 134
+  y = -72
+  width = 26
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;vis_36_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = clan_l1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_1] = clan_l1_inv:1
+  label = ✖
+  description = Rechazar la invitación.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_36_0][action_type:sendmessage] = /clan rechazar {"placeholder":"getvariable","values":{"name":"clan_l1_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -72
+  width = 72
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;vis_37_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = clan_l1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_1] = clan_l1_pedir:1
+  label = {"placeholder":"getvariable","values":{"name":"clan_l1_pedir_txt"}}
+  description = Pedir entrar: el líder o un oficial lo aceptará o rechazará. Los clanes cerrados no aceptan solicitudes.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_37_0][action_type:sendmessage] = /clan pedir {"placeholder":"getvariable","values":{"name":"clan_l1_id"}}
+  widget_active_state_requirement_container_identifier = act_37
+  [loading_requirement_container_meta:act_37] = [groups:][instances:act_37_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_37_0] = clan_l1_pedir_ok:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -50
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = clan_l2:1
+  source = **{"placeholder":"getvariable","values":{"name":"clan_l2_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -40
+  width = 122
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = clan_l2:1
+  source = {"placeholder":"getvariable","values":{"name":"clan_l2_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 82
+  y = -49
+  width = 48
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;vis_40_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = clan_l2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_1] = clan_l2_inv:1
+  label = Aceptar
+  description = Te han invitado: unirte a este clan.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_40_0][action_type:sendmessage] = /clan aceptar {"placeholder":"getvariable","values":{"name":"clan_l2_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 134
+  y = -49
+  width = 26
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;vis_41_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = clan_l2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_1] = clan_l2_inv:1
+  label = ✖
+  description = Rechazar la invitación.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_41_0][action_type:sendmessage] = /clan rechazar {"placeholder":"getvariable","values":{"name":"clan_l2_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -49
+  width = 72
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:vis_42_0;vis_42_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_0] = clan_l2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_1] = clan_l2_pedir:1
+  label = {"placeholder":"getvariable","values":{"name":"clan_l2_pedir_txt"}}
+  description = Pedir entrar: el líder o un oficial lo aceptará o rechazará. Los clanes cerrados no aceptan solicitudes.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_42_0][action_type:sendmessage] = /clan pedir {"placeholder":"getvariable","values":{"name":"clan_l2_id"}}
+  widget_active_state_requirement_container_identifier = act_42
+  [loading_requirement_container_meta:act_42] = [groups:][instances:act_42_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_42_0] = clan_l2_pedir_ok:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -27
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:vis_43_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_0] = clan_l3:1
+  source = **{"placeholder":"getvariable","values":{"name":"clan_l3_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -17
+  width = 122
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = clan_l3:1
+  source = {"placeholder":"getvariable","values":{"name":"clan_l3_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 82
+  y = -26
+  width = 48
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:vis_45_0;vis_45_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_0] = clan_l3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_1] = clan_l3_inv:1
+  label = Aceptar
+  description = Te han invitado: unirte a este clan.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_45_0][action_type:sendmessage] = /clan aceptar {"placeholder":"getvariable","values":{"name":"clan_l3_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 134
+  y = -26
+  width = 26
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:vis_46_0;vis_46_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_0] = clan_l3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_1] = clan_l3_inv:1
+  label = ✖
+  description = Rechazar la invitación.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_46_0][action_type:sendmessage] = /clan rechazar {"placeholder":"getvariable","values":{"name":"clan_l3_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -26
+  width = 72
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:vis_47_0;vis_47_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_0] = clan_l3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_1] = clan_l3_pedir:1
+  label = {"placeholder":"getvariable","values":{"name":"clan_l3_pedir_txt"}}
+  description = Pedir entrar: el líder o un oficial lo aceptará o rechazará. Los clanes cerrados no aceptan solicitudes.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_47_0][action_type:sendmessage] = /clan pedir {"placeholder":"getvariable","values":{"name":"clan_l3_id"}}
+  widget_active_state_requirement_container_identifier = act_47
+  [loading_requirement_container_meta:act_47] = [groups:][instances:act_47_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_47_0] = clan_l3_pedir_ok:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -4
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:vis_48_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_0] = clan_l4:1
+  source = **{"placeholder":"getvariable","values":{"name":"clan_l4_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 6
+  width = 122
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:vis_49_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_0] = clan_l4:1
+  source = {"placeholder":"getvariable","values":{"name":"clan_l4_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_50
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 82
+  y = -3
+  width = 48
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_50
+  [loading_requirement_container_meta:vis_50] = [groups:][instances:vis_50_0;vis_50_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_0] = clan_l4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_1] = clan_l4_inv:1
+  label = Aceptar
+  description = Te han invitado: unirte a este clan.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_50_0][action_type:sendmessage] = /clan aceptar {"placeholder":"getvariable","values":{"name":"clan_l4_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_51
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 134
+  y = -3
+  width = 26
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_51
+  [loading_requirement_container_meta:vis_51] = [groups:][instances:vis_51_0;vis_51_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_0] = clan_l4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_1] = clan_l4_inv:1
+  label = ✖
+  description = Rechazar la invitación.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_51_0][action_type:sendmessage] = /clan rechazar {"placeholder":"getvariable","values":{"name":"clan_l4_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_52
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = -3
+  width = 72
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_52
+  [loading_requirement_container_meta:vis_52] = [groups:][instances:vis_52_0;vis_52_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_0] = clan_l4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_1] = clan_l4_pedir:1
+  label = {"placeholder":"getvariable","values":{"name":"clan_l4_pedir_txt"}}
+  description = Pedir entrar: el líder o un oficial lo aceptará o rechazará. Los clanes cerrados no aceptan solicitudes.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_52_0][action_type:sendmessage] = /clan pedir {"placeholder":"getvariable","values":{"name":"clan_l4_id"}}
+  widget_active_state_requirement_container_identifier = act_52
+  [loading_requirement_container_meta:act_52] = [groups:][instances:act_52_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_52_0] = clan_l4_pedir_ok:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_53
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 19
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_53
+  [loading_requirement_container_meta:vis_53] = [groups:][instances:vis_53_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_0] = clan_l5:1
+  source = **{"placeholder":"getvariable","values":{"name":"clan_l5_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_54
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 29
+  width = 122
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_54
+  [loading_requirement_container_meta:vis_54] = [groups:][instances:vis_54_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_0] = clan_l5:1
+  source = {"placeholder":"getvariable","values":{"name":"clan_l5_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_55
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 82
+  y = 20
+  width = 48
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_55
+  [loading_requirement_container_meta:vis_55] = [groups:][instances:vis_55_0;vis_55_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_0] = clan_l5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_1] = clan_l5_inv:1
+  label = Aceptar
+  description = Te han invitado: unirte a este clan.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_55_0][action_type:sendmessage] = /clan aceptar {"placeholder":"getvariable","values":{"name":"clan_l5_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_56
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 134
+  y = 20
+  width = 26
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_56
+  [loading_requirement_container_meta:vis_56] = [groups:][instances:vis_56_0;vis_56_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_0] = clan_l5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_1] = clan_l5_inv:1
+  label = ✖
+  description = Rechazar la invitación.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_56_0][action_type:sendmessage] = /clan rechazar {"placeholder":"getvariable","values":{"name":"clan_l5_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_57
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = 20
+  width = 72
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_57
+  [loading_requirement_container_meta:vis_57] = [groups:][instances:vis_57_0;vis_57_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_0] = clan_l5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_1] = clan_l5_pedir:1
+  label = {"placeholder":"getvariable","values":{"name":"clan_l5_pedir_txt"}}
+  description = Pedir entrar: el líder o un oficial lo aceptará o rechazará. Los clanes cerrados no aceptan solicitudes.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_57_0][action_type:sendmessage] = /clan pedir {"placeholder":"getvariable","values":{"name":"clan_l5_id"}}
+  widget_active_state_requirement_container_identifier = act_57
+  [loading_requirement_container_meta:act_57] = [groups:][instances:act_57_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_57_0] = clan_l5_pedir_ok:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_58
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 42
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_58
+  [loading_requirement_container_meta:vis_58] = [groups:][instances:vis_58_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_0] = clan_l6:1
+  source = **{"placeholder":"getvariable","values":{"name":"clan_l6_nombre"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_59
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 52
+  width = 122
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_59
+  [loading_requirement_container_meta:vis_59] = [groups:][instances:vis_59_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_0] = clan_l6:1
+  source = {"placeholder":"getvariable","values":{"name":"clan_l6_info"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_60
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 82
+  y = 43
+  width = 48
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_60
+  [loading_requirement_container_meta:vis_60] = [groups:][instances:vis_60_0;vis_60_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_0] = clan_l6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_1] = clan_l6_inv:1
+  label = Aceptar
+  description = Te han invitado: unirte a este clan.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_aceptar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_60_0][action_type:sendmessage] = /clan aceptar {"placeholder":"getvariable","values":{"name":"clan_l6_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_61
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 134
+  y = 43
+  width = 26
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_61
+  [loading_requirement_container_meta:vis_61] = [groups:][instances:vis_61_0;vis_61_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_0] = clan_l6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_1] = clan_l6_inv:1
+  label = ✖
+  description = Rechazar la invitación.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_no_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_61_0][action_type:sendmessage] = /clan rechazar {"placeholder":"getvariable","values":{"name":"clan_l6_id"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_62
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = 43
+  width = 72
+  height = 18
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_62
+  [loading_requirement_container_meta:vis_62] = [groups:][instances:vis_62_0;vis_62_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_0] = clan_l6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_1] = clan_l6_pedir:1
+  label = {"placeholder":"getvariable","values":{"name":"clan_l6_pedir_txt"}}
+  description = Pedir entrar: el líder o un oficial lo aceptará o rechazará. Los clanes cerrados no aceptan solicitudes.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_pedir_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_62_0][action_type:sendmessage] = /clan pedir {"placeholder":"getvariable","values":{"name":"clan_l6_id"}}
+  widget_active_state_requirement_container_identifier = act_62
+  [loading_requirement_container_meta:act_62] = [groups:][instances:act_62_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_62_0] = clan_l6_pedir_ok:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_63
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 54
+  y = 82
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_63
+  [loading_requirement_container_meta:vis_63] = [groups:][instances:vis_63_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_0] = clan_lpag_ant:1
+  label = ◀
+  description = Página anterior
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_flecha.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_flecha_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_flecha_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_63_0][action_type:sendmessage] = /clan lista {"placeholder":"getvariable","values":{"name":"clan_lpag_prev"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_64
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 78
+  y = 82
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_64
+  [loading_requirement_container_meta:vis_64] = [groups:][instances:vis_64_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_0] = clan_lpag_sig:1
+  label = ▶
+  description = Página siguiente
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_flecha.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_flecha_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_flecha_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_64_0][action_type:sendmessage] = /clan lista {"placeholder":"getvariable","values":{"name":"clan_lpag_next"}}
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_65
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_65
+  [loading_requirement_container_meta:vis_65] = [groups:][instances:]
+  label = Cerrar
+  description = Cerrar el menú (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/clan_boton_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_65_0][action_type:closegui] = 
+}

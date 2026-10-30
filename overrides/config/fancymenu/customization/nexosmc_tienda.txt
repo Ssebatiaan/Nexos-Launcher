@@ -1,0 +1,3337 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_tienda
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1793326308291
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:vis_1_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_1_0] = tienda_tema:verde
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_panel_verde.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:vis_2_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_2_0] = tienda_tema:verde
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"tienda_titulo"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFD86E
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:vis_3_0;vis_3_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_3_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_3_1] = t_1:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -79
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:vis_4_0;vis_4_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_1] = t_2:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:vis_5_0;vis_5_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_1] = t_3:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 83
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:vis_6_0;vis_6_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_1] = t_4:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:vis_7_0;vis_7_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_1] = t_5:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -79
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:vis_8_0;vis_8_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_1] = t_6:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:vis_9_0;vis_9_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_1] = t_7:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 83
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:vis_10_0;vis_10_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_1] = t_8:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;vis_11_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_1] = t_9:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -79
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:vis_12_0;vis_12_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_1] = t_10:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;vis_13_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_1] = t_11:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 83
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:vis_14_0;vis_14_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_1] = t_12:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_verde.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;vis_15_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_1] = t_1:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_15_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 1 1
+  widget_active_state_requirement_container_identifier = act_15
+  [loading_requirement_container_meta:act_15] = [groups:][instances:act_15_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_15_0] = t_1_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:vis_16_0;vis_16_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_1] = t_1:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_16_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 1 10
+  widget_active_state_requirement_container_identifier = act_16
+  [loading_requirement_container_meta:act_16] = [groups:][instances:act_16_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_16_0] = t_1_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;vis_17_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_1] = t_2:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_17_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 2 1
+  widget_active_state_requirement_container_identifier = act_17
+  [loading_requirement_container_meta:act_17] = [groups:][instances:act_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_17_0] = t_2_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;vis_18_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_1] = t_2:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_18_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 2 10
+  widget_active_state_requirement_container_identifier = act_18
+  [loading_requirement_container_meta:act_18] = [groups:][instances:act_18_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_18_0] = t_2_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;vis_19_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_1] = t_3:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_19_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 3 1
+  widget_active_state_requirement_container_identifier = act_19
+  [loading_requirement_container_meta:act_19] = [groups:][instances:act_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_19_0] = t_3_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;vis_20_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_1] = t_3:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_20_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 3 10
+  widget_active_state_requirement_container_identifier = act_20
+  [loading_requirement_container_meta:act_20] = [groups:][instances:act_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_20_0] = t_3_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;vis_21_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_1] = t_4:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_21_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 4 1
+  widget_active_state_requirement_container_identifier = act_21
+  [loading_requirement_container_meta:act_21] = [groups:][instances:act_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_21_0] = t_4_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 123
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;vis_22_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_1] = t_4:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_22_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 4 10
+  widget_active_state_requirement_container_identifier = act_22
+  [loading_requirement_container_meta:act_22] = [groups:][instances:act_22_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_22_0] = t_4_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;vis_23_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_1] = t_5:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_23_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 5 1
+  widget_active_state_requirement_container_identifier = act_23
+  [loading_requirement_container_meta:act_23] = [groups:][instances:act_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_23_0] = t_5_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;vis_24_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_1] = t_5:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_24_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 5 10
+  widget_active_state_requirement_container_identifier = act_24
+  [loading_requirement_container_meta:act_24] = [groups:][instances:act_24_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_24_0] = t_5_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;vis_25_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_1] = t_6:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_25_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 6 1
+  widget_active_state_requirement_container_identifier = act_25
+  [loading_requirement_container_meta:act_25] = [groups:][instances:act_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_25_0] = t_6_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;vis_26_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_1] = t_6:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_26_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 6 10
+  widget_active_state_requirement_container_identifier = act_26
+  [loading_requirement_container_meta:act_26] = [groups:][instances:act_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_26_0] = t_6_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;vis_27_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_1] = t_7:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_27_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 7 1
+  widget_active_state_requirement_container_identifier = act_27
+  [loading_requirement_container_meta:act_27] = [groups:][instances:act_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_27_0] = t_7_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;vis_28_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_1] = t_7:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_28_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 7 10
+  widget_active_state_requirement_container_identifier = act_28
+  [loading_requirement_container_meta:act_28] = [groups:][instances:act_28_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_28_0] = t_7_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;vis_29_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_1] = t_8:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_29_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 8 1
+  widget_active_state_requirement_container_identifier = act_29
+  [loading_requirement_container_meta:act_29] = [groups:][instances:act_29_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_29_0] = t_8_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 123
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;vis_30_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_1] = t_8:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_30_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 8 10
+  widget_active_state_requirement_container_identifier = act_30
+  [loading_requirement_container_meta:act_30] = [groups:][instances:act_30_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_30_0] = t_8_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;vis_31_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_1] = t_9:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_31_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 9 1
+  widget_active_state_requirement_container_identifier = act_31
+  [loading_requirement_container_meta:act_31] = [groups:][instances:act_31_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_31_0] = t_9_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;vis_32_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_1] = t_9:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_32_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 9 10
+  widget_active_state_requirement_container_identifier = act_32
+  [loading_requirement_container_meta:act_32] = [groups:][instances:act_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_32_0] = t_9_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;vis_33_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_1] = t_10:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_33_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 10 1
+  widget_active_state_requirement_container_identifier = act_33
+  [loading_requirement_container_meta:act_33] = [groups:][instances:act_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_33_0] = t_10_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;vis_34_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_1] = t_10:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_34_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 10 10
+  widget_active_state_requirement_container_identifier = act_34
+  [loading_requirement_container_meta:act_34] = [groups:][instances:act_34_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_34_0] = t_10_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;vis_35_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_1] = t_11:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_35_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 11 1
+  widget_active_state_requirement_container_identifier = act_35
+  [loading_requirement_container_meta:act_35] = [groups:][instances:act_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_35_0] = t_11_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;vis_36_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_1] = t_11:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_36_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 11 10
+  widget_active_state_requirement_container_identifier = act_36
+  [loading_requirement_container_meta:act_36] = [groups:][instances:act_36_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_36_0] = t_11_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;vis_37_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_1] = t_12:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_37_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 12 1
+  widget_active_state_requirement_container_identifier = act_37
+  [loading_requirement_container_meta:act_37] = [groups:][instances:act_37_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_37_0] = t_12_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 123
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;vis_38_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = tienda_tema:verde
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_1] = t_12:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_38_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 12 10
+  widget_active_state_requirement_container_identifier = act_38
+  [loading_requirement_container_meta:act_38] = [groups:][instances:act_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_38_0] = t_12_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = tienda_tema:verde
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_cerrar_verde.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_cerrar_verde_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_cerrar_verde_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_39_0][action_type:closegui] = 
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = tienda_tema:grieta
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_panel_grieta.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = tienda_tema:grieta
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"tienda_titulo"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #9CF6FF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:vis_42_0;vis_42_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_1] = t_1:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -79
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:vis_43_0;vis_43_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_1] = t_2:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;vis_44_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_1] = t_3:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 83
+  y = -74
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:vis_45_0;vis_45_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_1] = t_4:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:vis_46_0;vis_46_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_1] = t_5:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -79
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:vis_47_0;vis_47_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_1] = t_6:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:vis_48_0;vis_48_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_1] = t_7:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 83
+  y = -25
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:vis_49_0;vis_49_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_1] = t_8:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_50
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_50
+  [loading_requirement_container_meta:vis_50] = [groups:][instances:vis_50_0;vis_50_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_1] = t_9:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_51
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -79
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_51
+  [loading_requirement_container_meta:vis_51] = [groups:][instances:vis_51_0;vis_51_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_1] = t_10:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_52
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_52
+  [loading_requirement_container_meta:vis_52] = [groups:][instances:vis_52_0;vis_52_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_1] = t_11:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_53
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 83
+  y = 24
+  width = 78
+  height = 46
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_53
+  [loading_requirement_container_meta:vis_53] = [groups:][instances:vis_53_0;vis_53_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_1] = t_12:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/tienda_tarjeta_grieta.png
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_54
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_54
+  [loading_requirement_container_meta:vis_54] = [groups:][instances:vis_54_0;vis_54_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_1] = t_1:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_54_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 1 1
+  widget_active_state_requirement_container_identifier = act_54
+  [loading_requirement_container_meta:act_54] = [groups:][instances:act_54_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_54_0] = t_1_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_55
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_55
+  [loading_requirement_container_meta:vis_55] = [groups:][instances:vis_55_0;vis_55_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_1] = t_1:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_55_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 1 10
+  widget_active_state_requirement_container_identifier = act_55
+  [loading_requirement_container_meta:act_55] = [groups:][instances:act_55_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_55_0] = t_1_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_56
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_56
+  [loading_requirement_container_meta:vis_56] = [groups:][instances:vis_56_0;vis_56_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_1] = t_2:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_56_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 2 1
+  widget_active_state_requirement_container_identifier = act_56
+  [loading_requirement_container_meta:act_56] = [groups:][instances:act_56_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_56_0] = t_2_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_57
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_57
+  [loading_requirement_container_meta:vis_57] = [groups:][instances:vis_57_0;vis_57_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_1] = t_2:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_57_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 2 10
+  widget_active_state_requirement_container_identifier = act_57
+  [loading_requirement_container_meta:act_57] = [groups:][instances:act_57_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_57_0] = t_2_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_58
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_58
+  [loading_requirement_container_meta:vis_58] = [groups:][instances:vis_58_0;vis_58_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_1] = t_3:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_58_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 3 1
+  widget_active_state_requirement_container_identifier = act_58
+  [loading_requirement_container_meta:act_58] = [groups:][instances:act_58_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_58_0] = t_3_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_59
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_59
+  [loading_requirement_container_meta:vis_59] = [groups:][instances:vis_59_0;vis_59_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_1] = t_3:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_59_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 3 10
+  widget_active_state_requirement_container_identifier = act_59
+  [loading_requirement_container_meta:act_59] = [groups:][instances:act_59_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_59_0] = t_3_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_60
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_60
+  [loading_requirement_container_meta:vis_60] = [groups:][instances:vis_60_0;vis_60_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_1] = t_4:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_60_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 4 1
+  widget_active_state_requirement_container_identifier = act_60
+  [loading_requirement_container_meta:act_60] = [groups:][instances:act_60_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_60_0] = t_4_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_61
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 123
+  y = -44
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_61
+  [loading_requirement_container_meta:vis_61] = [groups:][instances:vis_61_0;vis_61_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_1] = t_4:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_61_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 4 10
+  widget_active_state_requirement_container_identifier = act_61
+  [loading_requirement_container_meta:act_61] = [groups:][instances:act_61_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_61_0] = t_4_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_62
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_62
+  [loading_requirement_container_meta:vis_62] = [groups:][instances:vis_62_0;vis_62_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_1] = t_5:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_62_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 5 1
+  widget_active_state_requirement_container_identifier = act_62
+  [loading_requirement_container_meta:act_62] = [groups:][instances:act_62_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_62_0] = t_5_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_63
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_63
+  [loading_requirement_container_meta:vis_63] = [groups:][instances:vis_63_0;vis_63_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_1] = t_5:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_63_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 5 10
+  widget_active_state_requirement_container_identifier = act_63
+  [loading_requirement_container_meta:act_63] = [groups:][instances:act_63_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_63_0] = t_5_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_64
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_64
+  [loading_requirement_container_meta:vis_64] = [groups:][instances:vis_64_0;vis_64_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_1] = t_6:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_64_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 6 1
+  widget_active_state_requirement_container_identifier = act_64
+  [loading_requirement_container_meta:act_64] = [groups:][instances:act_64_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_64_0] = t_6_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_65
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_65
+  [loading_requirement_container_meta:vis_65] = [groups:][instances:vis_65_0;vis_65_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_1] = t_6:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_65_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 6 10
+  widget_active_state_requirement_container_identifier = act_65
+  [loading_requirement_container_meta:act_65] = [groups:][instances:act_65_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_65_0] = t_6_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_66
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_66
+  [loading_requirement_container_meta:vis_66] = [groups:][instances:vis_66_0;vis_66_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_1] = t_7:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_66_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 7 1
+  widget_active_state_requirement_container_identifier = act_66
+  [loading_requirement_container_meta:act_66] = [groups:][instances:act_66_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_66_0] = t_7_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_67
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_67
+  [loading_requirement_container_meta:vis_67] = [groups:][instances:vis_67_0;vis_67_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_1] = t_7:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_67_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 7 10
+  widget_active_state_requirement_container_identifier = act_67
+  [loading_requirement_container_meta:act_67] = [groups:][instances:act_67_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_67_0] = t_7_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_68
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_68
+  [loading_requirement_container_meta:vis_68] = [groups:][instances:vis_68_0;vis_68_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_1] = t_8:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_68_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 8 1
+  widget_active_state_requirement_container_identifier = act_68
+  [loading_requirement_container_meta:act_68] = [groups:][instances:act_68_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_68_0] = t_8_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_69
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 123
+  y = 5
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_69
+  [loading_requirement_container_meta:vis_69] = [groups:][instances:vis_69_0;vis_69_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_1] = t_8:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_69_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 8 10
+  widget_active_state_requirement_container_identifier = act_69
+  [loading_requirement_container_meta:act_69] = [groups:][instances:act_69_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_69_0] = t_8_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_70
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_70
+  [loading_requirement_container_meta:vis_70] = [groups:][instances:vis_70_0;vis_70_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_1] = t_9:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_70_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 9 1
+  widget_active_state_requirement_container_identifier = act_70
+  [loading_requirement_container_meta:act_70] = [groups:][instances:act_70_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_70_0] = t_9_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_71
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -120
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_71
+  [loading_requirement_container_meta:vis_71] = [groups:][instances:vis_71_0;vis_71_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_71_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_71_1] = t_9:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_71_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 9 10
+  widget_active_state_requirement_container_identifier = act_71
+  [loading_requirement_container_meta:act_71] = [groups:][instances:act_71_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_71_0] = t_9_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_72
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_72
+  [loading_requirement_container_meta:vis_72] = [groups:][instances:vis_72_0;vis_72_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_1] = t_10:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_72_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 10 1
+  widget_active_state_requirement_container_identifier = act_72
+  [loading_requirement_container_meta:act_72] = [groups:][instances:act_72_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_72_0] = t_10_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_73
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_73
+  [loading_requirement_container_meta:vis_73] = [groups:][instances:vis_73_0;vis_73_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_1] = t_10:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_73_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 10 10
+  widget_active_state_requirement_container_identifier = act_73
+  [loading_requirement_container_meta:act_73] = [groups:][instances:act_73_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_73_0] = t_10_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_74
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_74
+  [loading_requirement_container_meta:vis_74] = [groups:][instances:vis_74_0;vis_74_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_1] = t_11:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_74_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 11 1
+  widget_active_state_requirement_container_identifier = act_74
+  [loading_requirement_container_meta:act_74] = [groups:][instances:act_74_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_74_0] = t_11_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_75
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_75
+  [loading_requirement_container_meta:vis_75] = [groups:][instances:vis_75_0;vis_75_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_1] = t_11:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_75_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 11 10
+  widget_active_state_requirement_container_identifier = act_75
+  [loading_requirement_container_meta:act_75] = [groups:][instances:act_75_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_75_0] = t_11_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_76
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_76
+  [loading_requirement_container_meta:vis_76] = [groups:][instances:vis_76_0;vis_76_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_1] = t_12:1
+  label = 1
+  description = Comprar 1
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_76_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 12 1
+  widget_active_state_requirement_container_identifier = act_76
+  [loading_requirement_container_meta:act_76] = [groups:][instances:act_76_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_76_0] = t_12_x1:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_77
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 123
+  y = 54
+  width = 34
+  height = 13
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_77
+  [loading_requirement_container_meta:vis_77] = [groups:][instances:vis_77_0;vis_77_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_0] = tienda_tema:grieta
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_1] = t_12:1
+  label = 10
+  description = Comprar 10
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_b_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 0.85
+  navigatable = true
+  [executable_action_instance:nexo_act_77_0][action_type:sendmessage] = /tienda comprar {"placeholder":"getvariable","values":{"name":"tienda_id"}} 12 10
+  widget_active_state_requirement_container_identifier = act_77
+  [loading_requirement_container_meta:act_77] = [groups:][instances:act_77_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_77_0] = t_12_x10:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_78
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_78
+  [loading_requirement_container_meta:vis_78] = [groups:][instances:vis_78_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_78_0] = tienda_tema:grieta
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/tienda_cerrar_grieta.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/tienda_cerrar_grieta_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/tienda_cerrar_grieta_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_78_0][action_type:closegui] = 
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_79
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = -90
+  width = 205
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_79
+  [loading_requirement_container_meta:vis_79] = [groups:][instances:]
+  source = {"placeholder":"getvariable","values":{"name":"tienda_saludo"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.68
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_80
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 40
+  y = -88
+  width = 120
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_80
+  [loading_requirement_container_meta:vis_80] = [groups:][instances:]
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"tienda_saldo"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_81
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = -70
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_81
+  [loading_requirement_container_meta:vis_81] = [groups:][instances:vis_81_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_0] = t_1:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_1_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_1_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_82
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -133
+  y = -70
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_82
+  [loading_requirement_container_meta:vis_82] = [groups:][instances:vis_82_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_0] = t_1:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_1_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_83
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -133
+  y = -54
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_83
+  [loading_requirement_container_meta:vis_83] = [groups:][instances:vis_83_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_83_0] = t_1:1
+  source = {"placeholder":"getvariable","values":{"name":"t_1_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_84
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = -70
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_84
+  [loading_requirement_container_meta:vis_84] = [groups:][instances:vis_84_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_0] = t_2:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_2_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_2_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_85
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = -70
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_85
+  [loading_requirement_container_meta:vis_85] = [groups:][instances:vis_85_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_0] = t_2:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_2_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_86
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = -54
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_86
+  [loading_requirement_container_meta:vis_86] = [groups:][instances:vis_86_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_0] = t_2:1
+  source = {"placeholder":"getvariable","values":{"name":"t_2_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_87
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -70
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_87
+  [loading_requirement_container_meta:vis_87] = [groups:][instances:vis_87_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_87_0] = t_3:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_3_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_3_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_88
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 29
+  y = -70
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_88
+  [loading_requirement_container_meta:vis_88] = [groups:][instances:vis_88_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_88_0] = t_3:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_3_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_89
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 29
+  y = -54
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_89
+  [loading_requirement_container_meta:vis_89] = [groups:][instances:vis_89_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_0] = t_3:1
+  source = {"placeholder":"getvariable","values":{"name":"t_3_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_90
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = -70
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_90
+  [loading_requirement_container_meta:vis_90] = [groups:][instances:vis_90_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_0] = t_4:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_4_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_4_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_91
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = -70
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_91
+  [loading_requirement_container_meta:vis_91] = [groups:][instances:vis_91_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_0] = t_4:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_4_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_92
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = -54
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_92
+  [loading_requirement_container_meta:vis_92] = [groups:][instances:vis_92_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_92_0] = t_4:1
+  source = {"placeholder":"getvariable","values":{"name":"t_4_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_93
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = -21
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_93
+  [loading_requirement_container_meta:vis_93] = [groups:][instances:vis_93_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_0] = t_5:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_5_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_5_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_94
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -133
+  y = -21
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_94
+  [loading_requirement_container_meta:vis_94] = [groups:][instances:vis_94_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_0] = t_5:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_5_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_95
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -133
+  y = -5
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_95
+  [loading_requirement_container_meta:vis_95] = [groups:][instances:vis_95_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_0] = t_5:1
+  source = {"placeholder":"getvariable","values":{"name":"t_5_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_96
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = -21
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_96
+  [loading_requirement_container_meta:vis_96] = [groups:][instances:vis_96_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_96_0] = t_6:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_6_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_6_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_97
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = -21
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_97
+  [loading_requirement_container_meta:vis_97] = [groups:][instances:vis_97_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_97_0] = t_6:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_6_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_98
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = -5
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_98
+  [loading_requirement_container_meta:vis_98] = [groups:][instances:vis_98_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_98_0] = t_6:1
+  source = {"placeholder":"getvariable","values":{"name":"t_6_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_99
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = -21
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_99
+  [loading_requirement_container_meta:vis_99] = [groups:][instances:vis_99_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_0] = t_7:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_7_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_7_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_100
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 29
+  y = -21
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_100
+  [loading_requirement_container_meta:vis_100] = [groups:][instances:vis_100_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_0] = t_7:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_7_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_101
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 29
+  y = -5
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_101
+  [loading_requirement_container_meta:vis_101] = [groups:][instances:vis_101_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_101_0] = t_7:1
+  source = {"placeholder":"getvariable","values":{"name":"t_7_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_102
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = -21
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_102
+  [loading_requirement_container_meta:vis_102] = [groups:][instances:vis_102_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_0] = t_8:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_8_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_8_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_103
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = -21
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_103
+  [loading_requirement_container_meta:vis_103] = [groups:][instances:vis_103_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_0] = t_8:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_8_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_104
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = -5
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_104
+  [loading_requirement_container_meta:vis_104] = [groups:][instances:vis_104_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_0] = t_8:1
+  source = {"placeholder":"getvariable","values":{"name":"t_8_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_105
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -156
+  y = 28
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_105
+  [loading_requirement_container_meta:vis_105] = [groups:][instances:vis_105_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_105_0] = t_9:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_9_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_9_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_106
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -133
+  y = 28
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_106
+  [loading_requirement_container_meta:vis_106] = [groups:][instances:vis_106_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_106_0] = t_9:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_9_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_107
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -133
+  y = 44
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_107
+  [loading_requirement_container_meta:vis_107] = [groups:][instances:vis_107_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_107_0] = t_9:1
+  source = {"placeholder":"getvariable","values":{"name":"t_9_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_108
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -75
+  y = 28
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_108
+  [loading_requirement_container_meta:vis_108] = [groups:][instances:vis_108_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_108_0] = t_10:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_10_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_10_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_109
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = 28
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_109
+  [loading_requirement_container_meta:vis_109] = [groups:][instances:vis_109_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_109_0] = t_10:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_10_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_110
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -52
+  y = 44
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_110
+  [loading_requirement_container_meta:vis_110] = [groups:][instances:vis_110_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_110_0] = t_10:1
+  source = {"placeholder":"getvariable","values":{"name":"t_10_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_111
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 6
+  y = 28
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_111
+  [loading_requirement_container_meta:vis_111] = [groups:][instances:vis_111_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_111_0] = t_11:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_11_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_11_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_112
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 29
+  y = 28
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_112
+  [loading_requirement_container_meta:vis_112] = [groups:][instances:vis_112_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_112_0] = t_11:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_11_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_113
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 29
+  y = 44
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_113
+  [loading_requirement_container_meta:vis_113] = [groups:][instances:vis_113_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_113_0] = t_11:1
+  source = {"placeholder":"getvariable","values":{"name":"t_11_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_114
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 87
+  y = 28
+  width = 20
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_114
+  [loading_requirement_container_meta:vis_114] = [groups:][instances:vis_114_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_114_0] = t_12:1
+  item_key = {"placeholder":"getvariable","values":{"name":"t_12_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"t_12_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_115
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = 28
+  width = 50
+  height = 24
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_115
+  [loading_requirement_container_meta:vis_115] = [groups:][instances:vis_115_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_115_0] = t_12:1
+  source = §f{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"t_12_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_116
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = 44
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_116
+  [loading_requirement_container_meta:vis_116] = [groups:][instances:vis_116_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_116_0] = t_12:1
+  source = {"placeholder":"getvariable","values":{"name":"t_12_precio"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_117
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 84
+  width = 240
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_117
+  [loading_requirement_container_meta:vis_117] = [groups:][instances:vis_117_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_117_0] = tienda_msg_on:1
+  source = {"placeholder":"getvariable","values":{"name":"tienda_msg"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}

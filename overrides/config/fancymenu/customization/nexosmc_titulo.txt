@@ -1,0 +1,249 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1792564418266
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+menu_background {
+  instance_identifier = nexosmc_fondo
+  background_type = image
+  image_path = [source:local]/config/fancymenu/assets/nexosmc/fondo.png
+  slide = false
+  repeat_texture = false
+  parallax = true
+  parallax_intensity_x = 0.015
+  parallax_intensity_y = 0.015
+  invert_parallax = true
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_singleplayer_button
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = top-left
+  x = 14
+  y = 10
+  width = 132
+  height = 20
+  stay_on_screen = true
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/boton_hover.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  navigatable = true
+  is_hidden = false
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_multiplayer_button
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = top-right
+  x = -146
+  y = 10
+  width = 132
+  height = 20
+  stay_on_screen = true
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/boton_hover.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  navigatable = true
+  is_hidden = false
+}
+
+element {
+  element_type = image
+  instance_identifier = nexosmc_logo
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = true
+  anchor_point = mid-centered
+  x = 0
+  y = -20
+  width = 340
+  height = 86
+  stay_on_screen = true
+  source = [source:local]/config/fancymenu/assets/nexosmc/logo.png
+  enable_parallax = true
+  parallax_intensity_x = 0.03
+  parallax_intensity_y = 0.03
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexosmc_entrar
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = true
+  anchor_point = mid-centered
+  x = 0
+  y = 46
+  width = 210
+  height = 26
+  stay_on_screen = true
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/boton_principal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/boton_principal_hover.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  navigatable = true
+  label = Jugar en Nexos MC
+  label_scale = 1.15
+  description = Entrar directamente al servidor (192.168.1.26:25565)
+  [executable_action_instance:nexosmc_entrar_accion][action_type:joinserver] = 192.168.1.26:25565
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = forge_titlescreen_mods_button
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = true
+  anchor_point = bottom-centered
+  x = -138
+  y = -12
+  width = 132
+  height = 20
+  stay_on_screen = true
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/boton_hover.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  navigatable = true
+  is_hidden = false
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_options_button
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = true
+  anchor_point = bottom-centered
+  x = 0
+  y = -12
+  width = 132
+  height = 20
+  stay_on_screen = true
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/boton_hover.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  navigatable = true
+  is_hidden = false
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_quit_button
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = true
+  anchor_point = bottom-centered
+  x = 138
+  y = -12
+  width = 132
+  height = 20
+  stay_on_screen = true
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/boton_hover.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  navigatable = true
+  is_hidden = false
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_realms_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_playdemo_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = 376366
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = 604366
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_language_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_accessibility_button
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_logo_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_splash_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_realms_notification_icons_widget
+  is_hidden = true
+}
+
+vanilla_button {
+  element_type = vanilla_button
+  instance_identifier = minecraft_branding_widget
+  is_hidden = true
+}

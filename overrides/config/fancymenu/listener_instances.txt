@@ -1,0 +1,33 @@
+type = listener_instances
+
+listener_instance {
+  listener_instance_identifier = nexosmc_chat_enter
+  listener_provider_identifier = keyboard_key_pressed
+  listener_instance_action_script_identifier = nexosmc_chat_enter_script
+  listener_instance_display_name = Nexos MC: enter envia el chat del clan
+  [executable_block:nexosmc_chat_enter_script][type:generic] = [executables:nexosmc_chat_enter_if;]
+  [executable_block:nexosmc_chat_enter_if][type:if] = [executables:nexosmc_chat_enter_send;nexosmc_chat_enter_clear;]
+  [if_executable_block_body:nexosmc_chat_enter_if] = nexosmc_chat_enter_req
+  [if_executable_block_collapsed:nexosmc_chat_enter_if] = false
+  [loading_requirement_container_meta:nexosmc_chat_enter_req] = [groups:][instances:nexosmc_chat_enter_tecla;nexosmc_chat_enter_foco;]
+  [loading_requirement:is_key_pressed][requirement_mode:if][req_id:nexosmc_chat_enter_tecla] = 257
+  [loading_requirement:is_element_focused][requirement_mode:if][req_id:nexosmc_chat_enter_foco] = nexosmc_clan_chat_input
+  [executable_action_instance:nexosmc_chat_enter_send][action_type:sendmessage] = /clan chat {"placeholder":"getvariable","values":{"name":"clan_chat_txt"}}
+  [executable_action_instance:nexosmc_chat_enter_clear][action_type:set_variable] = clan_chat_txt:
+}
+
+listener_instance {
+  listener_instance_identifier = nexosmc_chat_enter_numerico
+  listener_provider_identifier = keyboard_key_pressed
+  listener_instance_action_script_identifier = nexosmc_chat_enter_numerico_script
+  listener_instance_display_name = Nexos MC: enter_numerico envia el chat del clan
+  [executable_block:nexosmc_chat_enter_numerico_script][type:generic] = [executables:nexosmc_chat_enter_numerico_if;]
+  [executable_block:nexosmc_chat_enter_numerico_if][type:if] = [executables:nexosmc_chat_enter_numerico_send;nexosmc_chat_enter_numerico_clear;]
+  [if_executable_block_body:nexosmc_chat_enter_numerico_if] = nexosmc_chat_enter_numerico_req
+  [if_executable_block_collapsed:nexosmc_chat_enter_numerico_if] = false
+  [loading_requirement_container_meta:nexosmc_chat_enter_numerico_req] = [groups:][instances:nexosmc_chat_enter_numerico_tecla;nexosmc_chat_enter_numerico_foco;]
+  [loading_requirement:is_key_pressed][requirement_mode:if][req_id:nexosmc_chat_enter_numerico_tecla] = 335
+  [loading_requirement:is_element_focused][requirement_mode:if][req_id:nexosmc_chat_enter_numerico_foco] = nexosmc_clan_chat_input
+  [executable_action_instance:nexosmc_chat_enter_numerico_send][action_type:sendmessage] = /clan chat {"placeholder":"getvariable","values":{"name":"clan_chat_txt"}}
+  [executable_action_instance:nexosmc_chat_enter_numerico_clear][action_type:set_variable] = clan_chat_txt:
+}

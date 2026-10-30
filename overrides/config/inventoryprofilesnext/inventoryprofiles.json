@@ -1,0 +1,16 @@
+{
+    "ModSettings": {
+        "first_run": false,
+        "enable_profiles": false,
+        "enable_lock_slots": false
+    },
+    "GuiSettings": {
+        "enable_profiles_ui": false,
+        "enable_inventory_settings_button": false,
+        "enable_inventory_editor_button": false
+    },
+    "AutoRefillSettings": {
+        "visual_replace_failed_notification": false,
+        "audio_replace_failed_notification": false
+    }
+}

@@ -1,0 +1,2349 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_crate
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1792183143473
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:]
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_panel.png
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_titulo"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #E6F5FF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -88
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_llave"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:vis_4_0;vis_4_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_0] = cr_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_4_1] = cr_1_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:vis_5_0;vis_5_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_0] = cr_1:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_5_1] = cr_1_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -136
+  y = -66
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:vis_6_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_6_0] = cr_1:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_1_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_1_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = -50
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:vis_7_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_7_0] = cr_1:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_1_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -150
+  y = -36
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:vis_8_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_8_0] = cr_1:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_1_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:vis_9_0;vis_9_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_0] = cr_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_9_1] = cr_2_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:vis_10_0;vis_10_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_0] = cr_2:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_10_1] = cr_2_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -86
+  y = -66
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:vis_11_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_11_0] = cr_2:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_2_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_2_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -50
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:vis_12_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_12_0] = cr_2:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_2_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -100
+  y = -36
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:vis_13_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_13_0] = cr_2:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_2_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:vis_14_0;vis_14_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_0] = cr_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_14_1] = cr_3_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:vis_15_0;vis_15_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_0] = cr_3:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_15_1] = cr_3_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -36
+  y = -66
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:vis_16_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_16_0] = cr_3:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_3_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_3_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = -50
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:vis_17_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_17_0] = cr_3:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_3_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = -36
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = cr_3:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_3_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;vis_19_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = cr_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_1] = cr_4_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;vis_20_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = cr_4:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_1] = cr_4_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -66
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = cr_4:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_4_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_4_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = -50
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = cr_4:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_4_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 0
+  y = -36
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = cr_4:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_4_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;vis_24_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = cr_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_1] = cr_5_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;vis_25_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = cr_5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_1] = cr_5_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 64
+  y = -66
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = cr_5:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_5_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_5_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -50
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = cr_5:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_5_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 50
+  y = -36
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = cr_5:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_5_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;vis_29_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = cr_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_1] = cr_6_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = -72
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;vis_30_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = cr_6:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_1] = cr_6_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 114
+  y = -66
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = cr_6:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_6_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_6_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = -50
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = cr_6:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_6_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 100
+  y = -36
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = cr_6:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_6_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;vis_34_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = cr_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_1] = cr_7_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;vis_35_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = cr_7:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_1] = cr_7_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -136
+  y = -17
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = cr_7:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_7_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_7_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = -1
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = cr_7:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_7_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -150
+  y = 13
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = cr_7:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_7_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;vis_39_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = cr_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_1] = cr_8_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;vis_40_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = cr_8:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_1] = cr_8_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -86
+  y = -17
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = cr_8:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_8_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_8_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = -1
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:vis_42_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_42_0] = cr_8:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_8_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -100
+  y = 13
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:vis_43_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_43_0] = cr_8:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_8_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:vis_44_0;vis_44_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_0] = cr_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_44_1] = cr_9_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:vis_45_0;vis_45_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_0] = cr_9:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_45_1] = cr_9_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -36
+  y = -17
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:vis_46_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_46_0] = cr_9:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_9_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_9_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = -1
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:vis_47_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_47_0] = cr_9:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_9_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = 13
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:vis_48_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_48_0] = cr_9:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_9_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:vis_49_0;vis_49_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_0] = cr_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_49_1] = cr_10_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_50
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_50
+  [loading_requirement_container_meta:vis_50] = [groups:][instances:vis_50_0;vis_50_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_0] = cr_10:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_50_1] = cr_10_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_51
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = -17
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_51
+  [loading_requirement_container_meta:vis_51] = [groups:][instances:vis_51_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_51_0] = cr_10:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_10_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_10_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_52
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = -1
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_52
+  [loading_requirement_container_meta:vis_52] = [groups:][instances:vis_52_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_52_0] = cr_10:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_10_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_53
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 0
+  y = 13
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_53
+  [loading_requirement_container_meta:vis_53] = [groups:][instances:vis_53_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_53_0] = cr_10:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_10_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_54
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_54
+  [loading_requirement_container_meta:vis_54] = [groups:][instances:vis_54_0;vis_54_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_0] = cr_11:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_54_1] = cr_11_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_55
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_55
+  [loading_requirement_container_meta:vis_55] = [groups:][instances:vis_55_0;vis_55_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_0] = cr_11:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_55_1] = cr_11_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_56
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 64
+  y = -17
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_56
+  [loading_requirement_container_meta:vis_56] = [groups:][instances:vis_56_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_56_0] = cr_11:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_11_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_11_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_57
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = -1
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_57
+  [loading_requirement_container_meta:vis_57] = [groups:][instances:vis_57_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_57_0] = cr_11:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_11_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_58
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 50
+  y = 13
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_58
+  [loading_requirement_container_meta:vis_58] = [groups:][instances:vis_58_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_58_0] = cr_11:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_11_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_59
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_59
+  [loading_requirement_container_meta:vis_59] = [groups:][instances:vis_59_0;vis_59_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_0] = cr_12:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_59_1] = cr_12_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_60
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = -23
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_60
+  [loading_requirement_container_meta:vis_60] = [groups:][instances:vis_60_0;vis_60_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_0] = cr_12:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_60_1] = cr_12_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_61
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 114
+  y = -17
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_61
+  [loading_requirement_container_meta:vis_61] = [groups:][instances:vis_61_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_61_0] = cr_12:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_12_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_12_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_62
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = -1
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_62
+  [loading_requirement_container_meta:vis_62] = [groups:][instances:vis_62_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_62_0] = cr_12:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_12_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_63
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 100
+  y = 13
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_63
+  [loading_requirement_container_meta:vis_63] = [groups:][instances:vis_63_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_63_0] = cr_12:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_12_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_64
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_64
+  [loading_requirement_container_meta:vis_64] = [groups:][instances:vis_64_0;vis_64_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_0] = cr_13:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_64_1] = cr_13_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_65
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_65
+  [loading_requirement_container_meta:vis_65] = [groups:][instances:vis_65_0;vis_65_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_0] = cr_13:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_65_1] = cr_13_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_66
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -136
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_66
+  [loading_requirement_container_meta:vis_66] = [groups:][instances:vis_66_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_66_0] = cr_13:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_13_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_13_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_67
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -142
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_67
+  [loading_requirement_container_meta:vis_67] = [groups:][instances:vis_67_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_67_0] = cr_13:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_13_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_68
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -150
+  y = 62
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_68
+  [loading_requirement_container_meta:vis_68] = [groups:][instances:vis_68_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_68_0] = cr_13:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_13_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_69
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_69
+  [loading_requirement_container_meta:vis_69] = [groups:][instances:vis_69_0;vis_69_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_0] = cr_14:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_69_1] = cr_14_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_70
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_70
+  [loading_requirement_container_meta:vis_70] = [groups:][instances:vis_70_0;vis_70_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_0] = cr_14:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_70_1] = cr_14_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_71
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -86
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_71
+  [loading_requirement_container_meta:vis_71] = [groups:][instances:vis_71_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_71_0] = cr_14:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_14_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_14_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_72
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -92
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_72
+  [loading_requirement_container_meta:vis_72] = [groups:][instances:vis_72_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_72_0] = cr_14:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_14_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_73
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -100
+  y = 62
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_73
+  [loading_requirement_container_meta:vis_73] = [groups:][instances:vis_73_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_73_0] = cr_14:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_14_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_74
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_74
+  [loading_requirement_container_meta:vis_74] = [groups:][instances:vis_74_0;vis_74_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_0] = cr_15:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_74_1] = cr_15_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_75
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_75
+  [loading_requirement_container_meta:vis_75] = [groups:][instances:vis_75_0;vis_75_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_0] = cr_15:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_75_1] = cr_15_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_76
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -36
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_76
+  [loading_requirement_container_meta:vis_76] = [groups:][instances:vis_76_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_76_0] = cr_15:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_15_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_15_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_77
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -42
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_77
+  [loading_requirement_container_meta:vis_77] = [groups:][instances:vis_77_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_77_0] = cr_15:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_15_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_78
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -50
+  y = 62
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_78
+  [loading_requirement_container_meta:vis_78] = [groups:][instances:vis_78_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_78_0] = cr_15:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_15_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_79
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_79
+  [loading_requirement_container_meta:vis_79] = [groups:][instances:vis_79_0;vis_79_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_79_0] = cr_16:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_79_1] = cr_16_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_80
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_80
+  [loading_requirement_container_meta:vis_80] = [groups:][instances:vis_80_0;vis_80_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_80_0] = cr_16:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_80_1] = cr_16_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_81
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 14
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_81
+  [loading_requirement_container_meta:vis_81] = [groups:][instances:vis_81_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_81_0] = cr_16:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_16_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_16_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_82
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_82
+  [loading_requirement_container_meta:vis_82] = [groups:][instances:vis_82_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_82_0] = cr_16:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_16_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_83
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 0
+  y = 62
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_83
+  [loading_requirement_container_meta:vis_83] = [groups:][instances:vis_83_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_83_0] = cr_16:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_16_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_84
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_84
+  [loading_requirement_container_meta:vis_84] = [groups:][instances:vis_84_0;vis_84_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_0] = cr_17:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_84_1] = cr_17_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_85
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_85
+  [loading_requirement_container_meta:vis_85] = [groups:][instances:vis_85_0;vis_85_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_0] = cr_17:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_85_1] = cr_17_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_86
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 64
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_86
+  [loading_requirement_container_meta:vis_86] = [groups:][instances:vis_86_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_86_0] = cr_17:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_17_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_17_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_87
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 58
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_87
+  [loading_requirement_container_meta:vis_87] = [groups:][instances:vis_87_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_87_0] = cr_17:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_17_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_88
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 50
+  y = 62
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_88
+  [loading_requirement_container_meta:vis_88] = [groups:][instances:vis_88_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_88_0] = cr_17:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_17_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_89
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_89
+  [loading_requirement_container_meta:vis_89] = [groups:][instances:vis_89_0;vis_89_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_0] = cr_18:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_89_1] = cr_18_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_90
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_90
+  [loading_requirement_container_meta:vis_90] = [groups:][instances:vis_90_0;vis_90_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_0] = cr_18:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_90_1] = cr_18_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_91
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 114
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_91
+  [loading_requirement_container_meta:vis_91] = [groups:][instances:vis_91_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_91_0] = cr_18:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_18_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_18_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_92
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 108
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_92
+  [loading_requirement_container_meta:vis_92] = [groups:][instances:vis_92_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_92_0] = cr_18:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_18_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_93
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 100
+  y = 62
+  width = 50
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_93
+  [loading_requirement_container_meta:vis_93] = [groups:][instances:vis_93_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_93_0] = cr_18:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_18_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_94
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 66
+  width = 240
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_94
+  [loading_requirement_container_meta:vis_94] = [groups:][instances:]
+  source = {"placeholder":"getvariable","values":{"name":"cr_mas"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_95
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -160
+  y = 88
+  width = 250
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_95
+  [loading_requirement_container_meta:vis_95] = [groups:][instances:]
+  source = Clic derecho en la caja con su llave en la mano para abrirla. Pasa el ratón por un premio para ver sus detalles.
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #7896B4
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_96
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 102
+  y = 82
+  width = 60
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_96
+  [loading_requirement_container_meta:vis_96] = [groups:][instances:]
+  label = Cerrar
+  description = Cerrar (también con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cr_cerrar.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/cr_cerrar_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/cr_cerrar_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_96_0][action_type:closegui] = 
+}

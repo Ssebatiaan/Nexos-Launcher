@@ -1,0 +1,1334 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = nexosmc_nexo
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1792201776789
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_1
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 340
+  height = 220
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_1
+  [loading_requirement_container_meta:vis_1] = [groups:][instances:]
+  source = [source:local]/config/fancymenu/assets/nexosmc/nexo_panel.png
+}
+
+element {
+  element_type = fancymenu_customization_item_ticker
+  instance_identifier = nexo_fancymenu_customization_item_ticker_2
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -110
+  width = 1
+  height = 1
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_2
+  [loading_requirement_container_meta:vis_2] = [groups:][instances:vis_2_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_2_0] = nexo_cerrar:1
+  tick_mode = normal
+  is_async = false
+  tick_delay = 100
+  [executable_action_instance:nexo_cerrar_reset][action_type:set_variable] = nexo_cerrar:0
+  [executable_action_instance:nexo_cerrar_cerrar][action_type:closegui] = 
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_3
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -170
+  y = -105
+  width = 340
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_3
+  [loading_requirement_container_meta:vis_3] = [groups:][instances:]
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"nexo_titulo"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #D9B8FF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_4
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -122
+  y = -89
+  width = 32
+  height = 32
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_4
+  [loading_requirement_container_meta:vis_4] = [groups:][instances:]
+  item_key = nexusprotect:nexus
+  item_count = 1
+  enchanted = false
+  show_tooltip = false
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_5
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = -52
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_5
+  [loading_requirement_container_meta:vis_5] = [groups:][instances:]
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"nexo_nivel"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #3EE6D8
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_6
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = -41
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_6
+  [loading_requirement_container_meta:vis_6] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_zona"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #AAAAAA
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_7
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -154
+  y = -29
+  width = 96
+  height = 6
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_7
+  [loading_requirement_container_meta:vis_7] = [groups:][instances:]
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_vida"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #46D25A
+  background_color = #1E142D
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_8
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = -21
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_8
+  [loading_requirement_container_meta:vis_8] = [groups:][instances:]
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"nexo_vida_txt"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_9
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = -12
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_9
+  [loading_requirement_container_meta:vis_9] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_golpes"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.72
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_10
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = -4
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_10
+  [loading_requirement_container_meta:vis_10] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_estado"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_11
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 5
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_11
+  [loading_requirement_container_meta:vis_11] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_cuenta"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.85
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_12
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 19
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_12
+  [loading_requirement_container_meta:vis_12] = [groups:][instances:]
+  source = ^^^%n%**{"placeholder":"getvariable","values":{"name":"nexo_premio_titulo"}}**%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFC828
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_13
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 31
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_13
+  [loading_requirement_container_meta:vis_13] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_premio0"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_14
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 41
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_14
+  [loading_requirement_container_meta:vis_14] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_premio1"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_15
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 51
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_15
+  [loading_requirement_container_meta:vis_15] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_premio2"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_16
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -168
+  y = 61
+  width = 124
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_16
+  [loading_requirement_container_meta:vis_16] = [groups:][instances:]
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"nexo_premio3"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.9
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_17
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -87
+  width = 196
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_17
+  [loading_requirement_container_meta:vis_17] = [groups:][instances:]
+  source = **{"placeholder":"getvariable","values":{"name":"nexo_mis_titulo"}}**
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #C9A8FF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_18
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -74
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_18
+  [loading_requirement_container_meta:vis_18] = [groups:][instances:vis_18_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_18_0] = nexo_m1:1
+  item_key = {"placeholder":"getvariable","values":{"name":"nexo_m1_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_19
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -72
+  width = 132
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_19
+  [loading_requirement_container_meta:vis_19] = [groups:][instances:vis_19_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_19_0] = nexo_m1:1
+  source = {"placeholder":"getvariable","values":{"name":"nexo_m1_color"}}{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"nexo_m1_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_20
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 92
+  y = -72
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_20
+  [loading_requirement_container_meta:vis_20] = [groups:][instances:vis_20_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_20_0] = nexo_m1:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"nexo_m1_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_21
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -62
+  width = 180
+  height = 2
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_21
+  [loading_requirement_container_meta:vis_21] = [groups:][instances:vis_21_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_21_0] = nexo_m1:1
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_m1_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #9650EB
+  background_color = #281C3C
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_22
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -57
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_22
+  [loading_requirement_container_meta:vis_22] = [groups:][instances:vis_22_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_22_0] = nexo_m2:1
+  item_key = {"placeholder":"getvariable","values":{"name":"nexo_m2_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_23
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -55
+  width = 132
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_23
+  [loading_requirement_container_meta:vis_23] = [groups:][instances:vis_23_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_23_0] = nexo_m2:1
+  source = {"placeholder":"getvariable","values":{"name":"nexo_m2_color"}}{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"nexo_m2_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_24
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 92
+  y = -55
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_24
+  [loading_requirement_container_meta:vis_24] = [groups:][instances:vis_24_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_24_0] = nexo_m2:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"nexo_m2_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_25
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -45
+  width = 180
+  height = 2
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_25
+  [loading_requirement_container_meta:vis_25] = [groups:][instances:vis_25_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_25_0] = nexo_m2:1
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_m2_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #9650EB
+  background_color = #281C3C
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_26
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -40
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_26
+  [loading_requirement_container_meta:vis_26] = [groups:][instances:vis_26_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_26_0] = nexo_m3:1
+  item_key = {"placeholder":"getvariable","values":{"name":"nexo_m3_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_27
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -38
+  width = 132
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_27
+  [loading_requirement_container_meta:vis_27] = [groups:][instances:vis_27_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_27_0] = nexo_m3:1
+  source = {"placeholder":"getvariable","values":{"name":"nexo_m3_color"}}{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"nexo_m3_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_28
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 92
+  y = -38
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_28
+  [loading_requirement_container_meta:vis_28] = [groups:][instances:vis_28_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_28_0] = nexo_m3:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"nexo_m3_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_29
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -28
+  width = 180
+  height = 2
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_29
+  [loading_requirement_container_meta:vis_29] = [groups:][instances:vis_29_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_29_0] = nexo_m3:1
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_m3_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #9650EB
+  background_color = #281C3C
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_30
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -23
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_30
+  [loading_requirement_container_meta:vis_30] = [groups:][instances:vis_30_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_30_0] = nexo_m4:1
+  item_key = {"placeholder":"getvariable","values":{"name":"nexo_m4_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_31
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -21
+  width = 132
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_31
+  [loading_requirement_container_meta:vis_31] = [groups:][instances:vis_31_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_31_0] = nexo_m4:1
+  source = {"placeholder":"getvariable","values":{"name":"nexo_m4_color"}}{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"nexo_m4_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_32
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 92
+  y = -21
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_32
+  [loading_requirement_container_meta:vis_32] = [groups:][instances:vis_32_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_32_0] = nexo_m4:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"nexo_m4_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_33
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -11
+  width = 180
+  height = 2
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_33
+  [loading_requirement_container_meta:vis_33] = [groups:][instances:vis_33_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_33_0] = nexo_m4:1
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_m4_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #9650EB
+  background_color = #281C3C
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_34
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = -6
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_34
+  [loading_requirement_container_meta:vis_34] = [groups:][instances:vis_34_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_34_0] = nexo_m5:1
+  item_key = {"placeholder":"getvariable","values":{"name":"nexo_m5_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_35
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = -4
+  width = 132
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_35
+  [loading_requirement_container_meta:vis_35] = [groups:][instances:vis_35_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_35_0] = nexo_m5:1
+  source = {"placeholder":"getvariable","values":{"name":"nexo_m5_color"}}{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"nexo_m5_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_36
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 92
+  y = -4
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_36
+  [loading_requirement_container_meta:vis_36] = [groups:][instances:vis_36_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_36_0] = nexo_m5:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"nexo_m5_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_37
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 6
+  width = 180
+  height = 2
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_37
+  [loading_requirement_container_meta:vis_37] = [groups:][instances:vis_37_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_37_0] = nexo_m5:1
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_m5_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #9650EB
+  background_color = #281C3C
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_38
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 11
+  width = 12
+  height = 12
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_38
+  [loading_requirement_container_meta:vis_38] = [groups:][instances:vis_38_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_38_0] = nexo_m6:1
+  item_key = {"placeholder":"getvariable","values":{"name":"nexo_m6_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_39
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 13
+  width = 132
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_39
+  [loading_requirement_container_meta:vis_39] = [groups:][instances:vis_39_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_39_0] = nexo_m6:1
+  source = {"placeholder":"getvariable","values":{"name":"nexo_m6_color"}}{"placeholder":"local","values":{"key":"{"placeholder":"getvariable","values":{"name":"nexo_m6_clave"}}"}}
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_40
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 92
+  y = 13
+  width = 66
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_40
+  [loading_requirement_container_meta:vis_40] = [groups:][instances:vis_40_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_40_0] = nexo_m6:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"nexo_m6_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 1.0
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = progress_bar
+  instance_identifier = nexo_progress_bar_41
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -22
+  y = 23
+  width = 180
+  height = 2
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_41
+  [loading_requirement_container_meta:vis_41] = [groups:][instances:vis_41_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_41_0] = nexo_m6:1
+  progress_source = {"placeholder":"getvariable","values":{"name":"nexo_m6_pct"}}
+  value_mode = percentage
+  direction = right
+  bar_color = #9650EB
+  background_color = #281C3C
+  smooth_filling_animation = true
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_42
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 30
+  width = 98
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_42
+  [loading_requirement_container_meta:vis_42] = [groups:][instances:]
+  label = Entregar todo
+  description = Entrega de una vez todo lo que falte y lleves en el inventario.%n%Solo objetos normales (sin nombre ni encantamientos).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_ancho_principal_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_42_0][action_type:sendmessage] = /nexo menu entregar
+  widget_active_state_requirement_container_identifier = act_42
+  [loading_requirement_container_meta:act_42] = [groups:][instances:act_42_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_42_0] = nexo_entregar:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_43
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 62
+  y = 30
+  width = 98
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_43
+  [loading_requirement_container_meta:vis_43] = [groups:][instances:]
+  label = Subir de nivel
+  description = Sube el Nexo de nivel cuando todas las misiones esten completas.%n%Solo el lider o un oficial.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_ancho.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_ancho_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_ancho_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_43_0][action_type:sendmessage] = /nexo menu subir
+  widget_active_state_requirement_container_identifier = act_43
+  [loading_requirement_container_meta:act_43] = [groups:][instances:act_43_0;act_43_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_43_0] = nexo_listo:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_43_1] = nexo_oficial:1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_44
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -38
+  y = 54
+  width = 196
+  height = 26
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_44
+  [loading_requirement_container_meta:vis_44] = [groups:][instances:]
+  source = Cualquier miembro del clan puede entregar objetos y matar mobs.
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  base_color = #8C82A0
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_45
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -162
+  y = 82
+  width = 64
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_45
+  [loading_requirement_container_meta:vis_45] = [groups:][instances:]
+  label = PvP: {"placeholder":"getvariable","values":{"name":"nexo_pvp"}}
+  description = Activa o desactiva el PvP dentro de la zona entre semana.%n%En el raideo siempre hay PvP. Lider u oficial.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_45_0][action_type:sendmessage] = /nexo menu pvp
+  widget_active_state_requirement_container_identifier = act_45
+  [loading_requirement_container_meta:act_45] = [groups:][instances:act_45_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_45_0] = nexo_oficial:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_46
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -94
+  y = 82
+  width = 64
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_46
+  [loading_requirement_container_meta:vis_46] = [groups:][instances:]
+  label = Mobs: {"placeholder":"getvariable","values":{"name":"nexo_mobs"}}
+  description = Permite o bloquea que aparezcan monstruos en la zona.%n%Los spawners siguen funcionando. Lider u oficial.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_46_0][action_type:sendmessage] = /nexo menu mobs
+  widget_active_state_requirement_container_identifier = act_46
+  [loading_requirement_container_meta:act_46] = [groups:][instances:act_46_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_46_0] = nexo_oficial:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_47
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -26
+  y = 82
+  width = 64
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_47
+  [loading_requirement_container_meta:vis_47] = [groups:][instances:]
+  label = Ver límites
+  description = Muestra el borde de la zona con particulas durante 20 s.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_47_0][action_type:sendmessage] = /nexo menu limites
+  [executable_action_instance:nexo_act_47_1][action_type:closegui] = 
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_48
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 42
+  y = 82
+  width = 64
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_48
+  [loading_requirement_container_meta:vis_48] = [groups:][instances:]
+  label = Mover Nexo
+  description = Recoge el Nexo para colocarlo en otro sitio (conserva nivel y progreso).%n%Solo entre semana. ¡La base queda sin proteccion hasta recolocarlo! Lider u oficial.
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_48_0][action_type:sendmessage] = /nexo menu mover
+  [executable_action_instance:nexo_act_48_1][action_type:closegui] = 
+  widget_active_state_requirement_container_identifier = act_48
+  [loading_requirement_container_meta:act_48] = [groups:][instances:act_48_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:act_48_0] = nexo_oficial:1
+}
+
+element {
+  element_type = custom_button
+  instance_identifier = nexo_custom_button_49
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 110
+  y = 82
+  width = 52
+  height = 20
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_49
+  [loading_requirement_container_meta:vis_49] = [groups:][instances:]
+  label = Cerrar
+  description = Cerrar el menu (tambien con Esc).
+  backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_corto.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_corto_hover.png
+  background_texture_inactive = [source:local]/config/fancymenu/assets/nexosmc/nexo_boton_corto_inactivo.png
+  nine_slice_custom_background = false
+  label_base_color = #F0E6FF
+  label_hover_color = #A6FFF7
+  label_shadow = true
+  label_scale = 1.0
+  navigatable = true
+  [executable_action_instance:nexo_act_49_0][action_type:closegui] = 
+}
