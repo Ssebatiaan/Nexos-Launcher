@@ -47,7 +47,7 @@ Al pulsar JUGAR (`src/main/main.ts`) se comprueba y, si falta, se instala cada p
 2. **Minecraft 1.21.1** y **NeoForge** (`ensureMinecraft`, `ensureNeoForge`, con `@xmcl/installer`), en `minecraft/`.
    Las descargas usan 16 conexiones y se repiten hasta 4 veces: solo baja lo que falta o está dañado.
 3. **Modpack** (`pack.ts`), en `juego/`.
-4. **Abrir el juego** (`game.ts`, `@xmcl/core`) directo al servidor (`quickPlayMultiplayer`) con la cuenta elegida.
+4. **Abrir el juego** (`game.ts`, `@xmcl/core`) con la cuenta elegida, en el menú principal (se entra con "Jugar en Nexos MC").
    Lo que escribe el juego va a `registros/juego.log` (pasado a texto por `gamelog.ts`); si se cierra con error,
    la interfaz ofrece "Ver registro".
 

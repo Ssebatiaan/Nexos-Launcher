@@ -193,7 +193,7 @@ async function play(win: BrowserWindow): Promise<void> {
     send();
     const ramMb = loadOptions().ramMb;
     gameProcess = await launchGame({
-      paths: p, versionId, java, account, ramMb, server: pack.server, logFile: logFile(), launcherVersion: app.getVersion(),
+      paths: p, versionId, java, account, ramMb, logFile: logFile(), launcherVersion: app.getVersion(),
     }, {
       onWindowReady: () => {
         step("juego", "hecho");

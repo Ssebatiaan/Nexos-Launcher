@@ -1,4 +1,4 @@
-// Abre Minecraft con NeoForge, directo al servidor de Nexos MC, y vigila el proceso (ventana lista, cierre, error).
+// Abre Minecraft con NeoForge (en el menu principal: el jugador entra con el boton "Jugar en Nexos MC") y vigila el proceso.
 import { createMinecraftProcessWatcher, launch } from "@xmcl/core";
 import type { ChildProcess } from "node:child_process";
 import * as fs from "node:fs";
@@ -13,7 +13,6 @@ export interface LaunchRequest {
   java: string;
   account: Account;
   ramMb: number;
-  server?: { host: string; port: number };
   /** Archivo donde se guarda todo lo que escribe el juego (para "Ver registro"). */
   logFile: string;
   launcherVersion: string;
@@ -41,7 +40,6 @@ export async function launchGame(req: LaunchRequest, events: GameEvents): Promis
     maxMemory: req.ramMb,
     launcherName: "nexos-launcher",
     launcherBrand: "Nexos Launcher",
-    quickPlayMultiplayer: req.server ? `${req.server.host}:${req.server.port}` : undefined,
     extraExecOption: { windowsHide: true },
   });
   proc.stdout?.pipe(new GameLogText()).pipe(log, { end: false });
