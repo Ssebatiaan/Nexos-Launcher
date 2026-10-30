@@ -27,12 +27,24 @@ Estructura:
 - `assets/` – logo y fondo (los mismos del menú del juego).
 - `docs/` – notas, como pedir la aprobación de Microsoft para el modo premium.
 
+## Modpack
+
+El launcher lee `https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/pack.json` (rama `pack`, la genera
+y publica `tools/build_launcher_pack.py --publicar` del proyecto del servidor). Cada archivo de la carpeta del juego
+lleva su descarga (Modrinth, CurseForge o la propia rama) y su SHA-1. `src/main/pack.ts` baja lo que falta o cambió,
+borra lo que se quitó del paquete y no toca los mods que añada el jugador.
+
+```bash
+node dist/main/cli-sync.js <pack.json> <carpeta>   # probar la sincronización sin abrir la ventana
+NEXOS_PACK_URL=<ruta o URL> npm start                # usar otra lista (pruebas)
+```
+
 ## Plan por sprints
 
 | Sprint | Contenido | Estado |
 |---|---|---|
 | 0 | Proyecto base con la estética de Nexos; pedir la aprobación de Microsoft | Hecho (falta la aprobación) |
-| 1 | Distribución del modpack: lista de mods y configs con sus huellas, publicada | Pendiente |
+| 1 | Distribución del modpack: `pack.json` en la rama `pack`, sincronización con comprobación de huellas | Hecho |
 | 2 | Instalar y jugar: Java 21 + Minecraft + NeoForge + modpack, cuenta no premium, entrar al servidor | Pendiente |
 | 3 | Actualizaciones y opciones: buscar al abrir, auto-actualización del launcher, Discord, noticias, estado | Pendiente |
 | 4 | Cuentas: varias guardadas, Microsoft (cuando aprueben la app) | Pendiente |
