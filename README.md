@@ -16,7 +16,8 @@ Requisitos: Node.js 20 o más nuevo.
 ```bash
 npm install
 npm start          # compila y abre el launcher
-npm run captura    # compila, abre, guarda captura.png y se cierra (para revisar el diseño)
+npm run captura    # compila, abre, guarda captura.png y se cierra (NEXOS_VISTA=opciones: otra pantalla)
+npm run dist       # instalador en release/ (sin publicar)
 ```
 
 Estructura:
@@ -63,6 +64,21 @@ Versiones fijadas: `@xmcl/installer` 6.1.2 y `@xmcl/core` 2.15.1 (las 6.3.x est�
 `undici` 8.12.3 para todos (`overrides`): la 7.x tiene un fallo (`assert(!this.paused)`) que sacaba una ventana de error
 al cerrar el servidor una descarga.
 
+## Actualizaciones, estado y novedades
+
+- **El launcher se actualiza solo** (`src/main/updater.ts`, electron-updater con las Releases de este repo). Al abrir, una
+  ventanita (`splash.html`) busca versión nueva y, si la hay, la descarga, la instala y se vuelve a abrir (como Steam).
+  Con el launcher abierto se mira cada 30 min: si sale una nueva aparece arriba el botón verde «Actualización lista».
+  Solo en el launcher instalado (con `npm start` no; `NEXOS_PRUEBA_UPDATER=1` para probarlo).
+- **Publicar una versión**: subir `version` en `package.json`, commit y `npm run publicar` (crea la etiqueta, compila
+  el instalador `Nexos-Launcher-Setup-X.Y.Z.exe` y lo sube con `latest.yml`; el token sale del gestor de credenciales de
+  Git). Sin firma digital: la primera instalación muestra «Windows protegió su PC» (Más información > Ejecutar de todas formas).
+- **Estado del servidor** (`status.ts`): el mismo «ping» que la lista de servidores de Minecraft, cada 30 s.
+- **Novedades**: el campo `news` de `pack.json` (en el proyecto del servidor, `client-pack/noticias.json`).
+- **Opciones**: memoria, ventana del juego (tamaño o pantalla completa), qué hace el launcher al abrir el juego, Reparar
+  instalación (vuelve a poner Java y revisa la huella de todos los archivos), abrir la carpeta del juego, buscar
+  actualizaciones.
+
 ## Plan por sprints
 
 | Sprint | Contenido | Estado |
@@ -70,7 +86,7 @@ al cerrar el servidor una descarga.
 | 0 | Proyecto base con la estética de Nexos; pedir la aprobación de Microsoft | Hecho (falta la aprobación) |
 | 1 | Distribución del modpack: `pack.json` en la rama `pack`, sincronización con comprobación de huellas | Hecho |
 | 2 | Instalar y jugar: Java 21 + Minecraft + NeoForge + modpack, cuenta no premium, entrar al servidor | Hecho |
-| 3 | Actualizaciones y opciones: buscar al abrir, auto-actualización del launcher, Discord, noticias, estado | Pendiente |
+| 3 | Actualizaciones y opciones: buscar al abrir, auto-actualización del launcher, Discord, noticias, estado | Hecho |
 | 4 | Cuentas: varias guardadas, Microsoft (cuando aprueben la app) | Pendiente |
 | 5 | Skins: visor 3D, subir skin y que se vea en el servidor | Pendiente |
 | 6 | Pulido: instalador .exe, auto-login no premium, registro de errores | Pendiente |
