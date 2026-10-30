@@ -1,6 +1,6 @@
 // Proceso principal del Nexos Launcher: crea la ventana (sin marco: la barra de titulo la dibuja la interfaz) y hace
 // lo que la interfaz no puede hacer sola: instalar, abrir el juego, guardar opciones y cuentas, abrir enlaces.
-import { app, BrowserWindow, ipcMain, shell } from "electron";
+import { app, BrowserWindow, dialog, ipcMain, shell } from "electron";
 import type { ChildProcess } from "node:child_process";
 import * as fs from "node:fs";
 import * as os from "node:os";
@@ -61,6 +61,27 @@ interface PlayState {
 
 let gameProcess: ChildProcess | undefined;
 let busy = false;
+
+/** Anota un error en registros/launcher.log (junto a juego.log). */
+function logLauncher(where: string, e: unknown): void {
+  try {
+    fs.mkdirSync(path.dirname(logFile()), { recursive: true });
+    fs.appendFileSync(path.join(path.dirname(logFile()), "launcher.log"),
+      `${new Date().toISOString()} [${where}] ${e instanceof Error ? e.stack ?? e.message : e}\n`, "utf-8");
+  } catch {
+    // sin registro no se puede hacer mas
+  }
+}
+
+// Un error suelto de una descarga no debe sacar la ventana de error de Electron (en ingles): las descargas ya se
+// repiten solas. Cualquier otro error se anota y se avisa en espanol.
+process.on("uncaughtException", (e) => {
+  logLauncher("sin capturar", e);
+  if (!/undici|file-transfer|ECONNRESET|socket/i.test(`${e.stack ?? e.message}`)) {
+    dialog.showErrorBox("Nexos Launcher", "Ocurrió un error inesperado. Si se repite, avisa en el Discord y manda el "
+      + `archivo registros/launcher.log.\n\n${e.message}`);
+  }
+});
 
 function logFile(): string {
   return path.join(app.getPath("userData"), "registros", "juego.log");
@@ -216,9 +237,7 @@ async function play(win: BrowserWindow): Promise<void> {
     state.error = err.message;
     state.steps.find((x) => x.id === current)!.state = "error";
     state.canOpenLog = current === "juego";
-    fs.mkdirSync(path.dirname(logFile()), { recursive: true });
-    fs.appendFileSync(path.join(path.dirname(logFile()), "launcher.log"),
-      `${new Date().toISOString()} [${current}] ${e instanceof Error ? e.stack ?? e.message : e}\n`, "utf-8");
+    logLauncher(current, e);
     send();
   }
 }

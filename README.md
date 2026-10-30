@@ -59,7 +59,9 @@ node dist/main/cli-install.js <carpeta>                 # Java + Minecraft + Neo
 NEXOS_PRUEBA_JUGAR=1 node scripts/electron.mjs --captura=captura.png   # pulsa JUGAR solo y guarda la captura
 ```
 
-Versiones fijadas: `@xmcl/installer` 6.1.2 y `@xmcl/core` 2.15.1 (las 6.3.x están mal publicadas en npm).
+Versiones fijadas: `@xmcl/installer` 6.1.2 y `@xmcl/core` 2.15.1 (las 6.3.x están mal publicadas en npm) y
+`undici` 8.12.3 para todos (`overrides`): la 7.x tiene un fallo (`assert(!this.paused)`) que sacaba una ventana de error
+al cerrar el servidor una descarga.
 
 ## Plan por sprints
 
