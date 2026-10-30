@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+  <title>Nexos Launcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de titulo propia (la ventana no tiene marco): se arrastra por aqui -->
+  <header class="titlebar">
+    <div class="titlebar-name"><span class="gem"></span>NEXOS LAUNCHER</div>
+    <button id="update-btn" class="update-btn hidden" title="Hay una versión nueva del launcher: pulsa para actualizar y reiniciar">
+      ⬇ Actualizar
+    </button>
+    <div class="titlebar-buttons">
+      <button id="btn-min" title="Minimizar">&#x2013;</button>
+      <button id="btn-close" class="close" title="Cerrar">&#x2715;</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Menu lateral -->
+    <nav class="sidebar">
+      <button class="nav-item active" data-view="jugar"><span class="nav-icon">▶</span>Jugar</button>
+      <button class="nav-item" data-view="skins"><span class="nav-icon">◆</span>Skins</button>
+      <button class="nav-item" data-view="opciones"><span class="nav-icon">⚙</span>Opciones</button>
+      <div class="sidebar-spacer"></div>
+      <button id="btn-discord" class="discord-btn" title="Abrir el Discord de Nexos MC">Discord</button>
+      <div class="version" id="version">v0.1.0</div>
+    </nav>
+
+    <main class="content">
+      <!-- Jugar -->
+      <section class="view view-jugar active" id="view-jugar">
+        <div class="hero">
+          <img class="logo" src="assets/logo.png" alt="Nexos MC">
+          <div class="server-status" id="server-status"><span class="dot"></span>Servidor: comprobando…</div>
+        </div>
+        <aside class="news">
+          <h3>Novedades</h3>
+          <article>
+            <h4>Coliseo renovado</h4>
+            <p>Cola de peleas, botón Listo, música y modos con kits estilo PvPHQ.</p>
+          </article>
+          <article>
+            <h4>Grietas y accesorios</h4>
+            <p>Accesorios de Artifacts en los cofres de las grietas y avisos en Discord.</p>
+          </article>
+        </aside>
+        <footer class="playbar">
+          <div class="account" id="account">
+            <div class="avatar"></div>
+            <div>
+              <div class="account-name" id="account-name">Sin cuenta</div>
+              <div class="account-type" id="account-type">Añade una cuenta para jugar</div>
+            </div>
+          </div>
+          <div class="progress hidden" id="progress">
+            <div class="progress-text" id="progress-text">Preparando…</div>
+            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          </div>
+          <button class="play-btn" id="play-btn">JUGAR</button>
+        </footer>
+      </section>
+
+      <!-- Skins -->
+      <section class="view" id="view-skins">
+        <div class="panel">
+          <h2>Skins</h2>
+          <p class="muted">Aquí verás tu personaje en 3D (podrás girarlo) y podrás subir una skin nueva que verán todos en el servidor.</p>
+          <div class="placeholder">Próximamente · Sprint 5</div>
+        </div>
+      </section>
+
+      <!-- Opciones -->
+      <section class="view" id="view-opciones">
+        <div class="panel">
+          <h2>Opciones</h2>
+          <label class="field">
+            <span>Memoria para el juego: <strong id="ram-label">5 GB</strong></span>
+            <input type="range" id="ram" min="3072" max="12288" step="512" value="5120">
+            <small class="muted">Recomendado: 5 GB. Más de la mitad de la RAM de tu PC no ayuda.</small>
+          </label>
+          <div class="saved hidden" id="saved">✔ Guardado</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
