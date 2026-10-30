@@ -107,9 +107,10 @@ async function run<T>(label: string, task: Task<T>, onProgress: OnProgress): Pro
 // ------------------------------------------------------------------ Java
 
 /** Ruta del java.exe de Mojang (se instala si falta o no es la version pedida). */
-export async function ensureJava(paths: Paths, major: number, onProgress: OnProgress): Promise<string> {
+/** repair = se vuelve a instalar aunque parezca bien (Reparar instalacion; son ~100 MB). */
+export async function ensureJava(paths: Paths, major: number, onProgress: OnProgress, repair = false): Promise<string> {
   const exe = path.join(paths.java, "bin", process.platform === "win32" ? "java.exe" : "java");
-  if (fs.existsSync(exe)) {
+  if (!repair && fs.existsSync(exe)) {
     const info = await resolveJava(exe).catch(() => undefined);
     if (info && info.majorVersion >= major) {
       return exe;

@@ -246,3 +246,33 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 .add-row input:focus { border-color: var(--teal); }
 .form-error { margin-top: 8px; font-size: 12.5px; color: #ffb4b4; }
 .btn-microsoft { margin-top: 18px; width: 100%; padding: 9px; border-radius: 6px; background: #1b1b2b; border: 1px solid #333; color: var(--muted); font-size: 13px; cursor: not-allowed; }
+
+/* ---- novedades (vienen en pack.json) ---- */
+.news-list { max-height: 330px; overflow-y: auto; padding-right: 4px; }
+.news-list::-webkit-scrollbar { width: 6px; }
+.news-list::-webkit-scrollbar-thumb { background: #3a2560; border-radius: 3px; }
+.news .meta { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; font-size: 11px; color: var(--muted); }
+.news .tag { padding: 1px 6px; border-radius: 3px; background: rgba(62, 230, 216, 0.15); color: var(--teal); font-weight: 700; font-size: 10.5px; letter-spacing: 0.5px; text-transform: uppercase; }
+
+/* ---- estado del modpack junto a JUGAR ---- */
+.pack-info { flex: 1; font-size: 13px; color: var(--muted); line-height: 1.4; }
+.pack-info strong { color: var(--text); }
+.pack-info .new { color: var(--gold); font-weight: 700; }
+
+/* ---- opciones ---- */
+#view-opciones { overflow-y: auto; }
+.panel h3.section { margin: 22px 0 6px; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
+.panel h3.section:first-of-type { margin-top: 6px; }
+.row { display: flex; gap: 16px; }
+.field.half { flex: 1; }
+.field select { padding: 8px 10px; border-radius: 6px; border: 1px solid #3a2560; background: #0f0820; color: var(--text); font: inherit; font-size: 13.5px; outline: none; }
+.field select:focus { border-color: var(--teal); }
+.buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 6px; }
+.inline { margin: 0; }
+#update-result.ok { color: var(--green); }
+#update-result.bad { color: #ffb4b4; }
+.saved { position: absolute; top: 30px; right: 30px; margin: 0; }
+.panel { position: relative; }
+
+/* ---- boton verde de actualizar (barra de titulo) ---- */
+.update-btn.busy { background: #2d6e44; cursor: default; }

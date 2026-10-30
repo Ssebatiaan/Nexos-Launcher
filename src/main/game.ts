@@ -13,6 +13,8 @@ export interface LaunchRequest {
   java: string;
   account: Account;
   ramMb: number;
+  /** Tamano de la ventana o pantalla completa; sin esto, lo que recuerde el juego. */
+  resolution?: { width?: number; height?: number; fullscreen?: boolean };
   /** Archivo donde se guarda todo lo que escribe el juego (para "Ver registro"). */
   logFile: string;
   launcherVersion: string;
@@ -40,6 +42,7 @@ export async function launchGame(req: LaunchRequest, events: GameEvents): Promis
     maxMemory: req.ramMb,
     launcherName: "nexos-launcher",
     launcherBrand: "Nexos Launcher",
+    resolution: req.resolution,
     extraExecOption: { windowsHide: true },
   });
   proc.stdout?.pipe(new GameLogText()).pipe(log, { end: false });

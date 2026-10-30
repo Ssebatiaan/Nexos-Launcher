@@ -15,6 +15,14 @@ export interface PackFile {
   onlyIfMissing?: boolean;
 }
 
+/** Novedades que se ven en el launcher (client-pack/noticias.json del proyecto del servidor). */
+export interface NewsItem {
+  fecha: string;
+  titulo: string;
+  texto: string;
+  etiqueta?: string;
+}
+
 export interface Pack {
   formatVersion: number;
   name: string;
@@ -25,6 +33,7 @@ export interface Pack {
   ramMb: number;
   server: { name: string; host: string; port: number };
   files: PackFile[];
+  news?: NewsItem[];
 }
 
 /** Lo instalado en la ultima sincronizacion (para borrar lo que se quite y no recalcular huellas sin necesidad). */
@@ -78,7 +87,8 @@ async function readText(source: string): Promise<string> {
 }
 
 /** Deja gameDir igual que el paquete. onProgress se llama a menudo (para la barra). */
-export async function syncPack(pack: Pack, gameDir: string, onProgress: (p: Progress) => void = () => {}): Promise<SyncResult> {
+export async function syncPack(pack: Pack, gameDir: string, onProgress: (p: Progress) => void = () => {},
+  options: { full?: boolean } = {}): Promise<SyncResult> {
   fs.mkdirSync(gameDir, { recursive: true });
   const state = readState(gameDir);
   const next: State = { version: pack.version, files: {} };
@@ -98,7 +108,8 @@ export async function syncPack(pack: Pack, gameDir: string, onProgress: (p: Prog
     }
     const st = fs.statSync(target);
     const known = state.files[f.path];
-    const sha1 = known && known.size === st.size && known.mtimeMs === st.mtimeMs ? known.sha1 : await sha1Of(target);
+    // full (Reparar instalacion): se recalcula la huella de todo, sin fiarse de lo anotado
+    const sha1 = !options.full && known && known.size === st.size && known.mtimeMs === st.mtimeMs ? known.sha1 : await sha1Of(target);
     if (sha1 === f.sha1) {
       next.files[f.path] = { sha1, size: st.size, mtimeMs: st.mtimeMs };
     } else {
@@ -203,6 +214,11 @@ function safePath(gameDir: string, rel: string): string {
     throw new Error(`Ruta no permitida en el modpack: ${rel}`);
   }
   return target;
+}
+
+/** Version del modpack instalada en gameDir (la de la ultima sincronizacion), o undefined. */
+export function installedVersion(gameDir: string): string | undefined {
+  return readState(gameDir).version || undefined;
 }
 
 function readState(gameDir: string): State {

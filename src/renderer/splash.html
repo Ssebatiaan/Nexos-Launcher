@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+  <title>Nexos Launcher</title>
+  <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+  <!-- Ventana del arranque: se busca (y si hay, se instala) la version nueva del launcher antes de abrirlo -->
+  <div class="splash">
+    <img class="icon" src="assets/icon.png" alt="">
+    <div class="name">NEXOS LAUNCHER</div>
+    <div class="text" id="text">Buscando actualizaciones…</div>
+    <div class="bar"><div class="fill" id="fill"></div></div>
+    <div class="sub" id="sub">&nbsp;</div>
+  </div>
+  <script type="module" src="splash.js"></script>
+</body>
+</html>

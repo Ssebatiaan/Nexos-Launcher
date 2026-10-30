@@ -11,7 +11,7 @@
   <header class="titlebar">
     <div class="titlebar-name"><span class="gem"></span>NEXOS LAUNCHER</div>
     <button id="update-btn" class="update-btn hidden" title="Hay una versión nueva del launcher: pulsa para actualizar y reiniciar">
-      ⬇ Actualizar
+      ⬇ Actualización lista
     </button>
     <div class="titlebar-buttons">
       <button id="btn-min" title="Minimizar">&#x2013;</button>
@@ -35,18 +35,11 @@
       <section class="view view-jugar active" id="view-jugar">
         <div class="hero">
           <img class="logo" src="assets/logo.png" alt="Nexos MC">
-          <div class="server-status" id="server-status"><span class="dot"></span>Servidor: comprobando…</div>
+          <div class="server-status" id="server-status"><span class="dot" id="server-dot"></span><span id="server-text">Servidor: comprobando…</span></div>
         </div>
         <aside class="news">
           <h3>Novedades</h3>
-          <article>
-            <h4>Coliseo renovado</h4>
-            <p>Cola de peleas, botón Listo, música y modos con kits estilo PvPHQ.</p>
-          </article>
-          <article>
-            <h4>Grietas y accesorios</h4>
-            <p>Accesorios de Artifacts en los cofres de las grietas y avisos en Discord.</p>
-          </article>
+          <div class="news-list" id="news-list"><p class="muted small">Cargando…</p></div>
         </aside>
         <!-- Pasos de la preparacion (se ve al pulsar JUGAR) -->
         <div class="steps hidden" id="steps">
@@ -67,6 +60,7 @@
               <div class="account-type" id="account-type">Añade una cuenta para jugar</div>
             </div>
           </div>
+          <div class="pack-info" id="pack-info"></div>
           <div class="progress hidden" id="progress">
             <div class="progress-text" id="progress-text">Preparando…</div>
             <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
@@ -88,12 +82,50 @@
       <section class="view" id="view-opciones">
         <div class="panel">
           <h2>Opciones</h2>
+          <div class="saved hidden" id="saved">✔ Guardado</div>
+
+          <h3 class="section">Juego</h3>
           <label class="field">
             <span>Memoria para el juego: <strong id="ram-label">5 GB</strong></span>
             <input type="range" id="ram" min="3072" max="12288" step="512" value="5120">
             <small class="muted" id="ram-info">Recomendado: 5 GB. Más de la mitad de la RAM de tu PC no ayuda.</small>
           </label>
-          <div class="saved hidden" id="saved">✔ Guardado</div>
+          <div class="row">
+            <label class="field half">
+              <span>Ventana del juego</span>
+              <select id="resolution">
+                <option value="auto">La que recuerde el juego</option>
+                <option value="1280x720">1280 × 720</option>
+                <option value="1600x900">1600 × 900</option>
+                <option value="1920x1080">1920 × 1080</option>
+                <option value="completa">Pantalla completa</option>
+              </select>
+            </label>
+            <label class="field half">
+              <span>Al abrir el juego, el launcher…</span>
+              <select id="on-launch">
+                <option value="minimizar">Se minimiza</option>
+                <option value="ocultar">Se oculta (vuelve al cerrar el juego)</option>
+                <option value="nada">Se queda abierto</option>
+              </select>
+            </label>
+          </div>
+
+          <h3 class="section">Instalación</h3>
+          <p class="muted small">Si el juego no abre o algo se ve raro: «Reparar» revisa todos los archivos (Java, Minecraft,
+            NeoForge y el modpack) y vuelve a bajar los que estén dañados. Tus mundos, capturas y opciones no se tocan.</p>
+          <div class="buttons">
+            <button class="btn-primary" id="btn-repair">Reparar instalación</button>
+            <button class="btn-secondary" id="btn-folder">Abrir carpeta del juego</button>
+            <button class="btn-secondary" id="btn-log2">Ver registro</button>
+          </div>
+
+          <h3 class="section">Launcher</h3>
+          <div class="buttons">
+            <span class="muted small inline" id="launcher-version">Versión 0.1.0</span>
+            <button class="btn-secondary" id="btn-check-update">Buscar actualizaciones</button>
+            <span class="small inline" id="update-result"></span>
+          </div>
         </div>
       </section>
     </main>

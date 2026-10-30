@@ -8,7 +8,9 @@ import * as path from "node:path";
 import { Accounts } from "./accounts";
 import { launchGame } from "./game";
 import { ensureJava, ensureMinecraft, ensureNeoForge, freeSpace, friendlyError, pathsFor, type StepProgress } from "./installer";
-import { fetchPack, type Pack, syncPack } from "./pack";
+import { fetchPack, installedVersion, type Pack, syncPack } from "./pack";
+import { queryStatus } from "./status";
+import { checkNow, installAvailable, updateOnStartup, type UpdateState, watchForUpdates } from "./updater";
 
 const DISCORD = "https://discord.gg/C8N5V8ncRM";
 /** Lista del modpack (rama "pack" del repo). NEXOS_PACK_URL la cambia para probar (por ejemplo una ruta local). */
@@ -24,9 +26,19 @@ const accounts = () => new Accounts(app.getPath("userData"));
 /** Opciones del launcher (en %APPDATA%/Nexos Launcher/opciones.json). */
 interface Options {
   ramMb: number;
+  /** Que hace el launcher cuando se abre la ventana del juego. */
+  onLaunch: "minimizar" | "ocultar" | "nada";
+  /** Tamano de la ventana del juego: "auto" (lo que recuerde el juego), "1280x720"... o "completa". */
+  resolution: string;
 }
 
-const DEFAULT_OPTIONS: Options = { ramMb: 5120 };
+const DEFAULT_OPTIONS: Options = { ramMb: 5120, onLaunch: "minimizar", resolution: "auto" };
+
+function resolutionOf(value: string): { width?: number; height?: number; fullscreen?: boolean } | undefined {
+  if (value === "completa") return { fullscreen: true };
+  const m = /^(\d{3,4})x(\d{3,4})$/.exec(value);
+  return m ? { width: Number(m[1]), height: Number(m[2]) } : undefined;
+}
 
 function optionsFile(): string {
   return path.join(app.getPath("userData"), "opciones.json");
@@ -57,6 +69,8 @@ interface PlayState {
   phase: "preparando" | "jugando" | "terminado" | "error";
   error?: string;
   canOpenLog?: boolean;
+  /** "reparar" = Reparar instalacion (revisa todo y no abre el juego). */
+  mode: "jugar" | "reparar";
 }
 
 let gameProcess: ChildProcess | undefined;
@@ -96,18 +110,26 @@ function lastPack(): Pack | undefined {
   }
 }
 
-async function play(win: BrowserWindow): Promise<void> {
+/** Guarda la lista del modpack como la ultima conocida (para jugar sin internet y para el estado al abrir). */
+function rememberPack(pack: Pack): void {
+  fs.mkdirSync(app.getPath("userData"), { recursive: true });
+  fs.writeFileSync(path.join(app.getPath("userData"), "ultimo-pack.json"), JSON.stringify(pack), "utf-8");
+}
+
+async function play(win: BrowserWindow, mode: "jugar" | "reparar"): Promise<void> {
+  const repair = mode === "reparar";
   const state: PlayState = {
     steps: [
       { id: "java", label: "Java 21", state: "pendiente" },
       { id: "minecraft", label: "Minecraft", state: "pendiente" },
       { id: "neoforge", label: "NeoForge", state: "pendiente" },
       { id: "modpack", label: "Modpack Nexos MC", state: "pendiente" },
-      { id: "juego", label: "Abrir el juego", state: "pendiente" },
+      ...(repair ? [] : [{ id: "juego" as StepId, label: "Abrir el juego", state: "pendiente" as StepState }]),
     ],
-    text: "Preparando…",
+    text: repair ? "Revisando la instalación…" : "Preparando…",
     percent: null,
     phase: "preparando",
+    mode,
   };
   const send = () => !win.isDestroyed() && win.webContents.send("juego:estado", state);
   const step = (id: StepId, s: StepState) => {
@@ -122,7 +144,7 @@ async function play(win: BrowserWindow): Promise<void> {
   let current: StepId = "java";
   try {
     const account = accounts().selected();
-    if (!account) {
+    if (!account && !repair) {
       throw new Error("Añade una cuenta para jugar (pulsa en «Sin cuenta», abajo a la izquierda).");
     }
     // Lista del modpack; sin internet se juega con lo ya instalado
@@ -132,10 +154,11 @@ async function play(win: BrowserWindow): Promise<void> {
     send();
     try {
       pack = await fetchPack(PACK_URL);
-      fs.writeFileSync(path.join(app.getPath("userData"), "ultimo-pack.json"), JSON.stringify(pack), "utf-8");
+      rememberPack(pack);
     } catch (e) {
       const known = lastPack();
-      if (!known) {
+      if (!known || repair) {
+        if (repair) throw new Error("Para reparar la instalación hace falta internet.");
         throw new Error("No hay conexión a internet y el juego aún no está instalado. Conéctate y pulsa JUGAR otra vez.");
       }
       pack = known;
@@ -151,7 +174,7 @@ async function play(win: BrowserWindow): Promise<void> {
 
     current = "java";
     step("java", "activo");
-    const java = await ensureJava(p, pack.java, progress);
+    const java = await ensureJava(p, pack.java, progress, repair);
     step("java", "hecho");
 
     current = "minecraft";
@@ -182,29 +205,40 @@ async function play(win: BrowserWindow): Promise<void> {
           state.percent = (sp.bytesDone / Math.max(1, sp.bytesTotal)) * 100;
         }
         send();
-      });
+      }, { full: repair });
     }
     step("modpack", "hecho");
+    if (repair) {
+      state.phase = "terminado";
+      state.text = "Instalación revisada: todo está bien. Ya puedes jugar.";
+      state.percent = 100;
+      send();
+      return;
+    }
 
     current = "juego";
     step("juego", "activo");
-    state.text = `Abriendo Minecraft como ${account.name}… (la primera vez tarda un poco)`;
+    state.text = `Abriendo Minecraft como ${account!.name}… (la primera vez tarda un poco)`;
     state.percent = null;
     send();
-    const ramMb = loadOptions().ramMb;
+    const options = loadOptions();
     gameProcess = await launchGame({
-      paths: p, versionId, java, account, ramMb, logFile: logFile(), launcherVersion: app.getVersion(),
+      paths: p, versionId, java, account: account!, ramMb: options.ramMb, resolution: resolutionOf(options.resolution),
+      logFile: logFile(), launcherVersion: app.getVersion(),
     }, {
       onWindowReady: () => {
         step("juego", "hecho");
         state.phase = "jugando";
         state.text = "Jugando en Nexos MC. ¡Diviértete!";
         send();
-        if (!win.isDestroyed()) win.minimize();
+        if (win.isDestroyed()) return;
+        if (options.onLaunch === "minimizar") win.minimize();
+        if (options.onLaunch === "ocultar") win.hide();
       },
       onExit: ({ code, crashReportLocation }) => {
         gameProcess = undefined;
         if (!win.isDestroyed()) {
+          win.show();
           win.restore();
           win.focus();
         }
@@ -242,7 +276,32 @@ async function play(win: BrowserWindow): Promise<void> {
   }
 }
 
-// ------------------------------------------------------------------ ventana
+// ------------------------------------------------------------------ estado al abrir
+
+/** Datos para la pantalla Jugar: modpack (nuevo o instalado) y novedades. Sin internet, lo ultimo conocido. */
+async function launcherInfo(): Promise<{ version?: string; installed?: string; news: Pack["news"]; online: boolean }> {
+  let pack: Pack | undefined;
+  let online = true;
+  try {
+    pack = await fetchPack(PACK_URL);
+    rememberPack(pack);
+  } catch {
+    pack = lastPack();
+    online = false;
+  }
+  return { version: pack?.version, installed: installedVersion(paths().game), news: pack?.news ?? [], online };
+}
+
+async function serverStatus() {
+  const server = lastPack()?.server;
+  if (!server) return { online: false };
+  return queryStatus(server.host, server.port);
+}
+
+// ------------------------------------------------------------------ ventanas
+
+const ICON = path.join(__dirname, "..", "renderer", "assets", "icon.png");
+const PRELOAD = path.join(__dirname, "preload.js");
 
 function createWindow(): BrowserWindow {
   const win = new BrowserWindow({
@@ -253,18 +312,30 @@ function createWindow(): BrowserWindow {
     frame: false,
     backgroundColor: "#0b0614",
     title: "Nexos Launcher",
-    icon: path.join(__dirname, "..", "renderer", "assets", "logo.png"),
+    icon: ICON,
     show: false,
-    webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-      contextIsolation: true,
-      nodeIntegration: false,
-      sandbox: true,
-    },
+    webPreferences: { preload: PRELOAD, contextIsolation: true, nodeIntegration: false, sandbox: true },
   });
   win.loadFile(path.join(__dirname, "..", "renderer", "index.html"));
-  win.once("ready-to-show", () => win.show());
   return win;
+}
+
+/** Ventanita del arranque (como la de Steam): "Buscando actualizaciones…" y, si hay, la descarga. */
+function createSplash(): BrowserWindow {
+  const splash = new BrowserWindow({
+    width: 360,
+    height: 420,
+    frame: false,
+    resizable: false,
+    backgroundColor: "#0b0614",
+    title: "Nexos Launcher",
+    icon: ICON,
+    show: false,
+    webPreferences: { preload: PRELOAD, contextIsolation: true, nodeIntegration: false, sandbox: true },
+  });
+  splash.loadFile(path.join(__dirname, "..", "renderer", "splash.html"));
+  splash.once("ready-to-show", () => splash.show());
+  return splash;
 }
 
 /** --captura=archivo.png: abre, espera a que pinte, guarda una imagen de la ventana y se cierra (para revisar el diseno). */
@@ -273,69 +344,135 @@ function captureArg(): string | undefined {
   return arg?.substring("--captura=".length);
 }
 
-// Una sola ventana: si se abre otra vez, se trae la que ya esta
+function sendAll(channel: string, data: unknown): void {
+  for (const w of BrowserWindow.getAllWindows()) {
+    if (!w.isDestroyed()) w.webContents.send(channel, data);
+  }
+}
+
+function registerIpc(): void {
+  ipcMain.on("ventana:minimizar", (e) => BrowserWindow.fromWebContents(e.sender)?.minimize());
+  ipcMain.on("ventana:cerrar", (e) => BrowserWindow.fromWebContents(e.sender)?.close());
+  ipcMain.on("abrir:discord", () => shell.openExternal(DISCORD));
+  ipcMain.on("abrir:registro", () => {
+    const file = fs.existsSync(logFile()) ? logFile() : path.join(path.dirname(logFile()), "launcher.log");
+    shell.openPath(file);
+  });
+  ipcMain.on("abrir:carpeta", () => {
+    fs.mkdirSync(paths().game, { recursive: true });
+    shell.openPath(paths().game);
+  });
+  ipcMain.handle("opciones:leer", () => loadOptions());
+  ipcMain.handle("opciones:guardar", (_e, options: Partial<Options>) => saveOptions({ ...loadOptions(), ...options }));
+  ipcMain.handle("app:version", () => app.getVersion());
+  ipcMain.handle("app:info", () => launcherInfo());
+  ipcMain.handle("servidor:estado", () => serverStatus());
+  ipcMain.handle("sistema:info", () => ({ totalMb: Math.floor(os.totalmem() / 1024 / 1024) }));
+  ipcMain.handle("cuentas:listar", () => accounts().list());
+  ipcMain.handle("cuentas:anadir", (_e, name: string) => accounts().addOffline(name));
+  ipcMain.handle("cuentas:elegir", (_e, id: string) => accounts().select(id));
+  ipcMain.handle("cuentas:borrar", (_e, id: string) => accounts().remove(id));
+  ipcMain.handle("actualizar:buscar", async () => {
+    const s = await checkNow();
+    if (s.phase === "disponible") sendAll("actualizar:estado", s);
+    return s;
+  });
+  ipcMain.handle("actualizar:instalar", () =>
+    installAvailable((s) => sendAll("actualizar:estado", s)).catch((e) => logLauncher("actualizar", e)));
+  const run = async (e: Electron.IpcMainInvokeEvent, mode: "jugar" | "reparar") => {
+    const win = BrowserWindow.fromWebContents(e.sender);
+    if (!win || busy || gameProcess) {
+      return false;
+    }
+    busy = true;
+    try {
+      await play(win, mode);
+    } finally {
+      busy = false;
+    }
+    return true;
+  };
+  ipcMain.handle("juego:jugar", (e) => run(e, "jugar"));
+  ipcMain.handle("juego:reparar", (e) => run(e, "reparar"));
+}
+
+function openMain(splash?: BrowserWindow): BrowserWindow {
+  const win = createWindow();
+  win.once("ready-to-show", () => {
+    win.show();
+    splash?.destroy();
+  });
+  win.on("close", () => {
+    // Cerrar el launcher no cierra el juego: sigue abierto por su cuenta
+    gameProcess?.unref();
+  });
+  watchForUpdates((s) => sendAll("actualizar:estado", s), (e) => logLauncher("actualizar", e));
+  return win;
+}
+
+// Una sola ventana: si se abre otra vez, se trae la que ya esta (tambien si estaba oculta mientras se juega)
 if (!app.requestSingleInstanceLock()) {
   app.quit();
 } else {
   app.on("second-instance", () => {
     const win = BrowserWindow.getAllWindows()[0];
     if (win) {
+      win.show();
       if (win.isMinimized()) win.restore();
       win.focus();
     }
   });
 
-  app.whenReady().then(() => {
-    ipcMain.on("ventana:minimizar", (e) => BrowserWindow.fromWebContents(e.sender)?.minimize());
-    ipcMain.on("ventana:cerrar", (e) => BrowserWindow.fromWebContents(e.sender)?.close());
-    ipcMain.on("abrir:discord", () => shell.openExternal(DISCORD));
-    ipcMain.on("abrir:registro", () => {
-      const file = fs.existsSync(logFile()) ? logFile() : path.join(path.dirname(logFile()), "launcher.log");
-      shell.openPath(file);
-    });
-    ipcMain.handle("opciones:leer", () => loadOptions());
-    ipcMain.handle("opciones:guardar", (_e, options: Options) => saveOptions({ ...loadOptions(), ...options }));
-    ipcMain.handle("app:version", () => app.getVersion());
-    ipcMain.handle("sistema:info", () => ({ totalMb: Math.floor(os.totalmem() / 1024 / 1024) }));
-    ipcMain.handle("cuentas:listar", () => accounts().list());
-    ipcMain.handle("cuentas:anadir", (_e, name: string) => accounts().addOffline(name));
-    ipcMain.handle("cuentas:elegir", (_e, id: string) => accounts().select(id));
-    ipcMain.handle("cuentas:borrar", (_e, id: string) => accounts().remove(id));
-    ipcMain.handle("juego:jugar", async (e) => {
-      const win = BrowserWindow.fromWebContents(e.sender);
-      if (!win || busy || gameProcess) {
-        return false;
-      }
-      busy = true;
-      try {
-        await play(win);
-      } finally {
-        busy = false;
-      }
-      return true;
-    });
-
-    const win = createWindow();
-    win.on("close", () => {
-      // Cerrar el launcher no cierra el juego: sigue abierto por su cuenta
-      gameProcess?.unref();
-    });
+  app.whenReady().then(async () => {
+    registerIpc();
     const capture = captureArg();
+    if (capture?.includes("splash")) {
+      // Captura de la ventana del arranque con una descarga a medias (para revisar el diseno)
+      const splash = createSplash();
+      splash.webContents.once("did-finish-load", () => {
+        splash.webContents.send("actualizar:estado", { phase: "descargando", version: "0.2.1", percent: 42 } satisfies UpdateState);
+        setTimeout(async () => {
+          fs.writeFileSync(capture, (await splash.webContents.capturePage()).toPNG());
+          app.quit();
+        }, 1200);
+      });
+      return;
+    }
+
+    // Como Steam: antes de nada, buscar e instalar la version nueva del launcher (solo en el launcher instalado)
+    let splash: BrowserWindow | undefined;
+    if (app.isPackaged || process.env.NEXOS_PRUEBA_UPDATER === "1") {
+      const s = createSplash();
+      splash = s;
+      await new Promise<void>((ok) => s.webContents.once("did-finish-load", () => ok()));
+      const installing = await updateOnStartup((u) => !s.isDestroyed() && s.webContents.send("actualizar:estado", u),
+        (e) => logLauncher("actualizar", e));
+      if (installing) {
+        return; // se cierra y se abre la version nueva
+      }
+    }
+
+    const win = openMain(splash);
     if (capture) {
-      // NEXOS_PRUEBA_JUGAR=1: pulsa JUGAR y espera a que acabe la preparacion antes de la captura (pruebas).
-      const pressPlay = process.env.NEXOS_PRUEBA_JUGAR === "1";
+      // NEXOS_PRUEBA_JUGAR=1 pulsa JUGAR (NEXOS_PRUEBA_BOTON=btn-repair, Reparar) y espera a que acabe antes de la captura.
+      const button = process.env.NEXOS_PRUEBA_BOTON ?? (process.env.NEXOS_PRUEBA_JUGAR === "1" ? "play-btn" : undefined);
       win.webContents.once("did-finish-load", () => {
         setTimeout(async () => {
-          if (pressPlay) {
+          if (process.env.NEXOS_VISTA) {
+            // Para revisar otra pantalla en la captura (por ejemplo NEXOS_VISTA=opciones)
+            await win.webContents.executeJavaScript(`document.querySelector('[data-view="${process.env.NEXOS_VISTA}"]')?.click()`);
+            await new Promise((ok) => setTimeout(ok, 400));
+          }
+          if (button) {
             await win.webContents.executeJavaScript(`new Promise((ok) => {
-              document.getElementById("play-btn").click();
+              document.getElementById("${button}").click();
               const t = setInterval(() => { const s = window.__estado; if (s && s.phase !== "preparando") { clearInterval(t); ok(); } }, 500);
             })`);
           }
           const image = await win.webContents.capturePage();
           fs.writeFileSync(capture, image.toPNG());
           if (!gameProcess) app.quit();
-        }, 1500);
+        }, 2500);
       });
     }
   });
