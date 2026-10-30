@@ -185,3 +185,64 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 .field { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
 .field input[type="range"] { accent-color: var(--purple); }
 .saved { margin-top: 12px; color: var(--green); font-size: 13px; }
+
+/* ---- pasos de la preparacion ---- */
+.steps {
+  position: absolute;
+  left: 24px;
+  bottom: 112px;
+  width: 340px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+}
+.steps ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.steps li { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--muted); }
+.steps li .icon { width: 18px; height: 18px; border-radius: 50%; display: grid; place-items: center; font-size: 11px; border: 2px solid #3a2560; }
+.steps li.activo { color: var(--text); }
+.steps li.activo .icon { border-color: var(--teal); border-top-color: transparent; animation: spin 0.9s linear infinite; }
+.steps li.hecho { color: #cfe9d6; }
+.steps li.hecho .icon { border-color: var(--green); background: var(--green); color: #fff; }
+.steps li.error { color: #ffb4b4; }
+.steps li.error .icon { border-color: var(--red); background: var(--red); color: #fff; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.error-box { margin-top: 12px; padding: 10px 12px; border-radius: 6px; background: rgba(224, 72, 72, 0.12); border: 1px solid rgba(224, 72, 72, 0.5); }
+.error-box p { margin: 0 0 10px; font-size: 13px; line-height: 1.4; color: #ffd6d6; }
+.error-actions { display: flex; gap: 8px; }
+
+.btn-primary, .btn-secondary {
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.btn-primary { background: linear-gradient(180deg, #a165f0, #6a2fc0); border: 1px solid var(--lavender); }
+.btn-secondary { background: #241638; border: 1px solid #3a2560; }
+.btn-primary:hover, .btn-secondary:hover { filter: brightness(1.15); }
+
+.avatar { display: grid; place-items: center; font-weight: 800; font-size: 20px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+.account { cursor: pointer; }
+
+/* ---- ventana de cuentas ---- */
+.modal { position: fixed; inset: 36px 0 0 0; background: rgba(5, 2, 12, 0.72); display: grid; place-items: center; z-index: 10; }
+.modal-card { position: relative; width: 460px; padding: 22px 24px; border-radius: 10px; background: #150b26; border: 1px solid var(--panel-border); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6); }
+.modal-card h2 { margin: 0 0 12px; color: var(--lavender); }
+.modal-card h3 { margin: 18px 0 4px; font-size: 14px; color: var(--gold); }
+.modal-close { position: absolute; top: 10px; right: 12px; width: 30px; height: 30px; border-radius: 6px; color: var(--muted); }
+.modal-close:hover { background: rgba(255, 255, 255, 0.08); color: var(--text); }
+.small { font-size: 12.5px; line-height: 1.45; margin: 0 0 10px; }
+.account-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.account-list li { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 6px; background: #1d1131; border: 1px solid transparent; cursor: pointer; }
+.account-list li.selected { border-color: var(--teal); }
+.account-list li .mini-avatar { width: 28px; height: 28px; border-radius: 5px; display: grid; place-items: center; font-weight: 800; background: linear-gradient(135deg, var(--purple), var(--teal)); }
+.account-list li .who { flex: 1; }
+.account-list li .who small { display: block; color: var(--muted); font-size: 11.5px; }
+.account-list li .remove { color: var(--muted); width: 26px; height: 26px; border-radius: 5px; }
+.account-list li .remove:hover { background: var(--red); color: #fff; }
+.account-list .empty { color: var(--muted); font-size: 13px; padding: 4px 0; cursor: default; background: none; }
+.add-row { display: flex; gap: 8px; }
+.add-row input { flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #3a2560; background: #0f0820; color: var(--text); font-size: 14px; outline: none; }
+.add-row input:focus { border-color: var(--teal); }
+.form-error { margin-top: 8px; font-size: 12.5px; color: #ffb4b4; }
+.btn-microsoft { margin-top: 18px; width: 100%; padding: 9px; border-radius: 6px; background: #1b1b2b; border: 1px solid #333; color: var(--muted); font-size: 13px; cursor: not-allowed; }

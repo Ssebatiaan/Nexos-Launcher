@@ -1,39 +1,62 @@
-// Interfaz del Nexos Launcher: cambia de vista, botones de la ventana y opciones.
-// Lo que necesita el sistema (archivos, enlaces, ventana) se pide al proceso principal por window.nexos (preload).
+// Interfaz del Nexos Launcher: vistas, cuentas, opciones y el boton JUGAR (con los pasos de la preparacion).
+// Lo que necesita el sistema (archivos, instalar, abrir el juego) se pide al proceso principal por window.nexos (preload).
+
+interface Account {
+  id: string;
+  type: "offline";
+  name: string;
+  uuid: string;
+}
+
+type StepState = "pendiente" | "activo" | "hecho" | "error";
+
+interface PlayState {
+  steps: Array<{ id: string; label: string; state: StepState }>;
+  text: string;
+  percent: number | null;
+  phase: "preparando" | "jugando" | "terminado" | "error";
+  error?: string;
+  canOpenLog?: boolean;
+}
 
 interface NexosApi {
   minimize(): void;
   close(): void;
   openDiscord(): void;
+  openLog(): void;
   readOptions(): Promise<{ ramMb: number }>;
   saveOptions(options: { ramMb: number }): Promise<void>;
   version(): Promise<string>;
-  syncPack(): Promise<{ version: string; downloaded: number; removed: number; unchanged: number; minecraft: string; neoforge: string }>;
-  onPackProgress(cb: (p: Progress) => void): void;
-}
-
-interface Progress {
-  phase: "comprobando" | "descargando" | "listo";
-  done: number;
-  total: number;
-  bytesDone: number;
-  bytesTotal: number;
-  current?: string;
+  systemInfo(): Promise<{ totalMb: number }>;
+  listAccounts(): Promise<{ selected?: string; accounts: Account[] }>;
+  addOfflineAccount(name: string): Promise<Account>;
+  selectAccount(id: string): Promise<void>;
+  removeAccount(id: string): Promise<void>;
+  play(): Promise<boolean>;
+  onPlayState(cb: (s: PlayState) => void): void;
 }
 
 declare global {
   interface Window {
     nexos: NexosApi;
+    /** Ultimo estado de JUGAR (lo lee el modo de prueba del proceso principal). */
+    __estado?: PlayState;
   }
 }
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+const nexos = window.nexos;
+
+/** Mensaje de un error del proceso principal sin el prefijo que anade Electron. */
+function cleanError(e: unknown): string {
+  return (e instanceof Error ? e.message : String(e)).replace(/^Error invoking remote method '[^']+': (Error: )?/, "");
+}
 
 // ---- ventana
-$("btn-min").addEventListener("click", () => window.nexos.minimize());
-$("btn-close").addEventListener("click", () => window.nexos.close());
-$("btn-discord").addEventListener("click", () => window.nexos.openDiscord());
-window.nexos.version().then((v) => ($("version").textContent = "v" + v));
+$("btn-min").addEventListener("click", () => nexos.minimize());
+$("btn-close").addEventListener("click", () => nexos.close());
+$("btn-discord").addEventListener("click", () => nexos.openDiscord());
+nexos.version().then((v) => ($("version").textContent = "v" + v));
 
 // ---- menu lateral
 for (const item of Array.from(document.querySelectorAll<HTMLButtonElement>(".nav-item"))) {
@@ -45,60 +68,139 @@ for (const item of Array.from(document.querySelectorAll<HTMLButtonElement>(".nav
   });
 }
 
-// ---- opciones: memoria
+// ---- opciones: memoria (como mucho la RAM del PC menos 2 GB para Windows)
 const ram = $<HTMLInputElement>("ram");
 const ramLabel = $("ram-label");
 let savedTimer: number | undefined;
+const gb = (mb: number) => (mb / 1024).toFixed(mb % 1024 === 0 ? 0 : 1) + " GB";
 
-function showRam(mb: number): void {
-  ramLabel.textContent = (mb / 1024).toFixed(mb % 1024 === 0 ? 0 : 1) + " GB";
-}
-
-window.nexos.readOptions().then((o) => {
-  ram.value = String(o.ramMb);
-  showRam(o.ramMb);
+Promise.all([nexos.readOptions(), nexos.systemInfo()]).then(([o, sys]) => {
+  const max = Math.max(3072, Math.min(16384, Math.floor((sys.totalMb - 2048) / 512) * 512));
+  ram.max = String(max);
+  ram.value = String(Math.min(o.ramMb, max));
+  ramLabel.textContent = gb(Number(ram.value));
+  $("ram-info").textContent = `Tu PC tiene ${gb(sys.totalMb)} de RAM. Recomendado: 5 GB (más no hace el juego más rápido y deja sin memoria a Windows).`;
 });
-ram.addEventListener("input", () => showRam(Number(ram.value)));
+ram.addEventListener("input", () => (ramLabel.textContent = gb(Number(ram.value))));
 ram.addEventListener("change", async () => {
-  await window.nexos.saveOptions({ ramMb: Number(ram.value) });
+  await nexos.saveOptions({ ramMb: Number(ram.value) });
   const saved = $("saved");
   saved.classList.remove("hidden");
   window.clearTimeout(savedTimer);
   savedTimer = window.setTimeout(() => saved.classList.add("hidden"), 1500);
 });
 
-// ---- jugar: por ahora comprueba y actualiza el modpack (abrir el juego llega en el Sprint 2)
-const playBtn = $<HTMLButtonElement>("play-btn");
-const progressText = $("progress-text");
-const progressFill = $("progress-fill");
-const mb = (n: number) => (n / 1e6).toFixed(1);
+// ---- cuentas
+const modal = $("account-modal");
+const nameInput = $<HTMLInputElement>("account-name-input");
+const accountError = $("account-error");
 
-window.nexos.onPackProgress((p) => {
-  if (p.phase === "comprobando") {
-    progressText.textContent = `Comprobando archivos… ${p.done}/${p.total}`;
-    progressFill.style.width = `${(p.done / Math.max(1, p.total)) * 100}%`;
-  } else if (p.phase === "descargando") {
-    progressText.textContent = `Descargando ${p.done}/${p.total} · ${mb(p.bytesDone)} de ${mb(p.bytesTotal)} MB`;
-    progressFill.style.width = `${(p.bytesDone / Math.max(1, p.bytesTotal)) * 100}%`;
+async function refreshAccounts(): Promise<Account | undefined> {
+  const { selected, accounts } = await nexos.listAccounts();
+  const current = accounts.find((a) => a.id === selected) ?? accounts[0];
+  $("account-name").textContent = current ? current.name : "Sin cuenta";
+  $("account-type").textContent = current ? "No premium · cambiar" : "Añade una cuenta para jugar";
+  $("avatar").textContent = current ? current.name[0].toUpperCase() : "?";
+  const list = $("account-list");
+  list.innerHTML = "";
+  if (accounts.length === 0) {
+    list.innerHTML = '<li class="empty">Todavía no hay cuentas.</li>';
   }
+  for (const a of accounts) {
+    const li = document.createElement("li");
+    li.className = a.id === current?.id ? "selected" : "";
+    li.innerHTML = `<div class="mini-avatar"></div><div class="who"><span></span><small>No premium</small></div>
+      <button class="remove" title="Quitar esta cuenta">✕</button>`;
+    li.querySelector(".mini-avatar")!.textContent = a.name[0].toUpperCase();
+    li.querySelector(".who span")!.textContent = a.name;
+    li.addEventListener("click", async () => {
+      await nexos.selectAccount(a.id);
+      await refreshAccounts();
+      modal.classList.add("hidden");
+    });
+    li.querySelector(".remove")!.addEventListener("click", async (ev) => {
+      ev.stopPropagation();
+      await nexos.removeAccount(a.id);
+      await refreshAccounts();
+    });
+    list.appendChild(li);
+  }
+  return current;
+}
+
+function openAccounts(): void {
+  accountError.classList.add("hidden");
+  nameInput.value = "";
+  modal.classList.remove("hidden");
+  nameInput.focus();
+}
+
+async function addAccount(): Promise<void> {
+  try {
+    await nexos.addOfflineAccount(nameInput.value);
+    await refreshAccounts();
+    modal.classList.add("hidden");
+  } catch (e) {
+    accountError.textContent = cleanError(e);
+    accountError.classList.remove("hidden");
+  }
+}
+
+$("account").addEventListener("click", openAccounts);
+$("account-close").addEventListener("click", () => modal.classList.add("hidden"));
+modal.addEventListener("click", (e) => e.target === modal && modal.classList.add("hidden"));
+$("account-add").addEventListener("click", addAccount);
+nameInput.addEventListener("keydown", (e) => e.key === "Enter" && addAccount());
+refreshAccounts();
+
+// ---- jugar
+const playBtn = $<HTMLButtonElement>("play-btn");
+const ICONS: Record<StepState, string> = { pendiente: "", activo: "", hecho: "✔", error: "✕" };
+
+nexos.onPlayState((s) => {
+  window.__estado = s;
+  $("steps").classList.remove("hidden");
+  const list = $("steps-list");
+  list.innerHTML = "";
+  for (const step of s.steps) {
+    const li = document.createElement("li");
+    li.className = step.state;
+    li.innerHTML = `<span class="icon">${ICONS[step.state]}</span><span></span>`;
+    li.lastElementChild!.textContent = step.label;
+    list.appendChild(li);
+  }
+  $("progress").classList.toggle("hidden", s.phase === "error");
+  $("progress-text").textContent = s.text;
+  const fill = $("progress-fill");
+  fill.style.width = s.percent === null ? (s.phase === "jugando" || s.phase === "terminado" ? "100%" : "0") : `${s.percent}%`;
+  $("error-box").classList.toggle("hidden", s.phase !== "error");
+  $("error-text").textContent = s.error ?? "";
+  $("btn-log").classList.toggle("hidden", !s.canOpenLog);
+  playBtn.disabled = s.phase === "preparando" || s.phase === "jugando";
+  playBtn.textContent = s.phase === "preparando" ? "…" : s.phase === "jugando" ? "JUGANDO" : "JUGAR";
 });
 
-playBtn.addEventListener("click", async () => {
+async function play(): Promise<void> {
+  const account = await refreshAccounts();
+  if (!account) {
+    openAccounts();
+    return;
+  }
   playBtn.disabled = true;
   playBtn.textContent = "…";
-  $("progress").classList.remove("hidden");
-  progressFill.style.width = "0";
   try {
-    const r = await window.nexos.syncPack();
-    progressFill.style.width = "100%";
-    progressText.textContent = `Modpack al día (versión ${r.version}): ${r.downloaded} descargados, ${r.removed} quitados. `
-      + "Abrir el juego llega en el Sprint 2.";
+    await nexos.play();
   } catch (e) {
-    progressText.textContent = "Error: " + (e instanceof Error ? e.message.replace(/^Error invoking remote method '[^']+': (Error: )?/, "") : e);
-  } finally {
+    $("steps").classList.remove("hidden");
+    $("error-box").classList.remove("hidden");
+    $("error-text").textContent = cleanError(e);
     playBtn.disabled = false;
     playBtn.textContent = "JUGAR";
   }
-});
+}
+
+playBtn.addEventListener("click", play);
+$("btn-retry").addEventListener("click", play);
+$("btn-log").addEventListener("click", () => nexos.openLog());
 
 export {};

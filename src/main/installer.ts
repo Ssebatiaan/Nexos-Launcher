@@ -15,6 +15,17 @@ import {
 import type { Task } from "@xmcl/task";
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { Agent, interceptors } from "undici";
+
+/**
+ * Conexiones para las descargas: sin limite, miles de recursos abrian miles de conexiones a la vez a los servidores de
+ * Mojang y muchas no llegaban a conectar ("Connect Timeout"). 16 a la vez y 30 s para conectar.
+ */
+const dispatcher = new Agent({ connections: 16, connect: { timeout: 30_000 }, headersTimeout: 60_000, bodyTimeout: 60_000 })
+  .compose(interceptors.redirect({ maxRedirections: 5 })); // @xmcl pide seguir redirecciones (en undici 7 va aparte)
+const DOWNLOAD = { dispatcher, assetsDownloadConcurrency: 16, librariesDownloadConcurrency: 8 };
+/** Pasadas como mucho: cada una baja solo lo que falta (un corte de internet no obliga a empezar de cero). */
+const PASSES = 4;
 
 export interface Paths {
   /** Carpeta del launcher (%APPDATA%/Nexos Launcher). */
@@ -43,6 +54,37 @@ export function pathsFor(root: string): Paths {
     game: path.join(root, "juego"),
     java: path.join(root, "java"),
   };
+}
+
+/** Repite una instalacion si falla alguna descarga (cada pasada solo baja lo que falta). */
+async function withRetries<T>(job: (pass: number) => Promise<T>): Promise<T> {
+  let lastError: unknown;
+  for (let pass = 1; pass <= PASSES; pass++) {
+    try {
+      return await job(pass);
+    } catch (e) {
+      lastError = e;
+      await new Promise((ok) => setTimeout(ok, 1500 * pass));
+    }
+  }
+  throw friendlyError(lastError);
+}
+
+/** Convierte los errores de descarga en un mensaje entendible. */
+export function friendlyError(e: unknown): Error {
+  const inner: unknown[] = (e as { errors?: unknown[] }).errors ?? [e];
+  const text = inner.map((x) => (x instanceof Error ? `${x.name} ${x.message} ${(x as { code?: string }).code ?? ""}` : String(x))).join(" ");
+  if (/ConnectTimeout|ENOTFOUND|ECONNREFUSED|ECONNRESET|ETIMEDOUT|EAI_AGAIN|fetch failed|UND_ERR/i.test(text)) {
+    return new Error("No hay conexión con los servidores de descarga (Mojang/NeoForge). Revisa tu internet y pulsa JUGAR otra vez: seguirá donde se quedó.");
+  }
+  if (/ENOSPC/i.test(text)) {
+    return new Error("El disco está lleno. Libera espacio y pulsa JUGAR otra vez.");
+  }
+  if (/EPERM|EACCES|EBUSY/i.test(text)) {
+    return new Error("Windows no deja escribir algunos archivos (¿un antivirus o el juego abierto?). Cierra el juego y pulsa JUGAR otra vez.");
+  }
+  const first = inner[0];
+  return first instanceof Error ? first : new Error(String(first));
 }
 
 /** Ejecuta una tarea de @xmcl contando bytes para la barra. */
@@ -75,7 +117,7 @@ export async function ensureJava(paths: Paths, major: number, onProgress: OnProg
   }
   const target = await officialJavaTarget(major);
   fs.rmSync(paths.java, { recursive: true, force: true });
-  await run(`Instalando Java ${major}`, installJavaRuntimeWithJsonTask({ target, destination: paths.java }), onProgress);
+  await withRetries(() => run(`Instalando Java ${major}`, installJavaRuntimeWithJsonTask({ target, destination: paths.java, dispatcher }), onProgress));
   const info = await resolveJava(exe).catch(() => undefined);
   if (!info) {
     throw new Error("Java se descargó pero no arranca. Pulsa JUGAR otra vez; si sigue, avisa en el Discord.");
@@ -107,17 +149,19 @@ async function officialJavaTarget(major: number): Promise<JavaRuntimeTarget> {
 export async function ensureMinecraft(paths: Paths, version: string, onProgress: OnProgress): Promise<void> {
   const folder = new MinecraftFolder(paths.minecraft);
   const label = `Descargando Minecraft ${version}`;
-  if (fs.existsSync(folder.getVersionJson(version))) {
-    // Ya instalado: solo comprobar librerias y recursos (baja lo que falte o este danado)
-    await run(label, installDependenciesTask(await Version.parse(folder, version)), onProgress);
-    return;
-  }
-  const list = await getVersionList();
-  const info = list.versions.find((v) => v.id === version);
-  if (!info) {
-    throw new Error(`Mojang no tiene la versión ${version} de Minecraft.`);
-  }
-  await run(label, installTask(info, folder), onProgress);
+  await withRetries(async () => {
+    if (fs.existsSync(folder.getVersionJson(version))) {
+      // Ya instalado (o a medias): comprobar el juego, librerias y recursos; baja lo que falte o este danado
+      await run(label, installDependenciesTask(await Version.parse(folder, version), DOWNLOAD), onProgress);
+      return;
+    }
+    const list = await getVersionList();
+    const info = list.versions.find((v) => v.id === version);
+    if (!info) {
+      throw new Error(`Mojang no tiene la versión ${version} de Minecraft.`);
+    }
+    await run(label, installTask(info, folder, DOWNLOAD), onProgress);
+  });
 }
 
 // ------------------------------------------------------------------ NeoForge
@@ -128,15 +172,17 @@ export async function ensureNeoForge(paths: Paths, neoforge: string, java: strin
   const id = `neoforge-${neoforge}`;
   if (fs.existsSync(folder.getVersionJson(id))) {
     try {
-      await run(`Comprobando NeoForge ${neoforge}`, installDependenciesTask(await Version.parse(folder, id)), onProgress);
+      await withRetries(async () => run(`Comprobando NeoForge ${neoforge}`, installDependenciesTask(await Version.parse(folder, id), DOWNLOAD), onProgress));
       return id;
     } catch {
       // version danada: se reinstala
     }
   }
-  const installed = await run(`Instalando NeoForge ${neoforge}`, installNeoForgedTask("neoforge", neoforge, folder, { java }), onProgress);
-  await run(`Completando NeoForge ${neoforge}`, installDependenciesTask(await Version.parse(folder, installed)), onProgress);
-  return installed;
+  return withRetries(async () => {
+    const installed = await run(`Instalando NeoForge ${neoforge}`, installNeoForgedTask("neoforge", neoforge, folder, { java, ...DOWNLOAD }), onProgress);
+    await run(`Completando NeoForge ${neoforge}`, installDependenciesTask(await Version.parse(folder, installed), DOWNLOAD), onProgress);
+    return installed;
+  });
 }
 
 // ------------------------------------------------------------------ comprobaciones previas

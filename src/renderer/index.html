@@ -48,9 +48,20 @@
             <p>Accesorios de Artifacts en los cofres de las grietas y avisos en Discord.</p>
           </article>
         </aside>
+        <!-- Pasos de la preparacion (se ve al pulsar JUGAR) -->
+        <div class="steps hidden" id="steps">
+          <ul id="steps-list"></ul>
+          <div class="error-box hidden" id="error-box">
+            <p id="error-text"></p>
+            <div class="error-actions">
+              <button class="btn-primary" id="btn-retry">Reintentar</button>
+              <button class="btn-secondary hidden" id="btn-log">Ver registro</button>
+            </div>
+          </div>
+        </div>
         <footer class="playbar">
-          <div class="account" id="account">
-            <div class="avatar"></div>
+          <div class="account" id="account" title="Cambiar de cuenta">
+            <div class="avatar" id="avatar">?</div>
             <div>
               <div class="account-name" id="account-name">Sin cuenta</div>
               <div class="account-type" id="account-type">Añade una cuenta para jugar</div>
@@ -80,12 +91,32 @@
           <label class="field">
             <span>Memoria para el juego: <strong id="ram-label">5 GB</strong></span>
             <input type="range" id="ram" min="3072" max="12288" step="512" value="5120">
-            <small class="muted">Recomendado: 5 GB. Más de la mitad de la RAM de tu PC no ayuda.</small>
+            <small class="muted" id="ram-info">Recomendado: 5 GB. Más de la mitad de la RAM de tu PC no ayuda.</small>
           </label>
           <div class="saved hidden" id="saved">✔ Guardado</div>
         </div>
       </section>
     </main>
+  </div>
+
+  <!-- Ventana de cuentas -->
+  <div class="modal hidden" id="account-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="account-close" title="Cerrar">&#x2715;</button>
+      <h2>Cuentas</h2>
+      <ul class="account-list" id="account-list"></ul>
+      <h3>Añadir cuenta no premium</h3>
+      <p class="muted small">Escribe el nombre con el que juegas en Nexos MC (3 a 16 letras, números o _). Si ya jugaste
+        en el servidor con ese nombre, conservas todo.</p>
+      <div class="add-row">
+        <input id="account-name-input" maxlength="16" placeholder="Tu nombre en el juego" spellcheck="false">
+        <button class="btn-primary" id="account-add">Añadir</button>
+      </div>
+      <div class="form-error hidden" id="account-error"></div>
+      <button class="btn-microsoft" disabled title="Llegará cuando Microsoft apruebe el launcher">
+        Iniciar sesión con Microsoft (premium) · próximamente
+      </button>
+    </div>
   </div>
 
   <script type="module" src="app.js"></script>

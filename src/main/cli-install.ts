@@ -30,5 +30,18 @@ async function main(): Promise<void> {
 
 main().catch((e) => {
   console.error("ERROR:", e instanceof Error ? e.stack ?? e.message : e);
+  // Los errores de varias descargas vienen juntos en un AggregateError: se muestran los primeros y cuantos hay.
+  const inner: unknown[] = (e as { errors?: unknown[] }).errors ?? [];
+  if (inner.length) {
+    const kinds = new Map<string, number>();
+    for (const x of inner) {
+      const msg = x instanceof Error ? `${x.name}: ${x.message}` : String(x);
+      kinds.set(msg.replace(/[0-9a-f]{40}/g, "<hash>").slice(0, 160), (kinds.get(msg) ?? 0) + 1);
+    }
+    console.error(`${inner.length} descargas fallidas. Tipos:`);
+    [...kinds.entries()].slice(0, 8).forEach(([k, n]) => console.error(`  x${n}  ${k}`));
+    const first = inner[0] as { cause?: unknown; stack?: string };
+    console.error("Primera:", first?.stack ?? first, first?.cause ?? "");
+  }
   process.exit(1);
 });
