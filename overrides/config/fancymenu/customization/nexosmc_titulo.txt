@@ -3,7 +3,7 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1792564418266
+  last_edited_time = 1793345267865
   is_enabled = true
   randommode = false
   randomgroup = 1
@@ -115,8 +115,8 @@ element {
   navigatable = true
   label = Jugar en Nexos MC
   label_scale = 1.15
-  description = Entrar directamente al servidor (192.168.1.26:25565)
-  [executable_action_instance:nexosmc_entrar_accion][action_type:joinserver] = 192.168.1.26:25565
+  description = Entrar directamente al servidor (192.168.1.29:25565)
+  [executable_action_instance:nexosmc_entrar_accion][action_type:joinserver] = 192.168.1.29:25565
 }
 
 vanilla_button {
