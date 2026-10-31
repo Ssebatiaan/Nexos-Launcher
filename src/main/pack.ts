@@ -13,6 +13,8 @@ export interface PackFile {
   size: number;
   /** Solo se escribe si no existe (servers.dat: no se pisan los servidores del jugador). */
   onlyIfMissing?: boolean;
+  /** Ajuste de partida que el jugador puede cambiar: si ya no es el que puso el launcher, no se toca. */
+  keepIfChanged?: boolean;
 }
 
 /** Novedades que se ven en el launcher (client-pack/noticias.json del proyecto del servidor). */
@@ -112,6 +114,10 @@ export async function syncPack(pack: Pack, gameDir: string, onProgress: (p: Prog
     const sha1 = !options.full && known && known.size === st.size && known.mtimeMs === st.mtimeMs ? known.sha1 : await sha1Of(target);
     if (sha1 === f.sha1) {
       next.files[f.path] = { sha1, size: st.size, mtimeMs: st.mtimeMs };
+    } else if (f.keepIfChanged && (!known || sha1 !== known.sha1)) {
+      // Ya no es el que pusimos: el jugador cambio sus ajustes y se respetan (se sigue anotando el nuestro para
+      // saberlo tambien la proxima vez)
+      if (known) next.files[f.path] = known;
     } else {
       todo.push(f);
     }

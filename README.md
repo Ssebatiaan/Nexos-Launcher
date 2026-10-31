@@ -33,7 +33,8 @@ Estructura:
 El launcher lee `https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/pack/pack.json` (rama `pack`, la genera
 y publica `tools/build_launcher_pack.py --publicar` del proyecto del servidor). Cada archivo de la carpeta del juego
 lleva su descarga (Modrinth, CurseForge o la propia rama) y su SHA-1. `src/main/pack.ts` baja lo que falta o cambió,
-borra lo que se quitó del paquete y no toca los mods que añada el jugador.
+borra lo que se quitó del paquete y no toca los mods que añada el jugador. Los ajustes de partida marcados `keepIfChanged` (inventario, barra de FTB) solo se ponen
+mientras el jugador no los cambie. Nunca se tocan `options.txt`, `shaderpacks/`, `screenshots/`, `saves/` ni `resourcepacks/`.
 
 ```bash
 node dist/main/cli-sync.js <pack.json> <carpeta>   # probar la sincronización sin abrir la ventana
