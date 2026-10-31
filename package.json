@@ -1,7 +1,7 @@
 {
   "name": "nexos-launcher",
   "productName": "Nexos Launcher",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Launcher de Nexos MC: instala y actualiza el modpack, cuentas premium y no premium, skins.",
   "main": "dist/main/main.js",
   "private": true,
