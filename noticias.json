@@ -1,0 +1,23 @@
+[
+  {
+    "fecha": "2026-10-30",
+    "etiqueta": "Nuevo",
+    "titulo": "Nexos Launcher",
+    "texto": "Instala y actualiza todo solo: Java, Minecraft, NeoForge y el modpack. Pulsa JUGAR y listo."
+  },
+  {
+    "fecha": "2026-10-29",
+    "titulo": "Coliseo renovado",
+    "texto": "Cola de peleas, botón Listo, música, fuegos artificiales y modos con kits estilo PvPHQ."
+  },
+  {
+    "fecha": "2026-10-29",
+    "titulo": "/revive y /skin",
+    "texto": "El staff puede devolverte lo perdido en una muerte injusta. Cambia tu skin con /skin <nombre>."
+  },
+  {
+    "fecha": "2026-10-28",
+    "titulo": "Grietas y accesorios",
+    "texto": "Accesorios de Artifacts en los cofres de las grietas y avisos de grietas y raideos en Discord."
+  }
+]
