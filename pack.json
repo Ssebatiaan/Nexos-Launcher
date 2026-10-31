@@ -442,7 +442,8 @@
       "path": "config/ftblibrary-client.snbt",
       "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/cf7aafc34bf10e6baa22949a664751680c50dfe5/overrides/config/ftblibrary-client.snbt",
       "sha1": "2b0f5392012e90bf1dc12286b6f40910b51e35bf",
-      "size": 1662
+      "size": 1662,
+      "keepIfChanged": true
     },
     {
       "path": "config/artifacts/items.toml",
@@ -2698,7 +2699,8 @@
       "path": "config/inventoryprofilesnext/inventoryprofiles.json",
       "url": "https://raw.githubusercontent.com/Ssebatiaan/Nexos-Launcher/cf7aafc34bf10e6baa22949a664751680c50dfe5/overrides/config/inventoryprofilesnext/inventoryprofiles.json",
       "sha1": "e079cbcb0ae7346f49ad05c8eff6c816643b9d23",
-      "size": 445
+      "size": 445,
+      "keepIfChanged": true
     },
     {
       "path": "servers.dat",
