@@ -5,7 +5,7 @@ instalar nada a mano.
 
 - Instala lo necesario aunque no tengas Minecraft: Java 21, Minecraft 1.21.1, NeoForge y el modpack.
 - Al abrir busca actualizaciones del modpack y del propio launcher (botón verde para actualizar y reiniciar).
-- Cuentas premium (Microsoft) y no premium, guardadas cifradas.
+- Cuentas premium (Microsoft) y no premium; la sesión premium se guarda cifrada (protección de Windows).
 - Opciones (memoria, etc.), botón de Discord, noticias y estado del servidor.
 - Skins con visor 3D y subida de skin que se ve en el servidor.
 
@@ -79,6 +79,15 @@ al cerrar el servidor una descarga.
   instalación (vuelve a poner Java y revisa la huella de todos los archivos), abrir la carpeta del juego, buscar
   actualizaciones.
 
+## Cuentas premium (Microsoft)
+
+`src/main/microsoft.ts`: la página oficial de Microsoft se abre en una ventana del launcher (código con PKCE, vuelta a
+`http://localhost` interceptada), luego Xbox Live → XSTS → Minecraft (`login_with_xbox`) y el perfil. App de Azure
+`bf95468d-9abf-41ad-b865-4d7ce7ab2d98`, aprobada por Mojang el 30-10-2026 (`docs/aprobacion-microsoft.md`). La sesión
+(token de refresco incluido) se guarda cifrada con `safeStorage` en `cuentas.json` y se renueva sola antes de jugar;
+si caduca, la cuenta pide volver a iniciar sesión. Con una cuenta premium la pestaña Skins cambia la skin oficial (API
+de Mojang) y al iniciar sesión la skin actual entra en el historial.
+
 ## Skins
 
 Pantalla Skins (`src/renderer/skins-view.ts`, visor 3D con skinview3d, MIT): subir una PNG (64×64; si los brazos son
@@ -98,6 +107,6 @@ premium ya vienen firmadas; las de archivo las firma MineSkin con la clave de `c
 | 1 | Distribución del modpack: `pack.json` en la rama `pack`, sincronización con comprobación de huellas | Hecho |
 | 2 | Instalar y jugar: Java 21 + Minecraft + NeoForge + modpack, cuenta no premium, entrar al servidor | Hecho |
 | 3 | Actualizaciones y opciones: buscar al abrir, auto-actualización del launcher, Discord, noticias, estado | Hecho |
-| 4 | Cuentas: varias guardadas, Microsoft (cuando aprueben la app) | Pendiente |
+| 4 | Cuentas: varias guardadas, Microsoft (cuando aprueben la app) | Hecho (falta la prueba con una cuenta real) |
 | 5 | Skins: visor 3D, subir skin y que se vea en el servidor | Hecho (las de archivo, cuando haya clave de MineSkin) |
 | 6 | Pulido: instalador .exe, auto-login no premium, registro de errores | Pendiente |

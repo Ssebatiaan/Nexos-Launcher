@@ -1,5 +1,8 @@
 # Aprobación de Microsoft para el modo premium
 
+**Aprobada el 30-10-2026** (correo de Mojang Enforcement). Id. de la app: `bf95468d-9abf-41ad-b865-4d7ce7ab2d98` (en
+`src/main/microsoft.ts`).
+
 Desde 2022, un launcher nuevo no puede iniciar sesión con cuentas de Microsoft en Minecraft hasta que Mojang aprueba su
 "aplicación" de Azure. Sin aprobar, el paso `login_with_xbox` de la API de Minecraft responde **403 "Invalid app
 registration"**. Se pide una vez y tarda (revisan las solicitudes cada semana, según guías de terceros). Mientras tanto

@@ -245,7 +245,18 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 .add-row input { flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid #3a2560; background: #0f0820; color: var(--text); font-size: 14px; outline: none; }
 .add-row input:focus { border-color: var(--teal); }
 .form-error { margin-top: 8px; font-size: 12.5px; color: #ffb4b4; }
-.btn-microsoft { margin-top: 18px; width: 100%; padding: 9px; border-radius: 6px; background: #1b1b2b; border: 1px solid #333; color: var(--muted); font-size: 13px; cursor: not-allowed; }
+.btn-microsoft { margin-top: 14px; width: 100%; padding: 10px; border-radius: 6px; background: #2f2f2f; border: 1px solid #555; color: #fff; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.btn-microsoft:hover { background: #3a3a3a; }
+.btn-microsoft:disabled { cursor: default; opacity: 0.7; }
+.ms-logo { display: grid; grid-template-columns: 8px 8px; gap: 2px; }
+.ms-logo i { width: 8px; height: 8px; }
+.ms-logo i:nth-child(1) { background: #f25022; }
+.ms-logo i:nth-child(2) { background: #7fba00; }
+.ms-logo i:nth-child(3) { background: #00a4ef; }
+.ms-logo i:nth-child(4) { background: #ffb900; }
+.ms-note { margin: 6px 0 0; }
+.account-list li .who small.premium { color: var(--teal); }
+.account-list li .who small.relogin { color: var(--gold); }
 
 /* ---- novedades (vienen en pack.json) ---- */
 .news-list { max-height: 330px; overflow-y: auto; padding-right: 4px; }

@@ -15,6 +15,7 @@ contextBridge.exposeInMainWorld("nexos", {
   systemInfo: () => ipcRenderer.invoke("sistema:info"),
   listAccounts: () => ipcRenderer.invoke("cuentas:listar"),
   addOfflineAccount: (name: string) => ipcRenderer.invoke("cuentas:anadir", name),
+  loginMicrosoft: () => ipcRenderer.invoke("cuentas:microsoft"),
   selectAccount: (id: string) => ipcRenderer.invoke("cuentas:elegir", id),
   removeAccount: (id: string) => ipcRenderer.invoke("cuentas:borrar", id),
   play: () => ipcRenderer.invoke("juego:jugar"),

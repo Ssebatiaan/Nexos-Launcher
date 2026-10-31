@@ -9,6 +9,7 @@ import { Accounts } from "./accounts";
 import { launchGame } from "./game";
 import { ensureJava, ensureMinecraft, ensureNeoForge, freeSpace, friendlyError, pathsFor, type StepProgress } from "./installer";
 import { fetchPack, installedVersion, type Pack, syncPack } from "./pack";
+import { currentSkin, LoginCancelled, loginInteractive, uploadSkin } from "./microsoft";
 import { Skins } from "./skins";
 import { queryStatus } from "./status";
 import { checkNow, installAvailable, updateOnStartup, type UpdateState, watchForUpdates } from "./updater";
@@ -30,6 +31,36 @@ function skinAccount(): string {
     throw new Error("Primero añade una cuenta (abajo a la izquierda, en la pantalla Jugar).");
   }
   return account.id;
+}
+
+/** Lista de skins para la interfaz (con premium = la skin elegida es la oficial de Mojang). */
+function skinList() {
+  const account = accounts().selected();
+  return { ...skins().list(account?.id), premium: account?.type === "microsoft" };
+}
+
+/**
+ * Cambia algo de las skins y, si la cuenta es premium, sube la elegida a Mojang (skin oficial). Si Mojang la rechaza,
+ * se vuelve a la que estaba elegida antes.
+ */
+async function changeSkin(action: (accountId: string) => unknown | Promise<unknown>) {
+  const accountId = skinAccount();
+  const account = accounts().selected()!;
+  const before = skins().selectedId(accountId);
+  await action(accountId);
+  if (account.type === "microsoft") {
+    const chosen = skins().selectedSkin(accountId);
+    if (chosen) {
+      try {
+        const session = await accounts().minecraftSession(accountId);
+        await uploadSkin(session.mcToken, chosen.png, chosen.variant);
+      } catch (e) {
+        skins().select(accountId, before ?? null);
+        throw e;
+      }
+    }
+  }
+  return skinList();
 }
 
 // ------------------------------------------------------------------ opciones
@@ -233,10 +264,12 @@ async function play(win: BrowserWindow, mode: "jugar" | "reparar"): Promise<void
     state.percent = null;
     send();
     const options = loadOptions();
-    // La skin elegida en el launcher: Nexus Protect la manda al entrar al servidor
-    skins().writeToGame(p.game, account!.id);
+    // La skin elegida en el launcher: Nexus Protect la manda al entrar al servidor (las premium usan la oficial)
+    skins().writeToGame(p.game, account!.id, account!.type === "microsoft");
+    const premium = account!.type === "microsoft" ? await accounts().minecraftSession(account!.id) : undefined;
     gameProcess = await launchGame({
       paths: p, versionId, java, account: account!, ramMb: options.ramMb, resolution: resolutionOf(options.resolution),
+      premium: premium && { accessToken: premium.mcToken, xuid: premium.xuid },
       server: process.env.NEXOS_PRUEBA_ENTRAR === "1" ? pack.server : undefined,
       logFile: logFile(), launcherVersion: app.getVersion(),
     }, {
@@ -384,9 +417,28 @@ function registerIpc(): void {
   ipcMain.handle("sistema:info", () => ({ totalMb: Math.floor(os.totalmem() / 1024 / 1024) }));
   ipcMain.handle("cuentas:listar", () => accounts().list());
   ipcMain.handle("cuentas:anadir", (_e, name: string) => accounts().addOffline(name));
+  ipcMain.handle("cuentas:microsoft", async (e) => {
+    const win = BrowserWindow.fromWebContents(e.sender)!;
+    try {
+      const session = await loginInteractive(win);
+      const account = accounts().addMicrosoft(session);
+      // Su skin oficial entra en el historial y queda elegida (si no la tiene ya)
+      try {
+        const skin = await currentSkin(session.mcToken);
+        if (skin) skins().importPng(account.id, skin.png, "Skin oficial", skin.variant);
+      } catch (err) {
+        logLauncher("skin oficial", err);
+      }
+      return account;
+    } catch (err) {
+      if (err instanceof LoginCancelled) return null;
+      logLauncher("microsoft", err);
+      throw err;
+    }
+  });
   ipcMain.handle("cuentas:elegir", (_e, id: string) => accounts().select(id));
   ipcMain.handle("cuentas:borrar", (_e, id: string) => accounts().remove(id));
-  ipcMain.handle("skins:listar", () => skins().list(accounts().selected()?.id));
+  ipcMain.handle("skins:listar", () => skinList());
   ipcMain.handle("skins:subir", async (e, variant: "classic" | "slim") => {
     const account = skinAccount();
     const win = BrowserWindow.fromWebContents(e.sender)!;
@@ -395,28 +447,17 @@ function registerIpc(): void {
       filters: [{ name: "Skin de Minecraft", extensions: ["png"] }],
       properties: ["openFile"],
     });
-    if (!pick.canceled && pick.filePaths[0]) {
-      skins().addPng(account, pick.filePaths[0], variant);
+    if (pick.canceled || !pick.filePaths[0]) {
+      return skinList();
     }
-    return skins().list(account);
+    return changeSkin((id) => skins().addPng(id, pick.filePaths[0], variant));
   });
-  ipcMain.handle("skins:premium", async (_e, name: string) => {
-    const account = skinAccount();
-    await skins().addPremium(account, name.trim());
-    return skins().list(account);
-  });
-  ipcMain.handle("skins:elegir", (_e, id: string | null) => {
-    const account = skinAccount();
-    skins().select(account, id);
-    return skins().list(account);
-  });
-  ipcMain.handle("skins:variante", (_e, id: string, variant: "classic" | "slim") => {
-    skins().setVariant(id, variant);
-    return skins().list(accounts().selected()?.id);
-  });
+  ipcMain.handle("skins:premium", (_e, name: string) => changeSkin((id) => skins().addPremium(id, name.trim())));
+  ipcMain.handle("skins:elegir", (_e, id: string | null) => changeSkin((account) => skins().select(account, id)));
+  ipcMain.handle("skins:variante", (_e, id: string, variant: "classic" | "slim") => changeSkin(() => skins().setVariant(id, variant)));
   ipcMain.handle("skins:borrar", (_e, id: string) => {
     skins().remove(id);
-    return skins().list(accounts().selected()?.id);
+    return skinList();
   });
   ipcMain.handle("actualizar:buscar", async () => {
     const s = await checkNow();
@@ -506,7 +547,7 @@ if (!app.requestSingleInstanceLock()) {
         setTimeout(async () => {
           if (process.env.NEXOS_VISTA) {
             // Para revisar otra pantalla en la captura (por ejemplo NEXOS_VISTA=opciones)
-            await win.webContents.executeJavaScript(`document.querySelector('[data-view="${process.env.NEXOS_VISTA}"]')?.click()`);
+            await win.webContents.executeJavaScript(`(document.querySelector('[data-view="${process.env.NEXOS_VISTA}"]') || document.getElementById('${process.env.NEXOS_VISTA}'))?.click()`);
             await new Promise((ok) => setTimeout(ok, 400));
           }
           if (button) {

@@ -4,6 +4,7 @@ import type { ChildProcess } from "node:child_process";
 import * as fs from "node:fs";
 import * as path from "node:path";
 import type { Account } from "./accounts";
+import { CLIENT_ID } from "./microsoft";
 import { GameLogText } from "./gamelog";
 import type { Paths } from "./installer";
 
@@ -13,6 +14,8 @@ export interface LaunchRequest {
   java: string;
   account: Account;
   ramMb: number;
+  /** Cuentas premium: token de Minecraft y XUID (sin esto, modo no premium). */
+  premium?: { accessToken: string; xuid: string };
   /** Tamano de la ventana o pantalla completa; sin esto, lo que recuerde el juego. */
   resolution?: { width?: number; height?: number; fullscreen?: boolean };
   /** Solo pruebas (NEXOS_PRUEBA_ENTRAR=1): entra directo a este servidor. Normalmente se abre el menu del juego. */
@@ -38,8 +41,11 @@ export async function launchGame(req: LaunchRequest, events: GameEvents): Promis
     javaPath: req.java,
     version: req.versionId,
     gameProfile: { name: req.account.name, id: req.account.uuid },
-    accessToken: "0",
-    userType: "legacy",
+    accessToken: req.premium?.accessToken ?? "0",
+    // Sin userType @xmcl pone "msa" (cuenta de Microsoft)
+    userType: req.premium ? undefined : "legacy",
+    // Valores de ${auth_xuid} y ${clientid} de los argumentos del juego (si no, quedan tal cual)
+    features: { nexos: { auth_xuid: req.premium?.xuid || "0", clientid: CLIENT_ID } } as unknown as Record<string, boolean>,
     minMemory: Math.min(2048, req.ramMb),
     maxMemory: req.ramMb,
     launcherName: "nexos-launcher",

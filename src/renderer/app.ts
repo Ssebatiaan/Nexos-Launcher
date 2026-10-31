@@ -5,9 +5,16 @@ import { SkinsScreen, type SkinsApi } from "./skins-view.js";
 
 interface Account {
   id: string;
-  type: "offline";
+  type: "offline" | "microsoft";
   name: string;
   uuid: string;
+  needsLogin?: boolean;
+}
+
+/** Texto bajo el nombre de una cuenta. */
+function accountLabel(a: Account): string {
+  if (a.type === "offline") return "No premium";
+  return a.needsLogin ? "Premium · vuelve a iniciar sesión" : "Premium";
 }
 
 type StepState = "pendiente" | "activo" | "hecho" | "error";
@@ -71,6 +78,7 @@ interface NexosApi extends SkinsApi {
   systemInfo(): Promise<{ totalMb: number }>;
   listAccounts(): Promise<{ selected?: string; accounts: Account[] }>;
   addOfflineAccount(name: string): Promise<Account>;
+  loginMicrosoft(): Promise<Account | null>;
   selectAccount(id: string): Promise<void>;
   removeAccount(id: string): Promise<void>;
   play(): Promise<boolean>;
@@ -268,7 +276,7 @@ async function refreshAccounts(): Promise<Account | undefined> {
   const { selected, accounts } = await nexos.listAccounts();
   const current = accounts.find((a) => a.id === selected) ?? accounts[0];
   $("account-name").textContent = current ? current.name : "Sin cuenta";
-  $("account-type").textContent = current ? "No premium · cambiar" : "Añade una cuenta para jugar";
+  $("account-type").textContent = current ? accountLabel(current) + " · cambiar" : "Añade una cuenta para jugar";
   const avatar = $("avatar");
   avatar.dataset.letter = current ? current.name[0].toUpperCase() : "?";
   avatar.textContent = avatar.dataset.letter;
@@ -280,8 +288,11 @@ async function refreshAccounts(): Promise<Account | undefined> {
   for (const a of accounts) {
     const li = document.createElement("li");
     li.className = a.id === current?.id ? "selected" : "";
-    li.innerHTML = `<div class="mini-avatar"></div><div class="who"><span></span><small>No premium</small></div>
+    li.innerHTML = `<div class="mini-avatar"></div><div class="who"><span></span><small></small></div>
       <button class="remove" title="Quitar esta cuenta">✕</button>`;
+    const label = li.querySelector(".who small")!;
+    label.textContent = accountLabel(a);
+    label.className = a.type === "offline" ? "" : a.needsLogin ? "relogin" : "premium";
     li.querySelector(".mini-avatar")!.textContent = a.name[0].toUpperCase();
     li.querySelector(".who span")!.textContent = a.name;
     li.addEventListener("click", async () => {
@@ -322,6 +333,27 @@ $("account").addEventListener("click", openAccounts);
 $("account-close").addEventListener("click", () => modal.classList.add("hidden"));
 modal.addEventListener("click", (e) => e.target === modal && modal.classList.add("hidden"));
 $("account-add").addEventListener("click", addAccount);
+
+// Premium: se abre la pagina oficial de Microsoft (ventana del launcher) y se espera a que termine
+const msButton = $<HTMLButtonElement>("btn-microsoft");
+msButton.addEventListener("click", async () => {
+  accountError.classList.add("hidden");
+  msButton.disabled = true;
+  $("btn-microsoft-text").textContent = "Esperando a Microsoft…";
+  try {
+    const account = await nexos.loginMicrosoft();
+    if (account) {
+      await refreshAccounts();
+      modal.classList.add("hidden");
+    }
+  } catch (e) {
+    accountError.textContent = cleanError(e);
+    accountError.classList.remove("hidden");
+  } finally {
+    msButton.disabled = false;
+    $("btn-microsoft-text").textContent = "Iniciar sesión con Microsoft (premium)";
+  }
+});
 nameInput.addEventListener("keydown", (e) => e.key === "Enter" && addAccount());
 refreshAccounts();
 

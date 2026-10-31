@@ -12,6 +12,8 @@ export interface SkinView {
 export interface SkinList {
   selected?: string;
   history: SkinView[];
+  /** Cuenta premium: la skin elegida es la oficial (se sube a Mojang). */
+  premium?: boolean;
 }
 
 export interface SkinsApi {
@@ -151,9 +153,11 @@ export class SkinsScreen {
     $("skin-kind").textContent = !current
       ? "Elige una para tu cuenta"
       : current.kind === "premium" ? "Skin de un jugador premium" : "Skin propia (archivo PNG)";
-    $("skin-clear").classList.toggle("hidden", !current);
+    $("skin-clear").classList.toggle("hidden", !current || !!this.list.premium);
     $("skin-empty").classList.toggle("hidden", !!current);
-    $("skin-note").textContent = !current
+    $("skin-note").textContent = this.list.premium
+      ? "Cuenta premium: la skin que elijas se pone como tu skin oficial de Minecraft (la verán en todos los servidores)."
+      : !current
       ? "La skin que elijas se pone sola al entrar al servidor."
       : current.kind === "premium"
         ? "Se pone sola al entrar al servidor y la verán todos."

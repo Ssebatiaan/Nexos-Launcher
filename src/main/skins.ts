@@ -136,10 +136,31 @@ export class Skins {
     this.write(data);
   }
 
-  /** Deja la skin de la cuenta en la carpeta del juego (o la quita si no tiene ninguna elegida). */
-  writeToGame(gameDir: string, accountId: string): void {
+  /** Anade una PNG que ya se tiene (la skin oficial de una cuenta premium al iniciar sesion) y la elige. */
+  importPng(accountId: string, png: Buffer, name: string, variant: "classic" | "slim"): SkinEntry {
+    checkSkinPng(png);
+    return this.add(accountId, png, { kind: "png", name, variant });
+  }
+
+  /** La skin elegida para la cuenta (imagen y variante), o undefined. */
+  selectedSkin(accountId: string): { png: Buffer; variant: "classic" | "slim" } | undefined {
     const data = this.read();
     const entry = data.history.find((e) => e.id === data.byAccount[accountId]);
+    return entry && { png: fs.readFileSync(path.join(this.dir, entry.file)), variant: entry.variant };
+  }
+
+  /** Id de la skin elegida para la cuenta (para poder volver a ella si Mojang rechaza la nueva). */
+  selectedId(accountId: string): string | undefined {
+    return this.read().byAccount[accountId];
+  }
+
+  /**
+   * Deja la skin de la cuenta en la carpeta del juego (o la quita si no tiene ninguna elegida). Las premium no: su
+   * skin es la oficial de Mojang y el servidor ya la ve.
+   */
+  writeToGame(gameDir: string, accountId: string, premium = false): void {
+    const data = this.read();
+    const entry = premium ? undefined : data.history.find((e) => e.id === data.byAccount[accountId]);
     const out = path.join(gameDir, "nexos");
     fs.mkdirSync(out, { recursive: true });
     const json = path.join(out, "skin.json");
