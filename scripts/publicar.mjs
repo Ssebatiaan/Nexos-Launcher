@@ -46,4 +46,22 @@ if (build.status !== 0) process.exit(build.status ?? 1);
 const env = { ...process.env, GH_TOKEN: token };
 const pub = spawnSync("npx", ["electron-builder", "--win", "--publish", "always"], { stdio: "inherit", shell: true, env });
 if (pub.status !== 0) process.exit(pub.status ?? 1);
+
+// Copia con nombre fijo: la web (nexosmc.network) enlaza releases/latest/download/Nexos-Launcher-Setup.exe y asi
+// siempre baja la ultima version sin tocar la web.
+const release = await (await fetch(`https://api.github.com/repos/${repo}/releases/tags/${tag}`, { headers })).json();
+const stable = "Nexos-Launcher-Setup.exe";
+const old = release.assets.find((a) => a.name === stable);
+if (old) {
+  await fetch(old.url, { method: "DELETE", headers });
+}
+const up = await fetch(`https://uploads.github.com/repos/${repo}/releases/${release.id}/assets?name=${stable}`, {
+  method: "POST",
+  headers: { ...headers, "Content-Type": "application/octet-stream" },
+  body: readFileSync(`release/Nexos-Launcher-Setup-${version}.exe`),
+});
+if (!up.ok) {
+  console.error(`[X] No se pudo subir ${stable}: HTTP ${up.status}`);
+  process.exit(1);
+}
 console.log(`[OK] Publicada la ${tag}: https://github.com/Ssebatiaan/Nexos-Launcher/releases/tag/${tag}`);
