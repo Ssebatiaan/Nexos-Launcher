@@ -49,7 +49,17 @@ if (pub.status !== 0) process.exit(pub.status ?? 1);
 
 // Copia con nombre fijo: la web (nexosmc.network) enlaza releases/latest/download/Nexos-Launcher-Setup.exe y asi
 // siempre baja la ultima version sin tocar la web.
-const release = await (await fetch(`https://api.github.com/repos/${repo}/releases/tags/${tag}`, { headers })).json();
+// GitHub tarda unos segundos en mostrar lo recien subido: se espera a ver el instalador en la Release
+let release;
+for (let i = 0; i < 10; i++) {
+  release = await (await fetch(`https://api.github.com/repos/${repo}/releases/tags/${tag}`, { headers })).json();
+  if (release.assets?.some((a) => a.name === `Nexos-Launcher-Setup-${version}.exe`)) break;
+  await new Promise((r) => setTimeout(r, 3000));
+}
+if (!release?.id || !release.assets) {
+  console.error(`[X] No se encontro la Release ${tag} para subir la copia con nombre fijo.`);
+  process.exit(1);
+}
 const stable = "Nexos-Launcher-Setup.exe";
 const old = release.assets.find((a) => a.name === stable);
 if (old) {
