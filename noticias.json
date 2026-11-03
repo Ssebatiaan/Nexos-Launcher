@@ -2,6 +2,12 @@
   {
     "fecha": "2026-11-03",
     "etiqueta": "Nuevo",
+    "titulo": "Torretas de Nexos",
+    "texto": "Torretas propias para defender tu base: giran hacia el objetivo, disparan balas de cobre a netherita y eliges su modo (pasivo, neutral o agresivo). En el raideo se pueden destruir a golpes."
+  },
+  {
+    "fecha": "2026-11-03",
+    "etiqueta": "Nuevo",
     "titulo": "Parkour vertical en las grietas",
     "texto": "El parkour ahora es un pozo enorme que se sube o se baja: escaleras, lanzaderas de slime y puntos de control de oro. Las grietas tienen más desnivel."
   },
