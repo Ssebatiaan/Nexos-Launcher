@@ -2,6 +2,12 @@
   {
     "fecha": "2026-11-03",
     "etiqueta": "Nuevo",
+    "titulo": "Parkour vertical en las grietas",
+    "texto": "El parkour ahora es un pozo enorme que se sube o se baja: escaleras, lanzaderas de slime y puntos de control de oro. Las grietas tienen más desnivel."
+  },
+  {
+    "fecha": "2026-11-03",
+    "etiqueta": "Nuevo",
     "titulo": "Grietas que se sienten",
     "texto": "Al abrirse una grieta tiembla la tierra, un haz sube al cielo y llega un trueno. En las emboscadas tu clan aparece a tu lado."
   },
