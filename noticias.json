@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-03",
+    "etiqueta": "Mejora",
+    "titulo": "Parkours rehechos",
+    "texto": "El parkour ahora es un recorrido largo que cruza varias cuevas (más largo cuanto más rara la grieta), con pasillos, cámaras y un abismo debajo. Escaleras y slime siempre separados."
+  },
+  {
+    "fecha": "2026-11-03",
     "etiqueta": "Nuevo",
     "titulo": "Torretas de Nexos",
     "texto": "Torretas propias para defender tu base: giran hacia el objetivo, disparan balas de cobre a netherita y eliges su modo (pasivo, neutral o agresivo). En el raideo se pueden destruir a golpes."
