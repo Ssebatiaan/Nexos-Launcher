@@ -2,6 +2,12 @@
   {
     "fecha": "2026-11-05",
     "etiqueta": "Nuevo",
+    "titulo": "Sonidos de las torretas",
+    "texto": "Cada nivel de torreta tiene su propio disparo: de un chasquido ligero en la Centinela a una explosión de energía en la Aniquiladora."
+  },
+  {
+    "fecha": "2026-11-05",
+    "etiqueta": "Nuevo",
     "titulo": "Mesa de armería",
     "texto": "Torretas, balas, cajas de mejora y cajas de munición ahora se fabrican solo en la Mesa de armería. Tiene planos: haz clic en uno y te coloca los materiales. Se hace con hierro, pólvora, una mesa de crafteo y troncos."
   },
