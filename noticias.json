@@ -1,5 +1,23 @@
 [
   {
+    "fecha": "2026-11-05",
+    "etiqueta": "Nuevo",
+    "titulo": "Mesa de armería",
+    "texto": "Torretas, balas, cajas de mejora y cajas de munición ahora se fabrican solo en la Mesa de armería. Tiene planos: haz clic en uno y te coloca los materiales. Se hace con hierro, pólvora, una mesa de crafteo y troncos."
+  },
+  {
+    "fecha": "2026-11-05",
+    "etiqueta": "Cambio",
+    "titulo": "Torretas equilibradas",
+    "texto": "Los escudos paran las balas, a la cabeza de la torreta ya se le puede pegar y las armas especiales no le hacen daño. Recetas más caras, menos huecos de munición (8 por torreta, 10 por caja) y 2 cajas por Nexo. Modo Neutral arreglado: también disparan a quien tú ataques."
+  },
+  {
+    "fecha": "2026-11-05",
+    "etiqueta": "Cambio",
+    "titulo": "Armas que jalan",
+    "texto": "Las armas especiales que jalan solo afectan a mobs: a los jugadores ya no, para que no estropeen el PvP."
+  },
+  {
     "fecha": "2026-11-04",
     "etiqueta": "Nuevo",
     "titulo": "Caja de munición",
