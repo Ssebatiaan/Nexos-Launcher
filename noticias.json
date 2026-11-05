@@ -1,6 +1,18 @@
 [
   {
     "fecha": "2026-11-05",
+    "etiqueta": "Cambio",
+    "titulo": "Una grieta cada 4 horas",
+    "texto": "Ahora se abren 6 grietas al día, a horas fijas: 00:00, 04:00, 08:00, 12:00, 16:00 y 20:00 (hora de Colombia)."
+  },
+  {
+    "fecha": "2026-11-05",
+    "etiqueta": "Cambio",
+    "titulo": "Torretas y parkour",
+    "texto": "En modo Agresivo puedes elegir el objetivo: todos, solo jugadores o solo monstruos. Las torretas ya no reciben flechas desde fuera de su alcance. En el parkour no hay daño de caída y las piedras de grieta abren el portal más lejos, de frente a ti."
+  },
+  {
+    "fecha": "2026-11-05",
     "etiqueta": "Nuevo",
     "titulo": "Sonidos de las torretas",
     "texto": "Cada nivel de torreta tiene su propio disparo: de un chasquido ligero en la Centinela a una explosión de energía en la Aniquiladora."
