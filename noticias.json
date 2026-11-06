@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-05",
+    "etiqueta": "Arreglo",
+    "titulo": "Mundos individuales",
+    "texto": "Arreglado el cierre del juego al entrar a un mundo individual con el modpack."
+  },
+  {
+    "fecha": "2026-11-05",
     "etiqueta": "Cambio",
     "titulo": "Una grieta cada 4 horas",
     "texto": "Ahora se abren 6 grietas al día, a horas fijas: 00:00, 04:00, 08:00, 12:00, 16:00 y 20:00 (hora de Colombia)."
