@@ -167,3 +167,25 @@ custom_gui {
   popup_mode = false
   popup_mode_background_overlay = false
 }
+
+custom_gui {
+  identifier = nexosmc_kits
+  title = 
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = false
+  pause_game = false
+  popup_mode = false
+  popup_mode_background_overlay = false
+}
+
+custom_gui {
+  identifier = nexosmc_cosmeticos
+  title = 
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = false
+  pause_game = false
+  popup_mode = false
+  popup_mode_background_overlay = false
+}
