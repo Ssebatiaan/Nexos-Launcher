@@ -1,5 +1,17 @@
 [
   {
+    "fecha": "2026-11-09",
+    "titulo": "Llaves nuevas",
+    "texto": "Las llaves de las cajas tienen dibujo nuevo, cada una con su forma. En la Caja de Grieta los premios legendarios ahora son mucho más raros.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-09",
+    "titulo": "Un Nexo nuevo cuesta 1.000 Nex",
+    "texto": "Si os destruyen el Nexo en el raideo, el lunes podréis reclamar otro con /nexo reclamar, pero ahora cuesta 1.000 Nex (lo paga el líder u oficial que lo reclama; el clan puede pasarle Nex con /pagar).",
+    "etiqueta": "Cambio"
+  },
+  {
     "fecha": "2026-11-05",
     "etiqueta": "Arreglo",
     "titulo": "Mundos individuales",
