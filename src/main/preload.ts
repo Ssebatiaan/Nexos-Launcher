@@ -11,6 +11,7 @@ contextBridge.exposeInMainWorld("nexos", {
   saveOptions: (options: Record<string, unknown>) => ipcRenderer.invoke("opciones:guardar", options),
   version: () => ipcRenderer.invoke("app:version"),
   info: () => ipcRenderer.invoke("app:info"),
+  checkPack: () => ipcRenderer.invoke("app:buscarModpack"),
   serverStatus: () => ipcRenderer.invoke("servidor:estado"),
   systemInfo: () => ipcRenderer.invoke("sistema:info"),
   listAccounts: () => ipcRenderer.invoke("cuentas:listar"),

@@ -325,12 +325,16 @@ async function play(win: BrowserWindow, mode: "jugar" | "reparar"): Promise<void
 
 // ------------------------------------------------------------------ estado al abrir
 
-/** Datos para la pantalla Jugar: modpack (nuevo o instalado) y novedades. Sin internet, lo ultimo conocido. */
-async function launcherInfo(): Promise<{ version?: string; installed?: string; news: Pack["news"]; online: boolean }> {
+/**
+ * Datos para la pantalla Jugar: modpack (nuevo o instalado) y novedades. Sin internet, lo ultimo conocido.
+ * fresh = boton "buscar actualizaciones del modpack": se salta la copia que guarda raw.githubusercontent (~5 min).
+ */
+async function launcherInfo(fresh = false): Promise<{ version?: string; installed?: string; news: Pack["news"]; online: boolean }> {
   let pack: Pack | undefined;
   let online = true;
   try {
-    pack = await fetchPack(PACK_URL);
+    const url = fresh && /^https?:/.test(PACK_URL) ? PACK_URL + (PACK_URL.includes("?") ? "&" : "?") + "t=" + Date.now() : PACK_URL;
+    pack = await fetchPack(url);
     rememberPack(pack);
   } catch {
     pack = lastPack();
@@ -413,6 +417,7 @@ function registerIpc(): void {
   ipcMain.handle("opciones:guardar", (_e, options: Partial<Options>) => saveOptions({ ...loadOptions(), ...options }));
   ipcMain.handle("app:version", () => app.getVersion());
   ipcMain.handle("app:info", () => launcherInfo());
+  ipcMain.handle("app:buscarModpack", () => launcherInfo(true));
   ipcMain.handle("servidor:estado", () => serverStatus());
   ipcMain.handle("sistema:info", () => ({ totalMb: Math.floor(os.totalmem() / 1024 / 1024) }));
   ipcMain.handle("cuentas:listar", () => accounts().list());

@@ -277,6 +277,13 @@ button { font: inherit; color: inherit; cursor: pointer; border: none; backgroun
 .pack-info { flex: 1; font-size: 13px; color: var(--muted); line-height: 1.4; }
 .pack-info strong { color: var(--text); }
 .pack-info .new { color: var(--gold); font-weight: 700; }
+.pack-info .ok { color: #6fe39a; font-weight: 700; }
+.pack-check { flex: none; width: 30px; height: 30px; margin-right: 12px; border-radius: 50%; border: 1px solid #3a2560;
+  background: #150b2a; color: var(--muted); display: grid; place-items: center; cursor: pointer; transition: color .15s, border-color .15s, background .15s; }
+.pack-check:hover { color: var(--text); border-color: var(--gold); background: #1f1140; }
+.pack-check:disabled { cursor: default; opacity: .6; }
+.pack-check.spin svg { animation: pack-spin .8s linear infinite; }
+@keyframes pack-spin { to { transform: rotate(360deg); } }
 
 /* ---- opciones ---- */
 #view-opciones { overflow-y: auto; }

@@ -74,6 +74,7 @@ interface NexosApi extends SkinsApi {
   saveOptions(options: Partial<Options>): Promise<void>;
   version(): Promise<string>;
   info(): Promise<LauncherInfo>;
+  checkPack(): Promise<LauncherInfo>;
   serverStatus(): Promise<ServerStatus>;
   systemInfo(): Promise<{ totalMb: number }>;
   listAccounts(): Promise<{ selected?: string; accounts: Account[] }>;
@@ -203,6 +204,38 @@ function renderPackInfo(info: LauncherInfo): void {
     el.querySelector(".new")!.textContent = "Actualización del modpack " + info.version;
   }
 }
+
+// ---- boton pequeno junto a la version del modpack: buscar si hay una nueva ahora mismo
+const packCheck = $<HTMLButtonElement>("pack-check");
+packCheck.addEventListener("click", async () => {
+  if (packCheck.disabled) return;
+  packCheck.disabled = true;
+  packCheck.classList.add("spin");
+  const el = $("pack-info");
+  el.textContent = "Buscando actualizaciones del modpack…";
+  const started = Date.now();
+  let info: LauncherInfo | undefined;
+  try {
+    info = await nexos.checkPack();
+  } catch {
+    info = undefined;
+  }
+  // que la vuelta se vea aunque la respuesta llegue al momento
+  await new Promise((r) => window.setTimeout(r, Math.max(0, 600 - (Date.now() - started))));
+  packCheck.classList.remove("spin");
+  packCheck.disabled = false;
+  if (!info || !info.online) {
+    el.textContent = "Sin conexión: no se pudo comprobar. Inténtalo de nuevo.";
+    return;
+  }
+  renderNews(info.news);
+  if (info.installed && info.version && info.installed === info.version) {
+    el.innerHTML = '<span class="ok">✓ Tienes la última versión</span> · modpack <strong></strong>';
+    el.querySelector("strong")!.textContent = info.version;
+  } else {
+    renderPackInfo(info);
+  }
+});
 
 async function refreshInfo(): Promise<void> {
   const info = await nexos.info();
@@ -367,6 +400,7 @@ nexos.onPlayState((s) => {
   $("steps").classList.remove("hidden");
   // Mientras se prepara se ve la barra; al terminar, otra vez el estado del modpack
   $("pack-info").classList.toggle("hidden", s.phase === "preparando" || s.phase === "jugando");
+  $("pack-check").classList.toggle("hidden", s.phase === "preparando" || s.phase === "jugando");
   const list = $("steps-list");
   list.innerHTML = "";
   for (const step of s.steps) {
