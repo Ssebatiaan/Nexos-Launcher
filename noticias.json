@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-10",
+    "titulo": "Sala del cristal más grande",
+    "texto": "La sala de Defiende el cristal ahora es mucho más grande y las salidas ya no se cierran al entrar: se sellan cuando alguien pulsa el botón. Si el cristal cae, se vuelven a abrir.",
+    "etiqueta": "Cambio"
+  },
+  {
+    "fecha": "2026-11-10",
     "titulo": "Animaciones y sonidos nuevos",
     "texto": "Tu personaje se mueve mejor: más de 50 animaciones nuevas al andar, correr, saltar, nadar, escalar y volar (Custom Player Animations). Y más de 170 sonidos nuevos o mejorados en menús, chat y bloques (Sounds). Los dos se pueden ajustar en Mods > Configuración.",
     "etiqueta": "Nuevo"
