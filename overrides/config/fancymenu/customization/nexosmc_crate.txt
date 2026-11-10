@@ -3,7 +3,7 @@ type = fancymenu_layout
 layout-meta {
   identifier = nexosmc_crate
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1792183143473
+  last_edited_time = 1794295278472
   is_enabled = true
   randommode = false
   randomgroup = 1
@@ -93,7 +93,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
+  x = -154
   y = -72
   width = 34
   height = 34
@@ -113,7 +113,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
+  x = -154
   y = -72
   width = 34
   height = 34
@@ -133,7 +133,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -136
+  x = -148
   y = -66
   width = 22
   height = 22
@@ -156,7 +156,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
+  x = -154
   y = -50
   width = 32
   height = 16
@@ -185,9 +185,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -150
+  x = -156
   y = -36
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_8
@@ -214,7 +214,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
+  x = -115
   y = -72
   width = 34
   height = 34
@@ -234,7 +234,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
+  x = -115
   y = -72
   width = 34
   height = 34
@@ -254,7 +254,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -86
+  x = -109
   y = -66
   width = 22
   height = 22
@@ -277,7 +277,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
+  x = -115
   y = -50
   width = 32
   height = 16
@@ -306,9 +306,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -100
+  x = -117
   y = -36
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_13
@@ -335,7 +335,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
+  x = -76
   y = -72
   width = 34
   height = 34
@@ -355,7 +355,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
+  x = -76
   y = -72
   width = 34
   height = 34
@@ -375,7 +375,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -36
+  x = -70
   y = -66
   width = 22
   height = 22
@@ -398,7 +398,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
+  x = -76
   y = -50
   width = 32
   height = 16
@@ -427,9 +427,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -50
+  x = -78
   y = -36
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_18
@@ -456,7 +456,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
+  x = -37
   y = -72
   width = 34
   height = 34
@@ -476,7 +476,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
+  x = -37
   y = -72
   width = 34
   height = 34
@@ -496,7 +496,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 14
+  x = -31
   y = -66
   width = 22
   height = 22
@@ -519,7 +519,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
+  x = -37
   y = -50
   width = 32
   height = 16
@@ -548,9 +548,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 0
+  x = -39
   y = -36
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_23
@@ -577,7 +577,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = 2
   y = -72
   width = 34
   height = 34
@@ -597,7 +597,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = 2
   y = -72
   width = 34
   height = 34
@@ -617,7 +617,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 64
+  x = 8
   y = -66
   width = 22
   height = 22
@@ -640,7 +640,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = 2
   y = -50
   width = 32
   height = 16
@@ -669,9 +669,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 50
+  x = 0
   y = -36
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_28
@@ -698,7 +698,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = 41
   y = -72
   width = 34
   height = 34
@@ -718,7 +718,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = 41
   y = -72
   width = 34
   height = 34
@@ -738,7 +738,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 114
+  x = 47
   y = -66
   width = 22
   height = 22
@@ -761,7 +761,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = 41
   y = -50
   width = 32
   height = 16
@@ -790,9 +790,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 100
+  x = 39
   y = -36
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_33
@@ -819,8 +819,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
-  y = -23
+  x = 80
+  y = -72
   width = 34
   height = 34
   stay_on_screen = false
@@ -839,8 +839,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
-  y = -23
+  x = 80
+  y = -72
   width = 34
   height = 34
   stay_on_screen = false
@@ -859,8 +859,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -136
-  y = -17
+  x = 86
+  y = -66
   width = 22
   height = 22
   stay_on_screen = false
@@ -882,8 +882,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
-  y = -1
+  x = 80
+  y = -50
   width = 32
   height = 16
   stay_on_screen = false
@@ -911,9 +911,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -150
-  y = 13
-  width = 50
+  x = 78
+  y = -36
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_38
@@ -940,8 +940,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
-  y = -23
+  x = 119
+  y = -72
   width = 34
   height = 34
   stay_on_screen = false
@@ -960,8 +960,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
-  y = -23
+  x = 119
+  y = -72
   width = 34
   height = 34
   stay_on_screen = false
@@ -980,8 +980,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -86
-  y = -17
+  x = 125
+  y = -66
   width = 22
   height = 22
   stay_on_screen = false
@@ -1003,8 +1003,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
-  y = -1
+  x = 119
+  y = -50
   width = 32
   height = 16
   stay_on_screen = false
@@ -1032,9 +1032,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -100
-  y = 13
-  width = 50
+  x = 117
+  y = -36
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_43
@@ -1061,7 +1061,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
+  x = -154
   y = -23
   width = 34
   height = 34
@@ -1081,7 +1081,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
+  x = -154
   y = -23
   width = 34
   height = 34
@@ -1101,7 +1101,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -36
+  x = -148
   y = -17
   width = 22
   height = 22
@@ -1124,7 +1124,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
+  x = -154
   y = -1
   width = 32
   height = 16
@@ -1153,9 +1153,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -50
+  x = -156
   y = 13
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_48
@@ -1182,7 +1182,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
+  x = -115
   y = -23
   width = 34
   height = 34
@@ -1202,7 +1202,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
+  x = -115
   y = -23
   width = 34
   height = 34
@@ -1222,7 +1222,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 14
+  x = -109
   y = -17
   width = 22
   height = 22
@@ -1245,7 +1245,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
+  x = -115
   y = -1
   width = 32
   height = 16
@@ -1274,9 +1274,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 0
+  x = -117
   y = 13
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_53
@@ -1303,7 +1303,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = -76
   y = -23
   width = 34
   height = 34
@@ -1323,7 +1323,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = -76
   y = -23
   width = 34
   height = 34
@@ -1343,7 +1343,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 64
+  x = -70
   y = -17
   width = 22
   height = 22
@@ -1366,7 +1366,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = -76
   y = -1
   width = 32
   height = 16
@@ -1395,9 +1395,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 50
+  x = -78
   y = 13
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_58
@@ -1424,7 +1424,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = -37
   y = -23
   width = 34
   height = 34
@@ -1444,7 +1444,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = -37
   y = -23
   width = 34
   height = 34
@@ -1464,7 +1464,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 114
+  x = -31
   y = -17
   width = 22
   height = 22
@@ -1487,7 +1487,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = -37
   y = -1
   width = 32
   height = 16
@@ -1516,9 +1516,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 100
+  x = -39
   y = 13
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_63
@@ -1545,8 +1545,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
-  y = 26
+  x = 2
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1565,8 +1565,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
-  y = 26
+  x = 2
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1585,8 +1585,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -136
-  y = 32
+  x = 8
+  y = -17
   width = 22
   height = 22
   stay_on_screen = false
@@ -1608,8 +1608,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -142
-  y = 48
+  x = 2
+  y = -1
   width = 32
   height = 16
   stay_on_screen = false
@@ -1637,9 +1637,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -150
-  y = 62
-  width = 50
+  x = 0
+  y = 13
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_68
@@ -1666,8 +1666,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
-  y = 26
+  x = 41
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1686,8 +1686,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
-  y = 26
+  x = 41
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1706,8 +1706,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -86
-  y = 32
+  x = 47
+  y = -17
   width = 22
   height = 22
   stay_on_screen = false
@@ -1729,8 +1729,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -92
-  y = 48
+  x = 41
+  y = -1
   width = 32
   height = 16
   stay_on_screen = false
@@ -1758,9 +1758,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -100
-  y = 62
-  width = 50
+  x = 39
+  y = 13
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_73
@@ -1787,8 +1787,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
-  y = 26
+  x = 80
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1807,8 +1807,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
-  y = 26
+  x = 80
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1827,8 +1827,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -36
-  y = 32
+  x = 86
+  y = -17
   width = 22
   height = 22
   stay_on_screen = false
@@ -1850,8 +1850,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -42
-  y = 48
+  x = 80
+  y = -1
   width = 32
   height = 16
   stay_on_screen = false
@@ -1879,9 +1879,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -50
-  y = 62
-  width = 50
+  x = 78
+  y = 13
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_78
@@ -1908,8 +1908,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
-  y = 26
+  x = 119
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1928,8 +1928,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
-  y = 26
+  x = 119
+  y = -23
   width = 34
   height = 34
   stay_on_screen = false
@@ -1948,8 +1948,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 14
-  y = 32
+  x = 125
+  y = -17
   width = 22
   height = 22
   stay_on_screen = false
@@ -1971,8 +1971,8 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 8
-  y = 48
+  x = 119
+  y = -1
   width = 32
   height = 16
   stay_on_screen = false
@@ -2000,9 +2000,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 0
-  y = 62
-  width = 50
+  x = 117
+  y = 13
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_83
@@ -2029,7 +2029,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = -154
   y = 26
   width = 34
   height = 34
@@ -2049,7 +2049,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = -154
   y = 26
   width = 34
   height = 34
@@ -2069,7 +2069,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 64
+  x = -148
   y = 32
   width = 22
   height = 22
@@ -2092,7 +2092,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 58
+  x = -154
   y = 48
   width = 32
   height = 16
@@ -2121,9 +2121,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 50
+  x = -156
   y = 62
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_88
@@ -2150,7 +2150,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = -115
   y = 26
   width = 34
   height = 34
@@ -2170,7 +2170,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = -115
   y = 26
   width = 34
   height = 34
@@ -2190,7 +2190,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 114
+  x = -109
   y = 32
   width = 22
   height = 22
@@ -2213,7 +2213,7 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 108
+  x = -115
   y = 48
   width = 32
   height = 16
@@ -2242,9 +2242,9 @@ element {
   fade_out = no_fading
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 100
+  x = -117
   y = 62
-  width = 50
+  width = 39
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = vis_93
@@ -2264,8 +2264,734 @@ element {
 }
 
 element {
+  element_type = image
+  instance_identifier = nexo_image_94
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -76
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_94
+  [loading_requirement_container_meta:vis_94] = [groups:][instances:vis_94_0;vis_94_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_0] = cr_19:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_94_1] = cr_19_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_95
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -76
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_95
+  [loading_requirement_container_meta:vis_95] = [groups:][instances:vis_95_0;vis_95_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_0] = cr_19:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_95_1] = cr_19_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_96
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -70
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_96
+  [loading_requirement_container_meta:vis_96] = [groups:][instances:vis_96_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_96_0] = cr_19:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_19_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_19_nbt"}}
+}
+
+element {
   element_type = text_v2
-  instance_identifier = nexo_text_v2_94
+  instance_identifier = nexo_text_v2_97
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -76
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_97
+  [loading_requirement_container_meta:vis_97] = [groups:][instances:vis_97_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_97_0] = cr_19:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_19_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_98
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -78
+  y = 62
+  width = 39
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_98
+  [loading_requirement_container_meta:vis_98] = [groups:][instances:vis_98_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_98_0] = cr_19:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_19_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_99
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -37
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_99
+  [loading_requirement_container_meta:vis_99] = [groups:][instances:vis_99_0;vis_99_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_0] = cr_20:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_99_1] = cr_20_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_100
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -37
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_100
+  [loading_requirement_container_meta:vis_100] = [groups:][instances:vis_100_0;vis_100_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_0] = cr_20:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_100_1] = cr_20_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_101
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -31
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_101
+  [loading_requirement_container_meta:vis_101] = [groups:][instances:vis_101_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_101_0] = cr_20:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_20_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_20_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_102
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -37
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_102
+  [loading_requirement_container_meta:vis_102] = [groups:][instances:vis_102_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_102_0] = cr_20:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_20_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_103
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -39
+  y = 62
+  width = 39
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_103
+  [loading_requirement_container_meta:vis_103] = [groups:][instances:vis_103_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_103_0] = cr_20:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_20_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_104
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_104
+  [loading_requirement_container_meta:vis_104] = [groups:][instances:vis_104_0;vis_104_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_0] = cr_21:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_104_1] = cr_21_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_105
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_105
+  [loading_requirement_container_meta:vis_105] = [groups:][instances:vis_105_0;vis_105_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_105_0] = cr_21:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_105_1] = cr_21_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_106
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 8
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_106
+  [loading_requirement_container_meta:vis_106] = [groups:][instances:vis_106_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_106_0] = cr_21:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_21_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_21_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_107
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 2
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_107
+  [loading_requirement_container_meta:vis_107] = [groups:][instances:vis_107_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_107_0] = cr_21:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_21_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_108
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 0
+  y = 62
+  width = 39
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_108
+  [loading_requirement_container_meta:vis_108] = [groups:][instances:vis_108_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_108_0] = cr_21:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_21_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_109
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 41
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_109
+  [loading_requirement_container_meta:vis_109] = [groups:][instances:vis_109_0;vis_109_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_109_0] = cr_22:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_109_1] = cr_22_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_110
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 41
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_110
+  [loading_requirement_container_meta:vis_110] = [groups:][instances:vis_110_0;vis_110_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_110_0] = cr_22:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_110_1] = cr_22_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_111
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 47
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_111
+  [loading_requirement_container_meta:vis_111] = [groups:][instances:vis_111_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_111_0] = cr_22:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_22_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_22_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_112
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 41
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_112
+  [loading_requirement_container_meta:vis_112] = [groups:][instances:vis_112_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_112_0] = cr_22:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_22_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_113
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 39
+  y = 62
+  width = 39
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_113
+  [loading_requirement_container_meta:vis_113] = [groups:][instances:vis_113_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_113_0] = cr_22:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_22_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_114
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 80
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_114
+  [loading_requirement_container_meta:vis_114] = [groups:][instances:vis_114_0;vis_114_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_114_0] = cr_23:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_114_1] = cr_23_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_115
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 80
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_115
+  [loading_requirement_container_meta:vis_115] = [groups:][instances:vis_115_0;vis_115_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_115_0] = cr_23:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_115_1] = cr_23_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_116
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 86
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_116
+  [loading_requirement_container_meta:vis_116] = [groups:][instances:vis_116_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_116_0] = cr_23:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_23_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_23_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_117
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 80
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_117
+  [loading_requirement_container_meta:vis_117] = [groups:][instances:vis_117_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_117_0] = cr_23:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_23_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_118
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 78
+  y = 62
+  width = 39
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_118
+  [loading_requirement_container_meta:vis_118] = [groups:][instances:vis_118_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_118_0] = cr_23:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_23_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_119
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 119
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_119
+  [loading_requirement_container_meta:vis_119] = [groups:][instances:vis_119_0;vis_119_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_119_0] = cr_24:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_119_1] = cr_24_raro:0
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot.png
+}
+
+element {
+  element_type = image
+  instance_identifier = nexo_image_120
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 119
+  y = 26
+  width = 34
+  height = 34
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_120
+  [loading_requirement_container_meta:vis_120] = [groups:][instances:vis_120_0;vis_120_1;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_120_0] = cr_24:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_120_1] = cr_24_raro:1
+  source = [source:local]/config/fancymenu/assets/nexosmc/cr_slot_raro.png
+}
+
+element {
+  element_type = item
+  instance_identifier = nexo_item_121
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 125
+  y = 32
+  width = 22
+  height = 22
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_121
+  [loading_requirement_container_meta:vis_121] = [groups:][instances:vis_121_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_121_0] = cr_24:1
+  item_key = {"placeholder":"getvariable","values":{"name":"cr_24_item"}}
+  item_count = 1
+  enchanted = false
+  show_tooltip = true
+  custom_nbt_data = {"placeholder":"getvariable","values":{"name":"cr_24_nbt"}}
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_122
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 119
+  y = 48
+  width = 32
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_122
+  [loading_requirement_container_meta:vis_122] = [groups:][instances:vis_122_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_122_0] = cr_24:1
+  source = |||%n%{"placeholder":"getvariable","values":{"name":"cr_24_num"}}%n%|||
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_123
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = 117
+  y = 62
+  width = 39
+  height = 16
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = vis_123
+  [loading_requirement_container_meta:vis_123] = [groups:][instances:vis_123_0;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:vis_123_0] = cr_24:1
+  source = ^^^%n%{"placeholder":"getvariable","values":{"name":"cr_24_pct"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  interactable = false
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  base_color = #FFFFFF
+  scale = 0.8
+  text_border = 0
+  line_spacing = 1
+}
+
+element {
+  element_type = text_v2
+  instance_identifier = nexo_text_v2_124
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
@@ -2276,8 +3002,8 @@ element {
   width = 240
   height = 16
   stay_on_screen = false
-  element_loading_requirement_container_identifier = vis_94
-  [loading_requirement_container_meta:vis_94] = [groups:][instances:]
+  element_loading_requirement_container_identifier = vis_124
+  [loading_requirement_container_meta:vis_124] = [groups:][instances:]
   source = {"placeholder":"getvariable","values":{"name":"cr_mas"}}
   source_mode = direct
   shadow = true
@@ -2293,7 +3019,7 @@ element {
 
 element {
   element_type = text_v2
-  instance_identifier = nexo_text_v2_95
+  instance_identifier = nexo_text_v2_125
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
@@ -2304,8 +3030,8 @@ element {
   width = 250
   height = 26
   stay_on_screen = false
-  element_loading_requirement_container_identifier = vis_95
-  [loading_requirement_container_meta:vis_95] = [groups:][instances:]
+  element_loading_requirement_container_identifier = vis_125
+  [loading_requirement_container_meta:vis_125] = [groups:][instances:]
   source = Clic derecho en la caja con su llave en la mano para abrirla. Pasa el ratón por un premio para ver sus detalles.
   source_mode = direct
   shadow = true
@@ -2321,7 +3047,7 @@ element {
 
 element {
   element_type = custom_button
-  instance_identifier = nexo_custom_button_96
+  instance_identifier = nexo_custom_button_126
   appearance_delay = no_delay
   fade_in_v2 = no_fading
   fade_out = no_fading
@@ -2332,8 +3058,8 @@ element {
   width = 60
   height = 20
   stay_on_screen = false
-  element_loading_requirement_container_identifier = vis_96
-  [loading_requirement_container_meta:vis_96] = [groups:][instances:]
+  element_loading_requirement_container_identifier = vis_126
+  [loading_requirement_container_meta:vis_126] = [groups:][instances:]
   label = Cerrar
   description = Cerrar (también con Esc).
   backgroundnormal = [source:local]/config/fancymenu/assets/nexosmc/cr_cerrar.png
@@ -2345,5 +3071,5 @@ element {
   label_shadow = true
   label_scale = 1.0
   navigatable = true
-  [executable_action_instance:nexo_act_96_0][action_type:closegui] = 
+  [executable_action_instance:nexo_act_126_0][action_type:closegui] = 
 }

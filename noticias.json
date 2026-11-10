@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-10",
+    "titulo": "Premios nuevos en las cajas",
+    "texto": "Todas las cajas dan Nex, objetos de los mods (katanas, mochilas, accesorios, armas únicas) y una pequeña probabilidad de la llave de la caja siguiente. En la Caja de Grieta pueden salir piedras de grieta legendaria y mítica, muy raras.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-10",
     "titulo": "Kits mejorados y Caja SVP",
     "texto": "Todos los kits traen más comida. Los de rango traen 2 llaves de su caja, equipo encantado y el nombre del rango en armas, armaduras y herramientas. Nueva Caja SVP con su propia llave.",
     "etiqueta": "Nuevo"
