@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-10",
+    "titulo": "Cajas nuevas en el spawn",
+    "texto": "Cada caja tiene ahora su propio modelo: cuanto mejor es, más brilla y más partículas suelta. Al abrirla se levanta la tapa y los premios pasan en fila como una ruleta hasta frenar en el tuyo.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-10",
     "titulo": "Premios nuevos en las cajas",
     "texto": "Todas las cajas dan Nex, objetos de los mods (katanas, mochilas, accesorios, armas únicas) y una pequeña probabilidad de la llave de la caja siguiente. En la Caja de Grieta pueden salir piedras de grieta legendaria y mítica, muy raras.",
     "etiqueta": "Nuevo"
