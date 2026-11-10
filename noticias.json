@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-10",
+    "titulo": "Animaciones y sonidos nuevos",
+    "texto": "Tu personaje se mueve mejor: más de 50 animaciones nuevas al andar, correr, saltar, nadar, escalar y volar (Custom Player Animations). Y más de 170 sonidos nuevos o mejorados en menús, chat y bloques (Sounds). Los dos se pueden ajustar en Mods > Configuración.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-10",
     "titulo": "Minijuego nuevo: Defiende el cristal",
     "texto": "Algunas salas de las grietas tienen un cristal en el centro. Pulsa el botón y aguanta las oleadas que vienen a romperlo (de 60 a 110 segundos según la rareza). Si lo defiendes salen cofres; con el cristal por encima del 75 %, premio extra.",
     "etiqueta": "Nuevo"
