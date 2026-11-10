@@ -1,5 +1,17 @@
 [
   {
+    "fecha": "2026-11-10",
+    "titulo": "Kits mejorados y Caja SVP",
+    "texto": "Todos los kits traen más comida. Los de rango traen 2 llaves de su caja, equipo encantado y el nombre del rango en armas, armaduras y herramientas. Nueva Caja SVP con su propia llave.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-10",
+    "titulo": "Arreglos",
+    "texto": "UHC: el cubo de agua ya no se duplica junto a la pared de la arena. Parkour de las grietas con menos puntos de control.",
+    "etiqueta": "Arreglo"
+  },
+  {
     "fecha": "2026-11-09",
     "titulo": "Llaves nuevas",
     "texto": "Las llaves de las cajas tienen dibujo nuevo, cada una con su forma. En la Caja de Grieta los premios legendarios ahora son mucho más raros.",
