@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-10",
+    "titulo": "Minijuego nuevo: Defiende el cristal",
+    "texto": "Algunas salas de las grietas tienen un cristal en el centro. Pulsa el botón y aguanta las oleadas que vienen a romperlo (de 60 a 110 segundos según la rareza). Si lo defiendes salen cofres; con el cristal por encima del 75 %, premio extra.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-10",
     "titulo": "Portales de grieta nuevos",
     "texto": "Los portales de las grietas ya no se ven bloque a bloque: cada uno es una sola imagen animada según su naturaleza (almas en la Cripta, copo de nieve en la Helada, un ojo de fuego en la Infernal, telaraña con ojos en el Nido y agua con glifos en el Abismo), con el borde del color de su rareza.",
     "etiqueta": "Nuevo"
