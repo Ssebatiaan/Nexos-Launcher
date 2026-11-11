@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-10",
+    "titulo": "Animaciones alternativas",
+    "texto": "Tu personaje tiene animaciones nuevas al andar, correr, saltar, nadar, agacharte, dormir, comer y usar el arco, el escudo o el tridente (Alternative Custom Player Animations, de tatoling). Vienen activadas de serie.",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-10",
     "titulo": "Sala del cristal más grande",
     "texto": "La sala de Defiende el cristal ahora es mucho más grande y las salidas ya no se cierran al entrar: se sellan cuando alguien pulsa el botón. Si el cristal cae, se vuelven a abrir.",
     "etiqueta": "Cambio"
