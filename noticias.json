@@ -1,6 +1,12 @@
 [
   {
     "fecha": "2026-11-12",
+    "titulo": "Accesorios en todas las cajas",
+    "texto": "Todas las cajas pueden dar accesorios de Artifacts: algunos concretos y un premio de \"accesorio al azar\" con varios posibles según la caja (de divertidos en la Vote a épicos en la MVP y reliquias en la de Grieta).",
+    "etiqueta": "Nuevo"
+  },
+  {
+    "fecha": "2026-11-12",
     "titulo": "Más premios en las cajas VIP, SVP y MVP",
     "texto": "Ahora pueden salir torretas (de nivel 1 a 5), balas, cajas de mejora, paraplaneadores y libros mágicos: se usan en el yunque como un libro encantado pero no se gastan, tienen varios usos (el de Reparación de la MVP, 5). Una torreta de nivel alto solo se puede poner cuando el Nexo de tu clan llega a ese nivel; mientras, guárdala.",
     "etiqueta": "Nuevo"
