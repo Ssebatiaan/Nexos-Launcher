@@ -1,5 +1,11 @@
 [
   {
+    "fecha": "2026-11-12",
+    "titulo": "Lanzas arregladas",
+    "texto": "Las lanzas de hierro, oro, diamante y netherita de Simply Swords ya hacen daño a jugadores al lanzarlas, igual que en la mano. Las armas únicas siguen siendo solo contra criaturas.",
+    "etiqueta": "Arreglo"
+  },
+  {
     "fecha": "2026-11-10",
     "titulo": "Animaciones alternativas",
     "texto": "Tu personaje tiene animaciones nuevas al andar, correr, saltar, nadar, agacharte, dormir, comer y usar el arco, el escudo o el tridente (Alternative Custom Player Animations, de tatoling). Vienen activadas de serie.",
