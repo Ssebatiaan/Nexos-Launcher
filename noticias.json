@@ -1,5 +1,11 @@
 [
   {
+    "fecha": "2026-11-18",
+    "titulo": "Entradas de grieta nuevas",
+    "texto": "Cada grieta sale de la tierra con una entrada según lo que hay dentro: un mausoleo con lápidas (Cripta, y una calavera gigante en la mítica), una cueva de hielo (Helada, con un pico colosal), una madriguera con patas de araña gigantes (Nido), un portón de fortaleza en roca volcánica (Infernal, con un cráneo de demonio) y el portal de la Ciudad Antigua (Abismo, con la cabeza del Warden). Cuanto más rara, más grande y con más detalles; los acentos llevan el color de su rareza.",
+    "etiqueta": "Nuevo"
+  },
+  {
     "fecha": "2026-11-12",
     "titulo": "Accesorios en todas las cajas",
     "texto": "Todas las cajas pueden dar accesorios de Artifacts: algunos concretos y un premio de \"accesorio al azar\" con varios posibles según la caja (de divertidos en la Vote a épicos en la MVP y reliquias en la de Grieta).",
